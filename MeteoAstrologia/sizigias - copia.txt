@@ -1,0 +1,1593 @@
+-272	 	 	 	 	4 de ene	19:57	12 de ene	16:21	29d 14h 34m
+-271	20 de ene	10:19	27 de ene	5:35	3 de feb	11:13	11 de feb	13:55	29d 12h 09m
+-270	18 de feb	22:28	25 de feb	14:21	5 de mar	3:47	13 de mar	8:49	29d 10h 08m
+-269	20 de mar	8:36	27 de mar	0:22	3 de abr	21:03	11 de abr	23:40	29d 8h 45m
+-268	18 de abr	17:21	25 de abr	11:58	3 de may	14:02	11 de may	10:21	29d 8h 00m
+-267	18 de may	1:21	25 de may	1:23	2 de jun	5:36	9 de jun	17:43	29d 7h 55m
+-266	16 de jun	9:16	23 de jun	16:42	1 de jul	19:01	8 de jul	23:03	29d 8h 38m
+-265	15 de jul	17:54	23 de jul	9:41	31 de jul	6:17	7 de ago	3:45	29d 10h 17m
+-264	14 de ago	4:11	22 de ago	3:35	29 de ago	16:04	5 de sep	9:11	29d 12h 51m
+-263	12 de sep	17:02	20 de sep	21:17	28 de sep	1:19	4 de oct	16:36	29d 15h 53m
+-262	12 de oct	8:55	20 de oct	13:41	27 de oct	10:50	3 de nov	3:08	29d 18h 23m
+-261	11 de nov	3:18	19 de nov	4:07	25 de nov	21:01	2 de dic	17:33	29d 19h 19m
+-260	10 de dic	22:37	18 de dic	16:19	25 de dic	7:59	 	 	29d 18h 21m
+
+-260	 	 	 	 	 	 	1 de ene	11:51	29d 18h 21m
+-259	9 de ene	16:58	17 de ene	2:22	23 de ene	19:49	31 de ene	8:52	29d 16h 07m
+-258	8 de feb	9:05	15 de feb	10:40	22 de feb	8:47	2 de mar	6:23	29d 13h 29m
+-257	9 de mar	22:33	16 de mar	17:56	23 de mar	23:05	1 de abr	2:07	29d 11h 00m
+-256	8 de abr	9:33	15 de abr	1:09	22 de abr	14:33	30 de abr	18:41	29d 8h 55m
+-255	7 de may	18:28	14 de may	9:23	22 de may	6:29	30 de may	7:44	29d 7h 26m
+-254	6 de jun	1:54	12 de jun	19:37	20 de jun	22:00	28 de jun	17:35	29d 6h 48m
+-253	5 de jul	8:42	12 de jul	8:30	20 de jul	12:28	28 de jul	0:58	29d 7h 18m
+-252	3 de ago	16:00	11 de ago	0:07	19 de ago	1:46	26 de ago	6:48	29d 9h 02m
+-251	2 de sep	1:02	9 de sep	17:58	17 de sep	14:06	24 de sep	12:15	29d 11h 50m
+-250	1 de oct	12:52	9 de oct	13:04	17 de oct	1:44	23 de oct	18:41	29d 15h 05m
+-249	31 de oct	3:57	8 de nov	8:14	15 de nov	12:50	22 de nov	3:30	29d 17h 51m
+-248	29 de nov	21:48	8 de dic	2:10	14 de dic	23:31	21 de dic	15:44	29d 19h 20m
+-247	29 de dic	17:08	 	 	 	 	 	 	29d 19h 14m
+
+-247	 	 	6 de ene	17:40	13 de ene	10:00	20 de ene	7:33	29d 19h 14m
+-246	28 de ene	12:22	5 de feb	5:56	11 de feb	20:41	19 de feb	2:06	29d 17h 41m
+-245	27 de feb	6:03	6 de mar	14:57	13 de mar	7:56	20 de mar	21:51	29d 15h 07m
+-244	28 de mar	21:09	4 de abr	21:34	11 de abr	20:01	19 de abr	17:13	29d 12h 05m
+-243	27 de abr	9:15	4 de may	3:09	11 de may	9:01	19 de may	11:01	29d 9h 18m
+-242	26 de may	18:33	2 de jun	9:07	9 de jun	22:51	18 de jun	2:27	29d 7h 21m
+-241	25 de jun	1:54	1 de jul	16:45	9 de jul	13:26	17 de jul	15:07	29d 6h 35m
+-240	24 de jul	8:29	31 de jul	2:58	8 de ago	4:37	16 de ago	1:06	29d 7h 05m
+-239	22 de ago	15:34	29 de ago	16:17	6 de sep	20:03	14 de sep	8:57	29d 8h 40m
+-238	21 de sep	0:13	28 de sep	8:51	6 de oct	11:07	13 de oct	15:40	29d 11h 00m
+-237	20 de oct	11:13	28 de oct	4:15	5 de nov	1:10	11 de nov	22:29	29d 13h 40m
+-236	19 de nov	0:53	27 de nov	1:20	4 de dic	13:56	11 de dic	6:36	29d 16h 16m
+-235	18 de dic	17:09	26 de dic	22:05	 	 	 	 	29d 18h 21m
+
+-235	 	 	 	 	3 de ene	1:31	9 de ene	16:53	29d 18h 21m
+-234	17 de ene	11:30	25 de ene	16:24	1 de feb	12:16	8 de feb	5:40	29d 19h 18m
+-233	16 de feb	6:48	24 de feb	6:52	1 de mar	22:31	8 de mar	20:44	29d 18h 35m
+-232	17 de mar	1:22	24 de mar	17:20	31 de mar	8:27	7 de abr	13:36	29d 16h 14m
+-231	15 de abr	17:36	23 de abr	0:38	29 de abr	18:19	7 de may	7:33	29d 13h 05m
+-230	15 de may	6:41	22 de may	6:02	29 de may	4:38	6 de jun	1:36	29d 10h 12m
+-229	13 de jun	16:53	20 de jun	10:53	27 de jun	16:06	5 de jul	18:37	29d 8h 17m
+-228	13 de jul	1:10	19 de jul	16:32	27 de jul	5:25	4 de ago	9:46	29d 7h 31m
+-227	11 de ago	8:41	18 de ago	0:10	25 de ago	20:45	2 de sep	22:42	29d 7h 45m
+-226	9 de sep	16:26	16 de sep	10:56	24 de sep	13:33	2 de oct	9:35	29d 8h 42m
+-225	9 de oct	1:08	16 de oct	1:37	24 de oct	6:39	31 de oct	18:56	29d 10h 12m
+-224	7 de nov	11:20	14 de nov	20:18	22 de nov	22:55	30 de nov	3:21	29d 12h 10m
+-223	6 de dic	23:30	14 de dic	17:50	22 de dic	13:44	29 de dic	11:29	29d 14h 31m
+
+-222	5 de ene	14:00	13 de ene	15:54	21 de ene	2:57	27 de ene	20:03	29d 16h 49m
+-221	4 de feb	6:49	12 de feb	12:03	19 de feb	14:35	26 de feb	5:47	29d 18h 14m
+-220	6 de mar	1:03	14 de mar	4:43	21 de mar	0:39	27 de mar	17:19	29d 18h 04m
+-219	4 de abr	19:07	12 de abr	17:25	19 de abr	9:21	26 de abr	6:57	29d 16h 26m
+-218	4 de may	11:33	12 de may	2:30	18 de may	17:19	25 de may	22:33	29d 14h 07m
+-217	3 de jun	1:40	10 de jun	8:48	17 de jun	1:35	24 de jun	15:29	29d 11h 53m
+-216	2 de jul	13:33	9 de jul	13:30	16 de jul	11:15	24 de jul	8:52	29d 10h 13m
+-215	31 de jul	23:46	7 de ago	18:00	14 de ago	23:15	23 de ago	1:54	29d 9h 11m
+-214	30 de ago	8:57	5 de sep	23:52	13 de sep	13:53	21 de sep	17:57	29d 8h 46m
+-213	28 de sep	17:43	5 de oct	8:37	13 de oct	6:46	21 de oct	8:34	29d 8h 58m
+-212	28 de oct	2:41	3 de nov	21:22	12 de nov	0:54	19 de nov	21:17	29d 9h 49m
+-211	26 de nov	12:30	3 de dic	14:21	11 de dic	19:09	19 de dic	7:52	29d 11h 17m
+-210	25 de dic	23:47	 	 	 	 	 	 	29d 13h 06m
+
+-210	 	 	2 de ene	10:35	10 de ene	12:20	17 de ene	16:32	29d 13h 06m
+-209	24 de ene	12:52	1 de feb	8:14	9 de feb	3:29	16 de feb	0:06	29d 14h 48m
+-208	23 de feb	3:40	3 de mar	5:12	10 de mar	16:00	17 de mar	7:41	29d 15h 55m
+-207	24 de mar	19:35	1 de abr	23:45	9 de abr	1:55	15 de abr	16:20	29d 16h 15m
+-206	23 de abr	11:50	1 de may	14:50	8 de may	9:53	15 de may	2:46	29d 15h 54m
+-205	23 de may	3:44	31 de may	2:07	6 de jun	16:55	13 de jun	15:18	29d 15h 05m
+-204	21 de jun	18:49	29 de jun	10:02	6 de jul	0:11	13 de jul	5:56	29d 13h 54m
+-203	21 de jul	8:43	28 de jul	15:40	4 de ago	8:43	11 de ago	22:31	29d 12h 28m
+-202	19 de ago	21:11	26 de ago	20:26	2 de sep	19:20	10 de sep	16:37	29d 11h 06m
+-201	18 de sep	8:17	25 de sep	1:55	2 de oct	8:32	10 de oct	11:23	29d 10h 09m
+-200	17 de oct	18:26	24 de oct	9:33	1 de nov	0:29	9 de nov	5:28	29d 9h 54m
+-199	16 de nov	4:20	22 de nov	20:23	30 de nov	18:50	8 de dic	21:28	29d 10h 18m
+-198	15 de dic	14:37	22 de dic	10:47	30 de dic	14:27	 	 	29d 11h 02m
+
+-198	 	 	 	 	 	 	7 de ene	10:31	29d 11h 02m
+-197	14 de ene	1:40	21 de ene	4:25	29 de ene	9:28	5 de feb	20:35	29d 11h 46m
+-196	12 de feb	13:26	20 de feb	0:18	28 de feb	2:06	7 de mar	4:25	29d 12h 22m
+-195	14 de mar	1:48	21 de mar	20:53	29 de mar	15:27	5 de abr	11:03	29d 13h 01m
+-194	12 de abr	14:49	20 de abr	16:21	28 de abr	1:48	4 de may	17:36	29d 13h 53m
+-193	12 de may	4:42	20 de may	9:11	27 de may	10:01	3 de jun	1:03	29d 14h 51m
+-192	10 de jun	19:33	18 de jun	22:38	25 de jun	17:10	2 de jul	10:17	29d 15h 27m
+-191	10 de jul	11:00	18 de jul	8:55	25 de jul	0:12	31 de jul	22:09	29d 15h 20m
+-190	9 de ago	2:20	16 de ago	16:49	23 de ago	7:58	30 de ago	13:11	29d 14h 27m
+-189	7 de sep	16:47	14 de sep	23:23	21 de sep	17:17	29 de sep	7:20	29d 13h 17m
+-188	7 de oct	6:04	14 de oct	5:45	21 de oct	5:00	29 de oct	3:35	29d 12h 18m
+-187	5 de nov	18:22	12 de nov	12:58	19 de nov	19:48	28 de nov	0:05	29d 11h 44m
+-186	5 de dic	6:06	11 de dic	21:59	19 de dic	13:38	27 de dic	18:54	29d 11h 21m
+
+-185	3 de ene	17:27	10 de ene	9:36	18 de ene	9:20	26 de ene	10:45	29d 10h 53m
+-184	2 de feb	4:20	9 de feb	0:11	17 de feb	4:49	24 de feb	23:07	29d 10h 20m
+-183	2 de mar	14:40	9 de mar	17:25	17 de mar	22:12	25 de mar	8:15	29d 10h 05m
+-182	1 de abr	0:45	8 de abr	12:15	16 de abr	12:38	23 de abr	14:50	29d 10h 31m
+-181	30 de abr	11:16	8 de may	7:07	16 de may	0:15	22 de may	20:00	29d 11h 41m
+-180	29 de may	22:57	7 de jun	0:39	14 de jun	9:38	21 de jun	1:09	29d 13h 17m
+-179	28 de jun	12:15	6 de jul	16:08	13 de jul	17:31	20 de jul	7:45	29d 14h 46m
+-178	28 de jul	3:00	5 de ago	5:23	12 de ago	0:42	18 de ago	17:09	29d 15h 42m
+-177	26 de ago	18:42	3 de sep	16:34	10 de sep	8:06	17 de sep	6:17	29d 16h 00m
+-176	25 de sep	10:43	3 de oct	1:57	9 de oct	16:47	16 de oct	23:19	29d 15h 47m
+-175	25 de oct	2:30	1 de nov	9:59	8 de nov	3:41	15 de nov	19:24	29d 15h 06m
+-174	23 de nov	17:36	30 de nov	17:28	7 de dic	17:27	15 de dic	16:56	29d 13h 57m
+-173	23 de dic	7:33	30 de dic	1:23	 	 	 	 	29d 12h 22m
+
+-173	 	 	 	 	6 de ene	9:56	14 de ene	13:55	29d 12h 22m
+-172	21 de ene	19:55	28 de ene	10:51	5 de feb	4:08	13 de feb	8:30	29d 10h 40m
+-171	20 de feb	6:35	26 de feb	22:32	6 de mar	22:39	14 de mar	23:25	29d 9h 19m
+-170	21 de mar	15:54	28 de mar	12:32	5 de abr	16:11	13 de abr	10:13	29d 8h 40m
+-169	20 de abr	0:34	27 de abr	4:19	5 de may	7:51	12 de may	17:28	29d 8h 51m
+-168	19 de may	9:25	26 de may	21:10	3 de jun	21:08	10 de jun	22:26	29d 9h 46m
+-167	17 de jun	19:11	25 de jun	14:26	3 de jul	8:00	10 de jul	2:41	29d 11h 16m
+-166	17 de jul	6:28	25 de jul	7:29	1 de ago	16:57	8 de ago	7:53	29d 13h 10m
+-165	15 de ago	19:38	23 de ago	23:38	31 de ago	0:51	6 de sep	15:28	29d 15h 14m
+-164	14 de sep	10:52	22 de sep	14:14	29 de sep	8:49	6 de oct	2:28	29d 17h 05m
+-163	14 de oct	3:56	22 de oct	2:46	28 de oct	17:50	4 de nov	17:21	29d 18h 05m
+-162	12 de nov	22:02	20 de nov	13:12	27 de nov	4:35	4 de dic	11:56	29d 17h 41m
+-161	12 de dic	15:42	19 de dic	22:01	26 de dic	17:13	 	 	29d 15h 52m
+
+-161	 	 	 	 	 	 	3 de ene	9:10	29d 15h 52m
+-160	11 de ene	7:34	18 de ene	6:04	25 de ene	7:34	2 de feb	7:11	29d 13h 22m
+-159	9 de feb	20:56	16 de feb	14:16	23 de feb	23:19	4 de mar	3:36	29d 10h 59m
+-158	11 de mar	7:55	17 de mar	23:20	25 de mar	16:04	2 de abr	20:31	29d 9h 13m
+-157	9 de abr	17:08	16 de abr	9:47	24 de abr	9:06	2 de may	9:12	29d 8h 08m
+-156	9 de may	1:16	15 de may	21:56	24 de may	1:22	31 de may	18:07	29d 7h 44m
+-155	7 de jun	8:59	14 de jun	12:02	22 de jun	15:55	30 de jun	0:22	29d 8h 04m
+-154	6 de jul	17:03	14 de jul	4:07	22 de jul	4:20	29 de jul	5:17	29d 9h 17m
+-153	5 de ago	2:20	12 de ago	21:44	20 de ago	14:57	27 de ago	10:16	29d 11h 29m
+-152	3 de sep	13:49	11 de sep	15:53	19 de sep	0:35	25 de sep	16:37	29d 14h 26m
+-151	3 de oct	4:15	11 de oct	9:23	18 de oct	10:07	25 de oct	1:31	29d 17h 24m
+-150	1 de nov	21:39	10 de nov	1:12	16 de nov	20:08	23 de nov	13:56	29d 19h 15m
+-149	1 de dic	16:54	9 de dic	14:48	16 de dic	6:48	23 de dic	6:19	29d 19h 11m
+-148	31 de dic	12:04	 	 	 	 	 	 	29d 17h 23m
+
+-148	 	 	8 de ene	2:03	14 de ene	18:09	22 de ene	2:04	29d 17h 23m
+-147	30 de ene	5:28	6 de feb	11:11	13 de feb	6:21	20 de feb	23:28	29d 14h 46m
+-146	28 de feb	20:14	7 de mar	18:44	14 de mar	19:42	22 de mar	20:10	29d 12h 07m
+-145	30 de mar	8:21	6 de abr	1:38	13 de abr	10:19	21 de abr	14:19	29d 9h 47m
+-144	28 de abr	18:08	5 de may	8:57	13 de may	1:53	21 de may	5:06	29d 7h 59m
+-143	28 de may	2:07	3 de jun	17:47	11 de jun	17:34	19 de jun	16:33	29d 6h 55m
+-142	26 de jun	9:02	3 de jul	5:03	11 de jul	8:36	19 de jul	1:14	29d 6h 52m
+-141	25 de jul	15:55	1 de ago	19:12	9 de ago	22:37	17 de ago	7:53	29d 8h 02m
+-140	23 de ago	23:57	31 de ago	12:03	8 de sep	11:39	15 de sep	13:34	29d 10h 23m
+-139	22 de sep	10:20	30 de sep	6:51	7 de oct	23:54	14 de oct	19:29	29d 13h 32m
+-138	21 de oct	23:52	30 de oct	2:24	6 de nov	11:31	13 de nov	3:02	29d 16h 40m
+-137	20 de nov	16:32	28 de nov	21:24	5 de dic	22:35	12 de dic	13:28	29d 18h 51m
+-136	20 de dic	11:23	28 de dic	14:30	 	 	 	 	29d 19h 29m
+
+-136	 	 	 	 	4 de ene	9:12	11 de ene	3:26	29d 19h 29m
+-135	19 de ene	6:53	27 de ene	4:34	2 de feb	19:40	9 de feb	20:34	29d 18h 34m
+-134	18 de feb	1:27	25 de feb	15:09	3 de mar	6:25	10 de mar	15:38	29d 16h 25m
+-133	18 de mar	17:52	25 de mar	22:45	1 de abr	17:48	9 de abr	11:07	29d 13h 32m
+-132	17 de abr	7:23	24 de abr	4:30	1 de may	6:02	9 de may	5:39	29d 10h 33m
+-131	16 de may	17:57	23 de may	9:54	30 de may	19:12	7 de jun	22:18	29d 8h 10m
+-130	15 de jun	2:06	21 de jun	16:21	29 de jun	9:17	7 de jul	12:30	29d 6h 50m
+-129	14 de jul	8:56	21 de jul	1:01	29 de jul	0:11	6 de ago	0:00	29d 6h 44m
+-128	12 de ago	15:40	19 de ago	12:39	27 de ago	15:41	4 de sep	9:06	29d 7h 51m
+-127	10 de sep	23:31	18 de sep	3:38	26 de sep	7:17	3 de oct	16:31	29d 9h 52m
+-126	10 de oct	9:23	17 de oct	21:49	25 de oct	22:13	1 de nov	23:21	29d 12h 24m
+-125	8 de nov	21:48	16 de nov	18:26	24 de nov	11:55	1 de dic	6:48	29d 15h 02m
+-124	8 de dic	12:50	16 de dic	15:49	24 de dic	0:13	30 de dic	15:55	29d 17h 22m
+
+-123	7 de ene	6:11	15 de ene	11:44	22 de ene	11:23	29 de ene	3:17	29d 18h 53m
+-122	6 de feb	1:04	14 de feb	4:17	20 de feb	21:46	27 de feb	16:58	29d 19h 01m
+-121	7 de mar	20:05	15 de mar	16:41	22 de mar	7:39	29 de mar	8:40	29d 17h 26m
+-120	6 de abr	13:31	14 de abr	1:22	20 de abr	17:15	28 de abr	1:52	29d 14h 36m
+-119	6 de may	4:07	13 de may	7:28	20 de may	3:01	27 de may	19:47	29d 11h 33m
+-118	4 de jun	15:40	11 de jun	12:20	18 de jun	13:37	26 de jun	13:24	29d 9h 09m
+-117	4 de jul	0:49	10 de jul	17:20	18 de jul	1:49	26 de jul	5:42	29d 7h 52m
+-116	2 de ago	8:41	8 de ago	23:46	16 de ago	16:10	24 de ago	20:01	29d 7h 40m
+-115	31 de ago	16:21	7 de sep	8:48	15 de sep	8:29	23 de sep	8:13	29d 8h 19m
+-114	30 de sep	0:39	6 de oct	21:29	15 de oct	1:50	22 de oct	18:36	29d 9h 32m
+-113	29 de oct	10:12	5 de nov	14:17	13 de nov	18:54	21 de nov	3:39	29d 11h 12m
+-112	27 de nov	21:24	5 de dic	10:41	13 de dic	10:43	20 de dic	11:59	29d 13h 17m
+-111	27 de dic	10:42	 	 	 	 	 	 	29d 15h 35m
+
+-111	 	 	4 de ene	8:52	12 de ene	0:52	18 de ene	20:13	29d 15h 35m
+-110	26 de ene	2:17	3 de feb	6:15	10 de feb	13:17	17 de feb	5:06	29d 17h 28m
+-109	24 de feb	19:45	5 de mar	0:46	12 de mar	0:01	18 de mar	15:22	29d 18h 07m
+-108	26 de mar	13:52	3 de abr	15:24	10 de abr	9:11	17 de abr	3:35	29d 17h 13m
+-107	25 de abr	7:05	3 de may	2:12	9 de may	17:13	16 de may	17:55	29d 15h 13m
+-106	24 de may	22:18	1 de jun	9:46	8 de jun	1:01	15 de jun	10:03	29d 12h 59m
+-105	23 de jun	11:16	30 de jun	15:07	7 de jul	9:43	15 de jul	3:15	29d 11h 05m
+-104	22 de jul	22:21	29 de jul	19:34	5 de ago	20:24	13 de ago	20:39	29d 9h 48m
+-103	21 de ago	8:09	28 de ago	0:35	4 de sep	9:44	12 de sep	13:31	29d 9h 07m
+-102	19 de sep	17:16	26 de sep	7:46	4 de oct	1:42	12 de oct	5:16	29d 9h 00m
+-101	19 de oct	2:16	25 de oct	18:27	2 de nov	19:31	10 de nov	19:20	29d 9h 29m
+-100	17 de nov	11:45	24 de nov	9:22	2 de dic	14:03	10 de dic	7:15	29d 10h 33m
+-99	16 de dic	22:18	24 de dic	4:07	 	 	 	 	29d 12h 07m
+
+-99	 	 	 	 	1 de ene	8:04	8 de ene	16:56	29d 12h 07m
+-98	15 de ene	10:25	23 de ene	1:15	31 de ene	0:24	7 de feb	0:54	29d 13h 49m
+-97	14 de feb	0:14	21 de feb	22:41	1 de mar	14:15	8 de mar	8:10	29d 15h 11m
+-96	15 de mar	15:25	23 de mar	18:31	31 de mar	1:20	6 de abr	15:55	29d 15h 53m
+-95	14 de abr	7:18	22 de abr	11:21	29 de abr	10:02	6 de may	1:05	29d 15h 55m
+-94	13 de may	23:14	22 de may	0:32	28 de may	17:15	4 de jun	12:15	29d 15h 26m
+-93	12 de jun	14:40	20 de jun	10:07	27 de jun	0:10	4 de jul	1:37	29d 14h 34m
+-92	12 de jul	5:14	19 de jul	16:52	26 de jul	7:54	2 de ago	17:10	29d 13h 22m
+-91	10 de ago	18:35	17 de ago	22:00	24 de ago	17:23	1 de sep	10:39	29d 12h 00m
+-90	9 de sep	6:35	16 de sep	3:04	23 de sep	5:18	1 de oct	5:27	29d 10h 49m
+-89	8 de oct	17:24	15 de oct	9:34	22 de oct	19:58	31 de oct	0:22	29d 10h 10m
+-88	7 de nov	3:35	13 de nov	18:46	21 de nov	13:19	29 de nov	17:53	29d 10h 12m
+-87	6 de dic	13:47	13 de dic	7:21	21 de dic	8:35	29 de dic	8:42	29d 10h 42m
+
+-86	5 de ene	0:28	11 de ene	23:20	20 de ene	4:12	27 de ene	20:18	29d 11h 20m
+-85	3 de feb	11:49	10 de feb	18:03	18 de feb	22:12	26 de feb	5:07	29d 11h 52m
+-84	3 de mar	23:41	11 de mar	14:16	19 de mar	13:10	26 de mar	12:05	29d 12h 23m
+-83	2 de abr	12:04	10 de abr	10:19	18 de abr	0:50	24 de abr	18:21	29d 13h 08m
+-82	2 de may	1:12	10 de may	4:30	17 de may	9:54	24 de may	0:59	29d 14h 08m
+-81	31 de may	15:20	8 de jun	19:42	15 de jun	17:24	22 de jun	8:59	29d 15h 06m
+-80	30 de jun	6:26	8 de jul	7:38	15 de jul	0:23	21 de jul	19:16	29d 15h 32m
+-79	29 de jul	21:58	6 de ago	16:49	13 de ago	7:43	20 de ago	8:36	29d 15h 09m
+-78	28 de ago	13:08	5 de sep	0:09	11 de sep	16:14	19 de sep	1:18	29d 14h 09m
+-77	27 de sep	3:17	4 de oct	6:43	11 de oct	2:44	18 de oct	20:51	29d 13h 03m
+-76	26 de oct	16:20	2 de nov	13:33	9 de nov	16:01	17 de nov	17:43	29d 12h 13m
+-75	25 de nov	4:33	1 de dic	21:38	9 de dic	8:27	17 de dic	13:49	29d 11h 41m
+-74	24 de dic	16:14	31 de dic	7:50	 	 	 	 	29d 11h 09m
+
+-74	 	 	 	 	8 de ene	3:25	16 de ene	7:25	29d 11h 09m
+-73	23 de ene	3:23	29 de ene	20:44	6 de feb	23:12	14 de feb	21:36	29d 10h 29m
+-72	21 de feb	13:52	28 de feb	12:27	8 de mar	17:41	16 de mar	8:16	29d 9h 56m
+-71	22 de mar	23:48	30 de mar	6:20	7 de abr	9:32	14 de abr	15:55	29d 9h 56m
+-70	21 de abr	9:45	29 de abr	1:05	6 de may	22:27	13 de may	21:31	29d 10h 45m
+-69	20 de may	20:30	28 de may	19:17	5 de jun	8:50	12 de jun	2:22	29d 12h 15m
+-68	19 de jun	8:45	27 de jun	11:52	4 de jul	17:24	11 de jul	7:55	29d 13h 58m
+-67	18 de jul	22:43	27 de jul	2:24	3 de ago	0:54	9 de ago	15:40	29d 15h 21m
+-66	17 de ago	14:04	25 de ago	14:51	1 de sep	8:12	8 de sep	2:48	29d 16h 06m
+-65	16 de sep	6:11	24 de sep	1:24	30 de sep	16:14	7 de oct	17:58	29d 16h 14m
+-64	15 de oct	22:24	23 de oct	10:21	30 de oct	2:03	6 de nov	12:47	29d 15h 47m
+-63	14 de nov	14:12	21 de nov	18:12	28 de nov	14:25	6 de dic	9:57	29d 14h 49m
+-62	14 de dic	5:00	21 de dic	1:50	28 de dic	5:35	 	 	29d 13h 18m
+
+-62	 	 	 	 	 	 	5 de ene	7:33	29d 13h 18m
+-61	12 de ene	18:19	19 de ene	10:21	26 de ene	22:57	4 de feb	3:35	29d 11h 29m
+-60	11 de feb	5:48	17 de feb	20:40	25 de feb	17:18	5 de mar	20:27	29d 9h 48m
+-59	12 de mar	15:35	19 de mar	9:14	27 de mar	11:16	4 de abr	9:16	29d 8h 42m
+-58	11 de abr	0:18	17 de abr	23:51	26 de abr	3:49	3 de may	18:09	29d 8h 27m
+-57	10 de may	8:44	17 de may	15:57	25 de may	18:16	2 de jun	0:03	29d 9h 02m
+-56	8 de jun	17:46	16 de jun	8:55	24 de jun	6:21	1 de jul	4:26	29d 10h 19m
+-55	8 de jul	4:05	16 de jul	2:08	23 de jul	16:18	30 de jul	8:57	29d 12h 07m
+-54	6 de ago	16:12	14 de ago	18:59	22 de ago	0:45	28 de ago	15:10	29d 14h 14m
+-53	5 de sep	6:27	13 de sep	10:45	20 de sep	8:44	27 de sep	0:22	29d 16h 21m
+-52	4 de oct	22:48	13 de oct	0:43	19 de oct	17:18	26 de oct	13:19	29d 17h 56m
+-51	3 de nov	16:45	11 de nov	12:29	18 de nov	3:16	25 de nov	6:08	29d 18h 18m
+-50	3 de dic	11:02	10 de dic	22:14	17 de dic	15:01	25 de dic	2:14	29d 17h 05m
+
+-49	2 de ene	4:07	9 de ene	6:38	16 de ene	4:27	24 de ene	0:05	29d 14h 42m
+-48	31 de ene	18:50	7 de feb	14:35	14 de feb	19:21	22 de feb	21:31	29d 12h 05m
+-47	2 de mar	6:54	8 de mar	22:57	16 de mar	11:24	24 de mar	16:17	29d 9h 54m
+-46	31 de mar	16:48	7 de abr	8:22	15 de abr	4:08	23 de abr	7:04	29d 8h 26m
+-45	30 de abr	1:13	6 de may	19:17	14 de may	20:44	22 de may	17:47	29d 7h 42m
+-44	29 de may	8:55	5 de jun	8:05	13 de jun	12:11	21 de jun	1:16	29d 7h 41m
+-43	27 de jun	16:36	4 de jul	23:00	13 de jul	1:45	20 de jul	6:46	29d 8h 29m
+-42	27 de jul	1:05	3 de ago	15:54	11 de ago	13:22	18 de ago	11:39	29d 10h 15m
+-41	25 de ago	11:20	2 de sep	10:05	9 de sep	23:37	16 de sep	17:15	29d 12h 57m
+-40	24 de sep	0:17	2 de oct	4:20	9 de oct	9:22	16 de oct	0:48	29d 16h 06m
+-39	23 de oct	16:22	31 de oct	21:26	7 de nov	19:18	14 de nov	11:24	29d 18h 40m
+-38	22 de nov	11:03	30 de nov	12:30	7 de dic	5:47	14 de dic	1:46	29d 19h 36m
+-37	22 de dic	6:39	30 de dic	1:08	 	 	 	 	29d 18h 31m
+
+-37	 	 	 	 	5 de ene	16:48	12 de ene	19:52	29d 18h 31m
+-36	21 de ene	1:10	28 de ene	11:21	4 de feb	4:25	11 de feb	16:32	29d 16h 08m
+-35	19 de feb	17:18	26 de feb	19:32	4 de mar	16:56	12 de mar	13:40	29d 13h 21m
+-34	20 de mar	6:39	27 de mar	2:28	3 de abr	6:38	11 de abr	9:07	29d 10h 47m
+-33	18 de abr	17:26	25 de abr	9:10	2 de may	21:47	11 de may	1:51	29d 8h 42m
+-32	18 de may	2:25	24 de may	17:07	1 de jun	13:18	9 de jun	14:58	29d 7h 16m
+-31	16 de jun	9:41	23 de jun	2:49	1 de jul	4:41	9 de jul	1:06	29d 6h 44m
+-30	15 de jul	16:25	22 de jul	15:20	30 de jul	19:19	7 de ago	8:51	29d 7h 19m
+-29	13 de ago	23:44	21 de ago	6:52	29 de ago	9:03	5 de sep	15:05	29d 9h 08m
+-28	12 de sep	8:51	20 de sep	0:55	27 de sep	21:56	4 de oct	20:54	29d 11h 59m
+-27	11 de oct	20:50	19 de oct	20:29	27 de oct	10:09	3 de nov	3:35	29d 15h 15m
+-26	10 de nov	12:05	18 de nov	16:13	25 de nov	21:42	2 de dic	12:29	29d 17h 59m
+-25	10 de dic	6:04	18 de dic	10:40	25 de dic	8:38	 	 	29d 19h 23m
+
+-25	 	 	 	 	 	 	1 de ene	0:35	29d 19h 23m
+-24	9 de ene	1:27	17 de ene	2:31	23 de ene	19:07	30 de ene	16:02	29d 19h 10m
+-23	7 de feb	20:37	15 de feb	14:53	22 de feb	5:32	1 de mar	10:03	29d 17h 32m
+-22	9 de mar	14:09	16 de mar	23:49	23 de mar	16:19	31 de mar	5:13	29d 14h 56m
+-21	8 de abr	5:05	15 de abr	6:11	22 de abr	3:49	30 de abr	0:08	29d 11h 56m
+-20	7 de may	17:01	14 de may	11:25	21 de may	16:15	29 de may	17:45	29d 9h 13m
+-19	6 de jun	2:15	12 de jun	16:59	20 de jun	5:41	28 de jun	9:17	29d 7h 22m
+-18	5 de jul	9:36	12 de jul	0:15	19 de jul	20:08	27 de jul	22:20	29d 6h 41m
+-17	3 de ago	16:17	10 de ago	10:14	18 de ago	11:28	26 de ago	8:51	29d 7h 15m
+-16	1 de sep	23:33	8 de sep	23:29	17 de sep	3:20	24 de sep	17:17	29d 8h 53m
+-15	1 de oct	8:26	8 de oct	16:11	16 de oct	18:59	24 de oct	0:31	29d 11h 12m
+-14	30 de oct	19:38	7 de nov	11:53	15 de nov	9:39	22 de nov	7:41	29d 13h 47m
+-13	29 de nov	9:25	7 de dic	9:19	14 de dic	22:50	21 de dic	15:54	29d 16h 14m
+-12	29 de dic	1:39	 	 	 	 	 	 	29d 18h 09m
+
+-12	 	 	6 de ene	6:23	13 de ene	10:36	20 de ene	2:00	29d 18h 09m
+-11	27 de ene	19:48	5 de feb	0:52	11 de feb	21:17	18 de feb	14:18	29d 18h 59m
+-10	26 de feb	14:47	6 de mar	15:21	13 de mar	7:14	20 de mar	4:43	29d 18h 16m
+-9	28 de mar	9:03	5 de abr	1:45	11 de abr	16:43	18 de abr	20:53	29d 16h 00m
+-8	27 de abr	1:04	4 de may	8:55	11 de may	2:06	18 de may	14:17	29d 13h 00m
+-7	26 de may	14:04	2 de jun	14:10	9 de jun	11:58	17 de jun	8:03	29d 10h 16m
+-6	25 de jun	0:20	1 de jul	18:52	8 de jul	23:07	17 de jul	1:11	29d 8h 27m
+-5	24 de jul	8:47	31 de jul	0:21	7 de ago	12:19	15 de ago	16:46	29d 7h 47m
+-4	22 de ago	16:34	29 de ago	7:55	6 de sep	3:47	14 de sep	6:20	29d 8h 04m
+-3	21 de sep	0:38	27 de sep	18:40	5 de oct	20:58	13 de oct	17:55	29d 9h 02m
+-2	20 de oct	9:40	27 de oct	9:26	4 de nov	14:36	12 de nov	3:52	29d 10h 26m
+-1	18 de nov	20:06	26 de nov	4:15	4 de dic	7:23	11 de dic	12:40	29d 12h 14m
+0	18 de dic	8:20	26 de dic	1:52	 	 	 	 	29d 14h 21m
+
+0	 	 	 	 	2 de ene	22:33	9 de ene	20:54	29d 14h 21m
+1	16 de ene	22:41	24 de ene	23:59	1 de feb	11:53	8 de feb	5:16	29d 16h 26m
+2	15 de feb	15:07	23 de feb	20:06	2 de mar	23:23	9 de mar	14:31	29d 17h 44m
+3	17 de mar	8:51	25 de mar	12:41	1 de abr	9:09	8 de abr	1:22	29d 17h 37m
+4	16 de abr	2:28	24 de abr	1:20	30 de abr	17:30	7 de may	14:18	29d 16h 10m
+5	15 de may	18:38	23 de may	10:25	30 de may	1:07	6 de jun	5:19	29d 14h 04m
+6	14 de jun	8:42	21 de jun	16:46	28 de jun	9:04	5 de jul	21:56	29d 12h 03m
+7	13 de jul	20:45	20 de jul	21:32	27 de jul	18:33	4 de ago	15:22	29d 10h 32m
+8	12 de ago	7:17	19 de ago	2:07	26 de ago	6:29	3 de sep	8:48	29d 9h 36m
+9	10 de sep	16:52	17 de sep	8:04	24 de sep	21:16	3 de oct	1:29	29d 9h 13m
+10	10 de oct	2:05	16 de oct	16:53	24 de oct	14:26	1 de nov	16:49	29d 9h 21m
+11	8 de nov	11:27	15 de nov	5:41	23 de nov	8:58	1 de dic	6:09	29d 10h 03m
+12	7 de dic	21:30	14 de dic	22:38	23 de dic	3:33	30 de dic	17:07	29d 11h 17m
+
+13	6 de ene	8:47	13 de ene	18:44	21 de ene	20:56	29 de ene	1:52	29d 12h 51m
+14	4 de feb	21:38	12 de feb	16:09	20 de feb	12:07	27 de feb	9:15	29d 14h 19m
+15	5 de mar	11:57	13 de mar	12:50	21 de mar	0:30	27 de mar	16:24	29d 15h 20m
+16	4 de abr	3:17	12 de abr	7:12	19 de abr	10:10	26 de abr	0:28	29d 15h 43m
+17	3 de may	19:00	11 de may	22:13	18 de may	17:52	25 de may	10:16	29d 15h 34m
+18	2 de jun	10:34	10 de jun	9:37	17 de jun	0:41	23 de jun	22:16	29d 15h 01m
+19	2 de jul	1:35	9 de jul	17:46	16 de jul	7:49	23 de jul	12:35	29d 14h 07m
+20	31 de jul	15:42	7 de ago	23:41	14 de ago	16:19	22 de ago	5:10	29d 12h 55m
+21	30 de ago	4:37	6 de sep	4:45	13 de sep	3:00	20 de sep	23:35	29d 11h 39m
+22	28 de sep	16:16	5 de oct	10:30	12 de oct	16:21	20 de oct	18:55	29d 10h 41m
+23	28 de oct	2:57	3 de nov	18:18	11 de nov	8:31	19 de nov	13:39	29d 10h 19m
+24	26 de nov	13:16	3 de dic	5:10	11 de dic	3:03	19 de dic	6:11	29d 10h 30m
+25	25 de dic	23:46	 	 	 	 	 	 	29d 10h 59m
+
+25	 	 	1 de ene	19:25	9 de ene	22:47	17 de ene	19:33	29d 10h 59m
+26	24 de ene	10:45	31 de ene	12:43	8 de feb	17:49	16 de feb	5:41	29d 11h 27m
+27	22 de feb	22:12	2 de mar	8:06	10 de mar	10:21	17 de mar	13:21	29d 11h 51m
+28	24 de mar	10:03	1 de abr	4:12	8 de abr	23:32	15 de abr	19:40	29d 12h 25m
+29	22 de abr	22:28	30 de abr	23:20	8 de may	9:42	15 de may	1:46	29d 13h 20m
+30	22 de may	11:48	30 de may	16:04	6 de jun	17:48	13 de jun	8:44	29d 14h 29m
+31	21 de jun	2:17	29 de jun	5:43	6 de jul	0:54	12 de jul	17:34	29d 15h 23m
+32	20 de jul	17:40	28 de jul	16:23	4 de ago	7:59	11 de ago	5:10	29d 15h 35m
+33	19 de ago	9:15	27 de ago	0:46	2 de sep	15:53	9 de sep	20:11	29d 14h 58m
+34	18 de sep	0:13	25 de sep	7:51	2 de oct	1:23	9 de oct	14:34	29d 13h 53m
+35	17 de oct	14:06	24 de oct	14:38	31 de oct	13:17	8 de nov	11:13	29d 12h 52m
+36	16 de nov	2:58	22 de nov	22:06	30 de nov	4:11	8 de dic	8:11	29d 12h 07m
+37	15 de dic	15:05	22 de dic	7:08	29 de dic	22:01	 	 	29d 11h 30m
+
+37	 	 	 	 	 	 	7 de ene	3:23	29d 11h 30m
+38	14 de ene	2:35	20 de ene	18:31	28 de ene	17:35	5 de feb	19:25	29d 10h 45m
+39	12 de feb	13:20	19 de feb	8:36	27 de feb	12:51	7 de mar	7:49	29d 10h 00m
+40	13 de mar	23:20	21 de mar	1:12	29 de mar	6:00	5 de abr	16:50	29d 9h 36m
+41	12 de abr	8:56	19 de abr	19:23	27 de abr	20:16	4 de may	23:13	29d 9h 59m
+42	11 de may	18:55	19 de may	13:48	27 de may	7:48	3 de jun	4:09	29d 11h 13m
+43	10 de jun	6:08	18 de jun	7:14	25 de jun	17:13	2 de jul	9:02	29d 12h 58m
+44	9 de jul	19:06	17 de jul	22:55	25 de jul	1:13	31 de jul	15:24	29d 14h 42m
+45	8 de ago	9:49	16 de ago	12:38	23 de ago	8:37	30 de ago	0:40	29d 15h 56m
+46	7 de sep	1:45	15 de sep	0:26	21 de sep	16:19	28 de sep	13:48	29d 16h 28m
+47	6 de oct	18:13	14 de oct	10:27	21 de oct	1:15	28 de oct	6:57	29d 16h 21m
+48	5 de nov	10:34	12 de nov	19:01	19 de nov	12:21	27 de nov	3:15	29d 15h 37m
+49	5 de dic	2:12	12 de dic	2:47	19 de dic	2:09	27 de dic	0:59	29d 14h 16m
+
+50	3 de ene	16:28	10 de ene	10:43	17 de ene	18:27	25 de ene	22:05	29d 12h 26m
+51	2 de feb	4:54	8 de feb	19:54	16 de feb	12:18	24 de feb	16:42	29d 10h 30m
+52	3 de mar	15:24	10 de mar	7:03	18 de mar	6:24	26 de mar	7:35	29d 8h 59m
+53	2 de abr	0:24	8 de abr	20:21	16 de abr	23:35	24 de abr	18:21	29d 8h 16m
+54	1 de may	8:39	8 de may	11:27	16 de may	15:02	24 de may	1:34	29d 8h 26m
+55	30 de may	17:05	7 de jun	3:48	15 de jun	4:19	22 de jun	6:29	29d 9h 26m
+56	29 de jun	2:31	6 de jul	20:52	14 de jul	15:22	21 de jul	10:43	29d 11h 04m
+57	28 de jul	13:36	5 de ago	14:05	13 de ago	0:37	19 de ago	15:54	29d 13h 09m
+58	27 de ago	2:45	4 de sep	6:44	11 de sep	8:54	17 de sep	23:29	29d 15h 25m
+59	25 de sep	18:11	3 de oct	22:01	10 de oct	17:14	17 de oct	10:31	29d 17h 26m
+60	25 de oct	11:37	2 de nov	11:15	9 de nov	2:36	16 de nov	1:28	29d 18h 32m
+61	24 de nov	6:09	1 de dic	22:15	8 de dic	13:32	15 de dic	20:03	29d 18h 04m
+62	24 de dic	0:13	31 de dic	7:22	 	 	 	 	29d 16h 05m
+
+62	 	 	 	 	7 de ene	2:08	14 de ene	17:14	29d 16h 05m
+63	22 de ene	16:19	29 de ene	15:26	5 de feb	16:11	13 de feb	15:05	29d 13h 22m
+64	21 de feb	5:41	27 de feb	23:21	6 de mar	7:27	14 de mar	11:20	29d 10h 49m
+65	21 de mar	16:29	28 de mar	7:54	4 de abr	23:39	13 de abr	4:09	29d 8h 55m
+66	20 de abr	1:25	26 de abr	17:42	4 de may	16:12	12 de may	16:50	29d 7h 49m
+67	19 de may	9:14	26 de may	5:11	3 de jun	8:13	11 de jun	1:51	29d 7h 28m
+68	17 de jun	16:42	24 de jun	18:47	2 de jul	22:48	10 de jul	8:16	29d 7h 53m
+69	17 de jul	0:35	24 de jul	10:38	1 de ago	11:30	8 de ago	13:24	29d 9h 13m
+70	15 de ago	9:48	23 de ago	4:21	30 de ago	22:34	6 de sep	18:35	29d 11h 32m
+71	13 de sep	21:20	21 de sep	22:58	29 de sep	8:42	6 de oct	1:06	29d 14h 36m
+72	13 de oct	11:56	21 de oct	17:06	28 de oct	18:43	4 de nov	10:06	29d 17h 39m
+73	12 de nov	5:35	20 de nov	9:36	27 de nov	5:06	3 de dic	22:31	29d 19h 31m
+74	12 de dic	1:06	19 de dic	23:43	26 de dic	15:55	 	 	29d 19h 22m
+
+74	 	 	 	 	 	 	2 de ene	14:44	29d 19h 22m
+75	10 de ene	20:28	18 de ene	11:15	25 de ene	3:09	1 de feb	10:11	29d 17h 27m
+76	9 de feb	13:55	16 de feb	20:23	23 de feb	14:59	3 de mar	7:10	29d 14h 42m
+77	11 de mar	4:37	18 de mar	3:42	25 de mar	3:47	2 de abr	3:29	29d 11h 56m
+78	9 de abr	16:33	16 de abr	10:09	23 de abr	17:48	1 de may	21:26	29d 9h 35m
+79	9 de may	2:08	15 de may	16:56	23 de may	8:50	31 de may	12:13	29d 7h 49m
+80	7 de jun	9:57	14 de jun	1:14	22 de jun	0:15	29 de jun	23:54	29d 6h 50m
+81	6 de jul	16:47	13 de jul	12:05	21 de jul	15:21	29 de jul	8:56	29d 6h 53m
+82	4 de ago	23:40	12 de ago	2:02	20 de ago	5:42	27 de ago	16:02	29d 8h 08m
+83	3 de sep	7:47	10 de sep	18:57	18 de sep	19:16	25 de sep	22:07	29d 10h 32m
+84	2 de oct	18:19	10 de oct	14:05	18 de oct	8:06	25 de oct	4:21	29d 13h 42m
+85	1 de nov	8:01	9 de nov	10:10	16 de nov	20:14	23 de nov	12:04	29d 16h 48m
+86	1 de dic	0:48	9 de dic	5:42	16 de dic	7:38	22 de dic	22:27	29d 18h 53m
+87	30 de dic	19:42	 	 	 	 	 	 	29d 19h 26m
+
+87	 	 	7 de ene	23:11	14 de ene	18:21	21 de ene	12:07	29d 19h 26m
+88	29 de ene	15:07	6 de feb	13:26	13 de feb	4:38	20 de feb	4:45	29d 18h 25m
+89	28 de feb	9:33	8 de mar	0:00	14 de mar	14:58	21 de mar	23:13	29d 16h 14m
+90	30 de mar	1:47	6 de abr	7:25	13 de abr	1:49	20 de abr	18:09	29d 13h 22m
+91	28 de abr	15:09	5 de may	12:53	12 de may	13:29	20 de may	12:22	29d 10h 28m
+92	28 de may	1:37	3 de jun	17:56	11 de jun	2:12	19 de jun	5:01	29d 8h 10m
+93	26 de jun	9:47	3 de jul	0:03	10 de jul	16:01	18 de jul	19:29	29d 6h 55m
+94	25 de jul	16:42	1 de ago	8:26	9 de ago	6:58	17 de ago	7:30	29d 6h 55m
+95	23 de ago	23:37	30 de ago	19:57	7 de sep	22:48	15 de sep	17:13	29d 8h 05m
+96	22 de sep	7:41	29 de sep	10:58	7 de oct	14:56	15 de oct	1:12	29d 10h 06m
+97	21 de oct	17:47	29 de oct	5:22	6 de nov	6:28	13 de nov	8:27	29d 12h 34m
+98	20 de nov	6:21	28 de nov	2:18	5 de dic	21:40	12 de dic	17:06	29d 15h 03m
+99	19 de dic	22:24	28 de dic	0:59	 	 	 	 	29d 17h 12m
+
+99	 	 	 	 	4 de ene	10:15	11 de ene	2:09	29d 17h 12m
+100	18 de ene	15:35	26 de ene	21:05	2 de feb	21:25	9 de feb	13:09	29d 18h 35m
+101	17 de feb	10:10	25 de feb	13:42	4 de mar	7:35	11 de mar	2:15	29d 18h 40m
+102	19 de mar	4:50	27 de mar	2:04	2 de abr	16:05	9 de abr	16:15	29d 17h 09m
+103	17 de abr	21:00	25 de abr	9:40	2 de may	1:14	9 de may	8:48	29d 14h 28m
+104	17 de may	11:28	24 de may	15:39	31 de may	10:33	8 de jun	2:18	29d 11h 34m
+105	15 de jun	23:02	22 de jun	20:23	29 de jun	20:47	7 de jul	19:52	29d 9h 18m
+106	15 de jul	8:20	22 de jul	1:16	29 de jul	8:48	6 de ago	12:28	29d 8h 07m
+107	13 de ago	16:27	20 de ago	7:36	27 de ago	23:10	5 de sep	3:21	29d 7h 59m
+108	12 de sep	0:26	18 de sep	16:37	26 de sep	15:45	4 de oct	16:15	29d 8h 40m
+109	11 de oct	9:06	18 de oct	6:20	26 de oct	10:34	3 de nov	4:17	29d 9h 50m
+110	9 de nov	19:55	16 de nov	23:14	25 de nov	4:10	2 de dic	13:50	29d 11h 21m
+111	9 de dic	7:16	16 de dic	19:43	24 de dic	20:24	31 de dic	22:23	29d 13h 13m
+
+112	7 de ene	20:29	15 de ene	17:55	23 de ene	10:44	30 de ene	6:32	29d 15h 16m
+113	6 de feb	11:45	14 de feb	15:16	21 de feb	23:07	28 de feb	15:03	29d 16h 59m
+114	7 de mar	3:44	15 de mar	8:41	22 de mar	8:37	28 de mar	23:44	29d 17h 37m
+115	5 de abr	21:21	13 de abr	23:15	20 de abr	17:27	27 de abr	11:14	29d 16h 50m
+116	5 de may	14:11	13 de may	10:02	20 de may	1:08	27 de may	0:55	29d 15h 04m
+117	4 de jun	5:16	11 de jun	17:40	18 de jun	8:38	25 de jun	16:36	29d 13h 04m
+118	3 de jul	18:20	10 de jul	23:07	17 de jul	17:07	25 de jul	9:42	29d 11h 22m
+119	2 de ago	5:42	9 de ago	3:40	16 de ago	3:42	24 de ago	3:22	29d 10h 13m
+120	31 de ago	15:55	7 de sep	8:49	14 de sep	17:06	22 de sep	20:47	29d 9h 35m
+121	30 de sep	1:30	6 de oct	16:05	14 de oct	9:18	22 de oct	13:14	29d 9h 26m
+122	29 de oct	10:56	5 de nov	3:50	13 de nov	4:28	21 de nov	4:58	29d 9h 47m
+123	27 de nov	21:43	4 de dic	18:45	12 de dic	23:21	20 de dic	17:22	29d 10h 39m
+124	27 de dic	8:22	 	 	 	 	 	 	29d 11h 57m
+
+124	 	 	3 de ene	13:24	11 de ene	17:36	19 de ene	3:15	29d 11h 57m
+125	25 de ene	20:20	2 de feb	10:16	10 de feb	10:01	17 de feb	11:08	29d 13h 24m
+126	24 de feb	9:44	4 de mar	6:24	11 de mar	22:46	18 de mar	17:05	29d 14h 36m
+127	25 de mar	23:20	3 de abr	1:56	10 de abr	9:37	17 de abr	0:18	29d 15h 18m
+128	24 de abr	14:38	2 de may	18:39	9 de may	18:04	16 de may	8:51	29d 15h 29m
+129	24 de may	6:07	1 de jun	7:53	8 de jun	1:05	14 de jun	19:26	29d 15h 15m
+130	22 de jun	21:22	30 de jun	17:41	7 de jul	7:51	14 de jul	8:24	29d 14h 41m
+131	22 de jul	12:03	30 de jul	0:44	5 de ago	15:32	12 de ago	23:49	29d 13h 45m
+132	21 de ago	1:48	28 de ago	6:13	4 de sep	1:05	11 de sep	17:30	29d 12h 33m
+133	19 de sep	14:21	26 de sep	11:36	3 de oct	13:08	11 de oct	12:46	29d 11h 24m
+134	19 de oct	1:45	25 de oct	18:21	2 de nov	4:59	10 de nov	9:18	29d 10h 39m
+135	17 de nov	13:24	24 de nov	4:38	1 de dic	22:31	10 de dic	3:24	29d 10h 29m
+136	16 de dic	23:53	23 de dic	17:09	31 de dic	17:54	 	 	29d 10h 44m
+
+136	 	 	 	 	 	 	8 de ene	18:36	29d 10h 44m
+137	15 de ene	10:37	22 de ene	8:50	30 de ene	13:32	7 de feb	6:22	29d 11h 07m
+138	13 de feb	21:44	21 de feb	3:05	1 de mar	6:26	8 de mar	14:06	29d 11h 25m
+139	15 de mar	8:09	22 de mar	21:45	30 de mar	21:15	6 de abr	20:49	29d 11h 48m
+140	13 de abr	19:57	21 de abr	17:21	29 de abr	8:45	6 de may	2:41	29d 12h 33m
+141	13 de may	8:30	21 de may	11:20	28 de may	17:41	4 de jun	8:53	29d 13h 41m
+142	11 de jun	22:11	20 de jun	2:37	27 de jun	1:08	3 de jul	16:28	29d 14h 54m
+143	11 de jul	13:06	19 de jul	14:53	26 de jul	8:09	2 de ago	2:27	29d 15h 40m
+144	10 de ago	4:46	18 de ago	0:33	24 de ago	15:37	31 de ago	15:40	29d 15h 35m
+145	8 de sep	20:20	16 de sep	8:26	23 de sep	0:19	30 de sep	8:29	29d 14h 44m
+146	8 de oct	11:05	15 de oct	15:29	22 de oct	11:01	30 de oct	4:22	29d 13h 38m
+147	7 de nov	1:43	13 de nov	23:39	21 de nov	1:26	29 de nov	2:39	29d 12h 41m
+148	6 de dic	14:25	13 de dic	7:51	20 de dic	17:53	28 de dic	23:08	29d 11h 55m
+
+149	5 de ene	2:20	11 de ene	17:55	19 de ene	12:44	27 de ene	16:59	29d 11h 07m
+150	3 de feb	13:27	10 de feb	6:25	18 de feb	8:17	26 de feb	7:14	29d 10h 13m
+151	4 de mar	22:40	11 de mar	20:30	20 de mar	1:32	27 de mar	16:51	29d 9h 30m
+152	3 de abr	8:11	10 de abr	13:42	18 de abr	17:10	26 de abr	0:21	29d 9h 26m
+153	2 de may	17:37	10 de may	7:54	18 de may	5:57	25 de may	5:44	29d 10h 15m
+154	1 de jun	3:52	9 de jun	1:49	16 de jun	16:20	23 de jun	10:21	29d 11h 52m
+155	30 de jun	15:44	8 de jul	18:29	16 de jul	1:00	22 de jul	15:42	29d 13h 48m
+156	30 de jul	5:32	7 de ago	9:23	14 de ago	8:44	20 de ago	23:17	29d 15h 28m
+157	28 de ago	21:01	5 de sep	22:26	12 de sep	16:18	19 de sep	10:23	29d 16h 29m
+158	27 de sep	13:30	5 de oct	9:39	12 de oct	0:39	19 de oct	1:36	29d 16h 46m
+159	27 de oct	6:15	3 de nov	20:12	10 de nov	11:42	17 de nov	21:36	29d 16h 20m
+160	25 de nov	23:36	3 de dic	4:28	10 de dic	0:10	17 de dic	18:57	29d 15h 13m
+161	25 de dic	14:49	 	 	 	 	 	 	29d 13h 29m
+
+161	 	 	1 de ene	12:14	8 de ene	15:14	16 de ene	16:41	29d 13h 29m
+162	24 de ene	4:18	30 de ene	20:35	7 de feb	8:19	15 de feb	12:45	29d 11h 24m
+163	22 de feb	15:42	29 de feb	6:28	8 de mar	1:14	16 de mar	4:35	29d 9h 31m
+164	23 de mar	0:13	29 de mar	17:22	6 de abr	18:46	14 de abr	17:21	29d 8h 19m
+165	21 de abr	8:33	28 de abr	7:16	6 de may	11:01	14 de may	2:12	29d 8h 02m
+166	20 de may	16:35	27 de may	22:46	5 de jun	1:22	12 de jun	8:05	29d 8h 40m
+167	19 de jun	1:14	26 de jun	15:23	4 de jul	13:34	11 de jul	12:28	29d 10h 04m
+168	18 de jul	11:18	26 de jul	8:36	2 de ago	23:47	9 de ago	16:59	29d 12h 02m
+169	16 de ago	23:21	25 de ago	1:49	1 de sep	8:37	7 de sep	23:14	29d 14h 21m
+170	15 de sep	13:41	23 de sep	18:12	30 de sep	17:01	7 de oct	8:29	29d 16h 39m
+171	15 de oct	6:21	23 de oct	8:53	30 de oct	1:58	5 de nov	22:29	29d 18h 21m
+172	14 de nov	1:42	21 de nov	22:19	28 de nov	13:12	5 de dic	15:20	29d 18h 43m
+173	13 de dic	20:25	21 de dic	8:30	28 de dic	1:00	 	 	29d 17h 22m
+
+173	 	 	 	 	 	 	4 de ene	11:22	29d 17h 22m
+174	12 de ene	13:47	19 de ene	17:02	26 de ene	14:15	3 de feb	9:04	29d 14h 47m
+175	11 de feb	4:34	18 de feb	0:49	25 de feb	4:43	5 de mar	5:17	29d 11h 57m
+176	12 de mar	15:31	19 de mar	7:46	26 de mar	19:12	3 de abr	23:53	29d 9h 38m
+177	11 de abr	1:10	17 de abr	16:34	25 de abr	11:24	3 de may	14:36	29d 8h 08m
+178	10 de may	9:18	17 de may	2:49	25 de may	3:38	2 de jun	1:24	29d 7h 25m
+179	8 de jun	16:43	15 de jun	15:03	23 de jun	19:00	1 de jul	9:03	29d 7h 29m
+180	8 de jul	0:13	15 de jul	5:36	23 de jul	8:46	30 de jul	14:47	29d 8h 24m
+181	6 de ago	8:37	13 de ago	22:28	21 de ago	20:47	28 de ago	19:54	29d 10h 17m
+182	4 de sep	18:53	12 de sep	16:57	20 de sep	7:32	27 de sep	1:43	29d 13h 04m
+183	4 de oct	7:58	12 de oct	11:47	19 de oct	17:48	26 de oct	9:26	29d 16h 18m
+184	3 de nov	1:16	11 de nov	6:33	18 de nov	5:10	24 de nov	21:04	29d 18h 55m
+185	2 de dic	20:11	10 de dic	22:13	17 de dic	15:53	24 de dic	11:20	29d 19h 48m
+
+186	1 de ene	15:59	9 de ene	11:13	16 de ene	2:53	23 de ene	5:09	29d 18h 36m
+187	31 de ene	10:35	7 de feb	21:32	14 de feb	14:14	22 de feb	1:24	29d 16h 05m
+188	2 de mar	1:40	9 de mar	4:35	16 de mar	1:15	23 de mar	21:06	29d 13h 12m
+189	31 de mar	14:52	7 de abr	11:10	14 de abr	14:21	22 de abr	16:14	29d 10h 36m
+190	30 de abr	1:28	6 de may	17:24	14 de may	4:39	22 de may	8:36	29d 8h 32m
+191	29 de may	10:00	5 de jun	0:32	12 de jun	19:47	20 de jun	21:52	29d 7h 10m
+192	27 de jun	17:10	4 de jul	9:47	12 de jul	11:05	20 de jul	8:19	29d 6h 43m
+193	26 de jul	23:53	2 de ago	22:00	11 de ago	1:57	18 de ago	16:30	29d 7h 24m
+194	25 de ago	7:17	1 de sep	13:28	9 de sep	16:08	16 de sep	23:12	29d 9h 16m
+195	23 de sep	16:33	1 de oct	7:45	9 de oct	5:37	16 de oct	5:24	29d 12h 09m
+196	23 de oct	4:42	31 de oct	3:45	7 de nov	19:23	14 de nov	13:20	29d 15h 23m
+197	21 de nov	21:05	30 de nov	1:00	7 de dic	7:22	13 de dic	22:17	29d 18h 02m
+198	21 de dic	15:07	29 de dic	19:53	 	 	 	 	29d 19h 20m
+
+198	 	 	 	 	5 de ene	18:30	12 de ene	10:11	29d 19h 20m
+199	20 de ene	10:27	28 de ene	12:00	4 de feb	4:54	11 de feb	1:12	29d 19h 01m
+200	19 de feb	5:28	27 de feb	0:26	5 de mar	14:00	12 de mar	17:37	29d 17h 21m
+201	20 de mar	21:49	28 de mar	8:15	4 de abr	0:18	11 de abr	12:11	29d 14h 46m
+202	19 de abr	12:35	26 de abr	14:24	3 de may	11:15	11 de may	6:40	29d 11h 50m
+203	19 de may	0:25	25 de may	19:20	1 de jun	23:11	10 de jun	0:07	29d 9h 12m
+204	17 de jun	9:37	24 de jun	0:35	1 de jul	12:16	9 de jul	15:49	29d 7h 26m
+205	16 de jul	17:03	23 de jul	7:34	31 de jul	2:37	8 de ago	5:18	29d 6h 51m
+206	14 de ago	23:53	21 de ago	17:21	29 de ago	18:09	6 de sep	16:24	29d 7h 29m
+207	13 de sep	7:22	20 de sep	6:34	28 de sep	10:27	6 de oct	1:27	29d 9h 08m
+208	12 de oct	16:30	19 de oct	23:24	28 de oct	2:42	4 de nov	10:12	29d 11h 24m
+209	11 de nov	4:54	18 de nov	20:21	26 de nov	18:54	3 de dic	17:40	29d 13h 51m
+210	10 de dic	18:45	18 de dic	18:04	26 de dic	8:28	 	 	29d 16h 07m
+
+210	 	 	 	 	 	 	2 de ene	1:56	29d 16h 07m
+211	9 de ene	10:53	17 de ene	15:21	24 de ene	20:22	31 de ene	11:47	29d 17h 52m
+212	8 de feb	4:45	16 de feb	9:56	23 de feb	6:55	29 de feb	23:35	29d 18h 38m
+213	8 de mar	22:23	16 de mar	23:25	23 de mar	15:33	30 de mar	12:20	29d 17h 56m
+214	7 de abr	16:18	15 de abr	9:45	22 de abr	0:37	29 de abr	3:49	29d 15h 48m
+215	7 de may	8:07	14 de may	16:50	21 de may	9:33	28 de may	20:40	29d 12h 58m
+216	5 de jun	21:05	12 de jun	21:59	19 de jun	19:01	27 de jun	14:13	29d 10h 23m
+217	5 de jul	8:28	12 de jul	3:35	19 de jul	6:55	27 de jul	8:30	29d 8h 42m
+218	3 de ago	17:09	10 de ago	9:00	17 de ago	20:03	26 de ago	0:33	29d 8h 06m
+219	2 de sep	1:15	8 de sep	16:32	16 de sep	11:41	24 de sep	14:47	29d 8h 26m
+220	1 de oct	9:41	8 de oct	3:18	16 de oct	5:15	24 de oct	3:04	29d 9h 22m
+221	30 de oct	19:03	6 de nov	18:08	14 de nov	23:23	22 de nov	13:36	29d 10h 39m
+222	29 de nov	5:42	6 de dic	13:01	14 de dic	16:38	21 de dic	22:45	29d 12h 14m
+223	28 de dic	17:56	 	 	 	 	 	 	29d 14h 07m
+
+223	 	 	5 de ene	10:40	13 de ene	8:04	20 de ene	7:02	29d 14h 07m
+224	27 de ene	8:03	4 de feb	8:43	11 de feb	21:27	18 de feb	15:07	29d 15h 59m
+225	26 de feb	0:02	6 de mar	4:43	13 de mar	8:47	19 de mar	23:52	29d 17h 12m
+226	27 de mar	17:14	4 de abr	21:12	11 de abr	18:15	18 de abr	10:03	29d 17h 10m
+227	26 de abr	10:24	4 de may	9:48	11 de may	2:15	17 de may	22:17	29d 15h 55m
+228	26 de may	2:18	2 de jun	18:56	9 de jun	9:34	16 de jun	11:45	29d 14h 04m
+229	24 de jun	15:22	2 de jul	0:24	8 de jul	16:17	16 de jul	4:07	29d 12h 17m
+230	24 de jul	3:39	31 de jul	5:19	7 de ago	1:39	14 de ago	21:40	29d 10h 55m
+231	22 de ago	14:34	29 de ago	10:04	5 de sep	13:36	13 de sep	15:32	29d 10h 05m
+232	21 de sep	0:39	27 de sep	16:09	5 de oct	4:33	13 de oct	8:53	29d 9h 41m
+233	20 de oct	11:20	27 de oct	2:04	3 de nov	23:00	12 de nov	1:54	29d 9h 44m
+234	18 de nov	21:04	25 de nov	14:53	3 de dic	17:51	11 de dic	15:48	29d 10h 14m
+235	18 de dic	7:18	25 de dic	7:44	 	 	 	 	29d 11h 13m
+
+235	 	 	 	 	2 de ene	12:42	10 de ene	3:05	29d 11h 13m
+236	16 de ene	18:32	24 de ene	3:36	1 de feb	6:13	8 de feb	11:52	29d 12h 31m
+237	15 de feb	7:03	23 de feb	0:40	2 de mar	21:20	9 de mar	19:00	29d 13h 47m
+238	16 de mar	20:50	24 de mar	21:02	1 de abr	9:32	8 de abr	1:43	29d 14h 43m
+239	15 de abr	11:33	23 de abr	15:10	30 de abr	19:00	7 de may	9:13	29d 15h 12m
+240	15 de may	2:45	23 de may	6:11	30 de may	2:29	5 de jun	18:26	29d 15h 16m
+241	13 de jun	18:02	21 de jun	17:44	28 de jun	9:09	5 de jul	5:58	29d 15h 01m
+242	13 de jul	9:03	21 de jul	2:13	27 de jul	16:13	3 de ago	20:04	29d 14h 25m
+243	11 de ago	23:28	19 de ago	8:30	26 de ago	0:46	2 de sep	12:41	29d 13h 25m
+244	10 de sep	12:53	17 de sep	13:57	24 de sep	11:34	2 de oct	7:27	29d 12h 14m
+245	10 de oct	1:06	16 de oct	19:58	24 de oct	1:05	1 de nov	3:18	29d 11h 13m
+246	8 de nov	12:19	15 de nov	3:57	22 de nov	17:24	30 de nov	22:37	29d 10h 41m
+247	7 de dic	23:00	14 de dic	14:47	22 de dic	12:03	30 de dic	15:37	29d 10h 38m
+
+248	6 de ene	9:38	13 de ene	4:49	21 de ene	7:48	29 de ene	5:13	29d 10h 51m
+249	4 de feb	20:29	11 de feb	21:40	20 de feb	2:45	27 de feb	15:22	29d 11h 05m
+250	6 de mar	7:34	13 de mar	16:30	21 de mar	19:08	28 de mar	22:52	29d 11h 19m
+251	4 de abr	18:53	12 de abr	12:04	20 de abr	8:10	27 de abr	4:51	29d 11h 50m
+252	4 de may	6:43	12 de may	6:53	19 de may	18:13	26 de may	10:34	29d 12h 50m
+253	2 de jun	19:33	10 de jun	23:35	18 de jun	2:14	24 de jun	17:08	29d 14h 10m
+254	2 de jul	9:44	10 de jul	13:29	17 de jul	9:21	24 de jul	1:38	29d 15h 23m
+255	1 de ago	0:06	8 de ago	23:36	15 de ago	15:34	22 de ago	12:04	29d 15h 53m
+256	30 de ago	16:00	7 de sep	8:32	13 de sep	23:39	21 de sep	3:06	29d 15h 30m
+257	29 de sep	7:29	6 de oct	16:10	13 de oct	9:22	20 de oct	22:42	29d 14h 30m
+258	28 de oct	22:59	5 de nov	0:22	11 de nov	22:27	19 de nov	19:43	29d 13h 24m
+259	27 de nov	12:23	4 de dic	8:04	11 de dic	13:25	19 de dic	17:04	29d 12h 27m
+260	27 de dic	0:50	 	 	 	 	 	 	29d 11h 34m
+
+260	 	 	2 de ene	17:04	10 de ene	7:09	18 de ene	12:32	29d 11h 34m
+261	25 de ene	12:24	1 de feb	4:08	9 de feb	2:30	17 de feb	4:42	29d 10h 35m
+262	23 de feb	22:59	1 de mar	17:40	9 de mar	21:28	17 de mar	17:05	29d 9h 37m
+263	24 de mar	8:36	31 de mar	9:34	8 de abr	14:22	16 de abr	1:59	29d 9h 08m
+264	22 de abr	17:44	30 de abr	3:07	8 de may	4:28	15 de may	8:12	29d 9h 29m
+265	22 de may	3:13	29 de may	21:07	6 de jun	15:58	13 de jun	12:56	29d 10h 47m
+266	20 de jun	14:00	28 de jun	14:27	6 de jul	1:27	12 de jul	17:38	29d 12h 43m
+267	20 de jul	2:42	28 de jul	6:24	4 de ago	9:39	10 de ago	23:52	29d 14h 42m
+268	18 de ago	17:25	26 de ago	20:39	2 de sep	17:21	9 de sep	9:03	29d 16h 13m
+269	17 de sep	9:37	25 de sep	9:07	2 de oct	1:22	8 de oct	22:12	29d 16h 57m
+270	17 de oct	2:35	24 de oct	19:48	31 de oct	10:35	7 de nov	15:29	29d 16h 55m
+271	15 de nov	19:29	23 de nov	4:53	29 de nov	21:52	7 de dic	11:57	29d 16h 05m
+272	15 de dic	11:35	22 de dic	12:54	29 de dic	11:38	 	 	29d 14h 32m
+
+272	 	 	 	 	 	 	6 de ene	9:48	29d 14h 32m
+273	14 de ene	2:07	20 de ene	20:48	28 de ene	3:41	5 de feb	6:56	29d 12h 27m
+274	12 de feb	14:33	19 de feb	5:38	26 de feb	21:07	7 de mar	1:30	29d 10h 18m
+275	14 de mar	0:51	20 de mar	16:12	28 de mar	14:45	5 de abr	16:19	29d 8h 39m
+276	12 de abr	9:30	19 de abr	4:47	27 de abr	7:33	5 de may	3:02	29d 7h 52m
+277	11 de may	17:22	18 de may	19:12	26 de may	22:49	3 de jun	10:15	29d 8h 04m
+278	10 de jun	1:26	17 de jun	11:06	25 de jun	12:08	2 de jul	15:13	29d 9h 09m
+279	9 de jul	10:35	17 de jul	4:01	24 de jul	23:26	31 de jul	19:30	29d 10h 56m
+280	7 de ago	21:32	15 de ago	21:27	23 de ago	9:03	30 de ago	0:44	29d 13h 12m
+281	6 de sep	10:44	14 de sep	14:38	21 de sep	17:46	28 de sep	8:23	29d 15h 39m
+282	6 de oct	2:22	14 de oct	6:38	21 de oct	2:32	27 de oct	19:30	29d 17h 48m
+283	4 de nov	20:10	12 de nov	20:34	19 de nov	12:13	26 de nov	10:28	29d 18h 56m
+284	4 de dic	15:07	12 de dic	8:05	18 de dic	23:17	26 de dic	5:00	29d 18h 23m
+
+285	3 de ene	9:30	10 de ene	17:27	17 de ene	11:47	25 de ene	2:00	29d 16h 13m
+286	2 de feb	1:43	9 de feb	1:28	16 de feb	1:28	23 de feb	23:37	29d 13h 18m
+287	3 de mar	14:02	10 de mar	8:03	17 de mar	15:11	25 de mar	18:38	29d 10h 36m
+288	2 de abr	0:37	8 de abr	16:04	16 de abr	6:47	24 de abr	11:19	29d 8h 39m
+289	1 de may	9:16	8 de may	1:13	15 de may	22:53	24 de may	0:02	29d 7h 33m
+290	30 de may	16:49	6 de jun	12:06	14 de jun	14:42	22 de jun	9:12	29d 7h 16m
+291	29 de jun	0:06	6 de jul	1:15	14 de jul	5:23	21 de jul	15:52	29d 7h 48m
+292	28 de jul	7:53	4 de ago	16:56	12 de ago	18:26	19 de ago	21:17	29d 9h 14m
+293	26 de ago	17:07	3 de sep	10:49	11 de sep	5:59	18 de sep	2:44	29d 11h 38m
+294	25 de sep	4:45	3 de oct	6:53	10 de oct	17:40	17 de oct	10:28	29d 14h 46m
+295	24 de oct	20:32	2 de nov	1:40	9 de nov	4:10	15 de nov	19:34	29d 17h 52m
+296	23 de nov	14:24	1 de dic	18:47	8 de dic	14:52	15 de dic	7:57	29d 19h 43m
+297	23 de dic	10:06	31 de dic	9:22	 	 	 	 	29d 19h 28m
+
+297	 	 	 	 	7 de ene	1:46	13 de ene	23:56	29d 19h 28m
+298	22 de ene	5:34	29 de ene	21:07	5 de feb	12:50	12 de feb	18:58	29d 17h 26m
+299	20 de feb	23:00	28 de feb	6:12	7 de mar	0:15	14 de mar	15:28	29d 14h 34m
+300	22 de mar	13:34	29 de mar	13:15	5 de abr	12:29	13 de abr	11:23	29d 11h 45m
+301	21 de abr	1:19	27 de abr	19:18	5 de may	1:53	13 de may	5:08	29d 9h 24m
+302	20 de may	10:44	27 de may	1:35	3 de jun	16:27	11 de jun	19:58	29d 7h 42m
+303	18 de jun	18:26	25 de jun	9:25	3 de jul	7:39	11 de jul	7:54	29d 6h 49m
+304	18 de jul	1:15	24 de jul	19:54	1 de ago	22:50	9 de ago	17:22	29d 6h 57m
+305	16 de ago	8:12	23 de ago	9:40	31 de ago	13:34	8 de sep	0:57	29d 8h 16m
+306	14 de sep	16:28	22 de sep	2:42	30 de sep	3:41	7 de oct	7:29	29d 10h 42m
+307	14 de oct	3:10	21 de oct	22:11	29 de oct	17:07	5 de nov	14:03	29d 13h 51m
+308	12 de nov	17:01	20 de nov	18:44	28 de nov	5:45	4 de dic	21:55	29d 16h 52m
+309	12 de dic	9:53	20 de dic	14:43	27 de dic	17:27	 	 	29d 18h 51m
+
+309	 	 	 	 	 	 	3 de ene	8:12	29d 18h 51m
+310	11 de ene	4:45	19 de ene	8:32	26 de ene	4:11	1 de feb	21:31	29d 19h 17m
+311	10 de feb	0:02	17 de feb	22:55	24 de feb	14:15	2 de mar	13:35	29d 18h 13m
+312	10 de mar	18:15	18 de mar	9:27	25 de mar	0:10	1 de abr	7:25	29d 16h 02m
+313	9 de abr	10:17	16 de abr	16:42	23 de abr	10:28	1 de may	1:48	29d 13h 14m
+314	8 de may	23:30	15 de may	21:55	22 de may	21:37	30 de may	19:43	29d 10h 25m
+315	7 de jun	9:56	14 de jun	2:40	21 de jun	9:54	29 de jun	12:23	29d 8h 13m
+316	6 de jul	18:09	13 de jul	8:30	20 de jul	23:31	29 de jul	3:11	29d 7h 04m
+317	5 de ago	1:13	11 de ago	16:40	19 de ago	14:32	27 de ago	15:46	29d 7h 08m
+318	3 de sep	8:21	10 de sep	4:05	18 de sep	6:43	26 de sep	2:07	29d 8h 21m
+319	2 de oct	16:42	9 de oct	19:11	17 de oct	23:24	25 de oct	10:41	29d 10h 21m
+320	1 de nov	3:03	8 de nov	13:47	16 de nov	15:31	23 de nov	18:22	29d 12h 42m
+321	30 de nov	15:45	8 de dic	10:58	16 de dic	6:11	23 de dic	2:12	29d 15h 00m
+322	30 de dic	6:45	 	 	 	 	 	 	29d 16h 57m
+
+322	 	 	7 de ene	8:52	14 de ene	18:59	21 de ene	11:07	29d 16h 57m
+323	28 de ene	23:42	6 de feb	5:05	13 de feb	6:08	19 de feb	21:43	29d 18h 12m
+324	27 de feb	17:55	7 de mar	21:42	14 de mar	16:02	21 de mar	10:10	29d 18h 16m
+325	29 de mar	12:11	6 de abr	10:01	13 de abr	1:08	20 de abr	0:27	29d 16h 52m
+326	28 de abr	5:02	5 de may	18:33	12 de may	9:51	19 de may	16:22	29d 14h 22m
+327	27 de may	19:24	4 de jun	0:27	10 de jun	18:45	18 de jun	9:29	29d 11h 38m
+328	26 de jun	7:02	3 de jul	5:08	10 de jul	4:41	18 de jul	3:02	29d 9h 31m
+329	25 de jul	16:33	1 de ago	9:57	8 de ago	16:34	16 de ago	19:59	29d 8h 26m
+330	24 de ago	0:59	30 de ago	16:17	7 de sep	7:00	15 de sep	11:29	29d 8h 22m
+331	22 de sep	9:21	29 de sep	1:19	6 de oct	23:53	15 de oct	1:06	29d 9h 02m
+332	21 de oct	18:23	28 de oct	14:05	5 de nov	18:09	13 de nov	12:48	29d 10h 06m
+333	20 de nov	4:29	27 de nov	7:02	5 de dic	12:14	12 de dic	22:48	29d 11h 27m
+334	19 de dic	15:56	27 de dic	3:32	 	 	 	 	29d 13h 04m
+
+334	 	 	 	 	4 de ene	4:48	11 de ene	7:31	29d 13h 04m
+335	18 de ene	5:00	26 de ene	1:40	2 de feb	19:16	9 de feb	15:32	29d 14h 53m
+336	16 de feb	19:53	24 de feb	22:52	4 de mar	7:34	10 de mar	23:38	29d 16h 27m
+337	18 de mar	12:20	26 de mar	17:09	2 de abr	17:49	9 de abr	8:42	29d 17h 05m
+338	17 de abr	5:25	25 de abr	7:40	2 de may	2:19	8 de may	19:32	29d 16h 29m
+339	16 de may	21:55	24 de may	18:28	31 de may	9:43	7 de jun	8:35	29d 14h 58m
+340	15 de jun	12:53	23 de jun	2:13	29 de jun	16:58	6 de jul	23:53	29d 13h 13m
+341	15 de jul	2:06	22 de jul	7:50	29 de jul	1:18	5 de ago	16:56	29d 11h 43m
+342	13 de ago	13:48	20 de ago	12:35	27 de ago	11:51	4 de sep	10:54	29d 10h 40m
+343	12 de sep	0:29	18 de sep	17:54	26 de sep	1:21	4 de oct	4:53	29d 10h 05m
+344	11 de oct	10:33	18 de oct	1:18	25 de oct	17:46	2 de nov	22:00	29d 9h 52m
+345	9 de nov	20:25	16 de nov	12:06	24 de nov	12:14	2 de dic	13:22	29d 10h 03m
+346	9 de dic	6:29	16 de dic	2:57	24 de dic	7:23	 	 	29d 10h 41m
+
+346	 	 	 	 	 	 	1 de ene	2:11	29d 10h 41m
+347	7 de ene	17:10	14 de ene	21:23	23 de ene	1:47	30 de ene	12:14	29d 11h 44m
+348	6 de feb	4:54	13 de feb	17:55	21 de feb	18:12	28 de feb	19:59	29d 12h 57m
+349	7 de mar	17:51	15 de mar	14:40	23 de mar	7:50	30 de mar	2:35	29d 14h 01m
+350	6 de abr	7:52	14 de abr	9:56	21 de abr	18:30	28 de abr	9:18	29d 14h 44m
+351	5 de may	22:36	14 de may	2:32	21 de may	2:44	27 de may	17:17	29d 15h 05m
+352	4 de jun	13:40	12 de jun	15:52	19 de jun	9:36	26 de jun	3:22	29d 15h 08m
+353	4 de jul	4:48	12 de jul	1:56	18 de jul	16:17	25 de jul	15:59	29d 14h 51m
+354	2 de ago	19:39	10 de ago	9:22	16 de ago	23:59	24 de ago	7:20	29d 14h 10m
+355	1 de sep	9:50	8 de sep	15:16	15 de sep	9:38	23 de sep	1:13	29d 13h 07m
+356	30 de sep	22:57	7 de oct	21:00	14 de oct	21:51	22 de oct	20:55	29d 11h 58m
+357	30 de oct	10:54	6 de nov	3:58	13 de nov	12:52	21 de nov	17:01	29d 11h 06m
+358	28 de nov	22:00	5 de dic	13:20	13 de dic	6:30	21 de dic	11:37	29d 10h 43m
+359	28 de dic	8:43	 	 	 	 	 	 	29d 10h 43m
+
+359	 	 	4 de ene	1:42	12 de ene	1:55	20 de ene	3:09	29d 10h 43m
+360	26 de ene	19:26	2 de feb	17:01	10 de feb	21:28	18 de feb	15:01	29d 10h 50m
+361	25 de feb	6:16	3 de mar	10:43	11 de mar	15:14	18 de mar	23:40	29d 10h 57m
+362	25 de mar	17:13	2 de abr	5:49	10 de abr	5:53	17 de abr	6:08	29d 11h 15m
+363	24 de abr	4:28	2 de may	0:58	9 de may	17:16	16 de may	11:39	29d 12h 00m
+364	23 de may	16:28	31 de may	18:47	8 de jun	2:07	14 de jun	17:28	29d 13h 17m
+365	22 de jun	5:45	30 de jun	10:12	7 de jul	9:34	14 de jul	0:42	29d 14h 46m
+366	21 de jul	20:31	29 de jul	22:51	5 de ago	16:40	12 de ago	10:27	29d 15h 50m
+367	20 de ago	12:21	28 de ago	9:03	4 de sep	0:19	10 de sep	23:36	29d 16h 01m
+368	19 de sep	4:22	26 de sep	17:31	3 de oct	9:15	10 de oct	16:33	29d 15h 20m
+369	18 de oct	19:43	26 de oct	1:04	1 de nov	20:10	9 de nov	12:43	29d 14h 13m
+370	17 de nov	9:56	24 de nov	8:34	1 de dic	9:42	9 de dic	10:22	29d 13h 07m
+371	16 de dic	23:02	23 de dic	16:52	31 de dic	2:06	 	 	29d 12h 06m
+
+371	 	 	 	 	 	 	8 de ene	7:09	29d 12h 06m
+372	15 de ene	11:08	22 de ene	2:43	29 de ene	20:44	7 de feb	1:09	29d 11h 02m
+373	13 de feb	22:10	20 de feb	14:45	28 de feb	15:59	8 de mar	15:27	29d 9h 55m
+374	15 de mar	8:05	22 de mar	5:11	30 de mar	9:55	7 de abr	1:59	29d 9h 04m
+375	13 de abr	17:09	20 de abr	21:41	29 de abr	1:21	6 de may	9:21	29d 8h 57m
+376	13 de may	2:06	20 de may	15:21	28 de may	14:03	4 de jun	14:36	29d 9h 49m
+377	11 de jun	11:55	19 de jun	9:01	27 de jun	0:30	3 de jul	19:04	29d 11h 33m
+378	10 de jul	23:28	19 de jul	1:48	26 de jul	9:21	2 de ago	0:16	29d 13h 42m
+379	9 de ago	13:10	17 de ago	17:08	24 de ago	17:21	31 de ago	7:47	29d 15h 38m
+380	8 de sep	4:48	16 de sep	6:50	23 de sep	1:16	29 de sep	18:52	29d 16h 53m
+381	7 de oct	21:41	15 de oct	18:45	22 de oct	9:56	29 de oct	10:10	29d 17h 17m
+382	6 de nov	14:58	14 de nov	4:52	20 de nov	20:12	28 de nov	5:16	29d 16h 50m
+383	6 de dic	7:48	13 de dic	13:30	20 de dic	8:44	28 de dic	2:44	29d 15h 33m
+
+384	4 de ene	23:21	11 de ene	21:22	18 de ene	23:37	27 de ene	0:28	29d 13h 34m
+385	3 de feb	12:55	10 de feb	5:29	17 de feb	16:17	25 de feb	20:29	29d 11h 16m
+386	5 de mar	0:11	11 de mar	14:52	19 de mar	9:43	27 de mar	13:14	29d 9h 14m
+387	3 de abr	9:25	10 de abr	2:06	18 de abr	2:49	26 de abr	1:58	29d 7h 57m
+388	2 de may	17:23	9 de may	15:18	17 de may	18:47	25 de may	10:50	29d 7h 41m
+389	1 de jun	1:03	8 de jun	6:14	16 de jun	9:06	23 de jun	16:46	29d 8h 23m
+390	30 de jun	9:26	7 de jul	22:33	15 de jul	21:29	22 de jul	21:14	29d 9h 54m
+391	29 de jul	19:20	6 de ago	15:51	14 de ago	8:03	21 de ago	1:51	29d 12h 01m
+392	28 de ago	7:21	5 de sep	9:29	12 de sep	17:20	19 de sep	8:11	29d 14h 30m
+393	26 de sep	21:51	5 de oct	2:31	12 de oct	2:10	18 de oct	17:30	29d 16h 57m
+394	26 de oct	14:47	3 de nov	17:55	10 de nov	11:30	17 de nov	6:33	29d 18h 43m
+395	25 de nov	9:31	3 de dic	6:56	9 de dic	21:57	16 de dic	23:22	29d 19h 03m
+396	25 de dic	4:34	 	 	 	 	 	 	29d 17h 33m
+
+396	 	 	1 de ene	17:29	8 de ene	9:44	15 de ene	19:14	29d 17h 33m
+397	23 de ene	22:07	31 de ene	2:05	6 de feb	22:43	14 de feb	16:40	29d 14h 47m
+398	22 de feb	12:54	1 de mar	9:40	8 de mar	12:41	16 de mar	13:36	29d 11h 48m
+399	24 de mar	0:42	30 de mar	17:10	7 de abr	3:35	15 de abr	8:00	29d 9h 24m
+400	22 de abr	10:06	29 de abr	1:23	6 de may	19:14	14 de may	22:42	29d 7h 52m
+401	21 de may	17:59	28 de may	11:01	5 de jun	11:08	13 de jun	9:37	29d 7h 13m
+402	20 de jun	1:12	26 de jun	22:44	5 de jul	2:29	12 de jul	17:31	29d 7h 23m
+403	19 de jul	8:34	26 de jul	13:00	3 de ago	16:30	10 de ago	23:33	29d 8h 23m
+404	17 de ago	16:58	25 de ago	5:52	2 de sep	4:59	9 de sep	4:59	29d 10h 21m
+405	16 de sep	3:19	24 de sep	0:41	1 de oct	16:17	8 de oct	11:04	29d 13h 13m
+406	15 de oct	16:32	23 de oct	20:05	31 de oct	3:04	6 de nov	18:56	29d 16h 29m
+407	14 de nov	9:02	22 de nov	14:29	29 de nov	13:50	6 de dic	5:36	29d 19h 06m
+408	14 de dic	4:07	22 de dic	6:40	29 de dic	0:44	 	 	29d 19h 54m
+
+408	 	 	 	 	 	 	4 de ene	19:41	29d 19h 54m
+409	13 de ene	0:01	20 de ene	19:58	27 de ene	11:40	3 de feb	13:08	29d 18h 36m
+410	11 de feb	18:38	19 de feb	6:21	25 de feb	22:42	4 de mar	8:53	29d 15h 59m
+411	12 de mar	10:37	19 de mar	14:14	26 de mar	10:11	3 de abr	5:06	29d 13h 02m
+412	10 de abr	23:39	17 de abr	20:28	24 de abr	22:40	2 de may	23:55	29d 10h 26m
+413	10 de may	10:04	17 de may	2:15	24 de may	12:26	1 de jun	16:13	29d 8h 25m
+414	8 de jun	18:29	15 de jun	8:56	23 de jun	3:14	1 de jul	5:41	29d 7h 08m
+415	8 de jul	1:38	14 de jul	17:47	22 de jul	18:29	30 de jul	16:31	29d 6h 47m
+416	6 de ago	8:25	13 de ago	5:45	21 de ago	9:38	29 de ago	1:13	29d 7h 32m
+417	4 de sep	15:57	11 de sep	21:13	20 de sep	0:20	27 de sep	8:25	29d 9h 27m
+418	4 de oct	1:25	11 de oct	15:44	19 de oct	14:25	26 de oct	15:02	29d 12h 19m
+419	2 de nov	13:44	10 de nov	12:09	18 de nov	3:45	24 de nov	22:13	29d 15h 29m
+420	2 de dic	5:13	10 de dic	8:51	17 de dic	16:07	24 de dic	7:10	29d 18h 01m
+421	31 de dic	23:14	 	 	 	 	 	 	29d 19h 11m
+
+421	 	 	9 de ene	4:06	16 de ene	3:22	22 de ene	18:48	29d 19h 11m
+422	30 de ene	18:25	7 de feb	20:24	14 de feb	13:38	21 de feb	9:19	29d 18h 47m
+423	1 de mar	13:13	9 de mar	8:50	15 de mar	23:22	23 de mar	2:05	29d 17h 06m
+424	31 de mar	6:19	7 de abr	17:33	14 de abr	9:09	21 de abr	20:00	29d 14h 35m
+425	29 de abr	20:54	6 de may	23:29	13 de may	19:34	21 de may	14:03	29d 11h 45m
+426	29 de may	8:39	5 de jun	4:10	12 de jun	7:02	20 de jun	7:22	29d 9h 14m
+427	27 de jun	17:54	4 de jul	9:09	11 de jul	19:50	19 de jul	23:18	29d 7h 35m
+428	27 de jul	1:28	2 de ago	15:55	10 de ago	10:09	18 de ago	13:16	29d 7h 05m
+429	25 de ago	8:33	1 de sep	1:35	9 de sep	1:55	17 de sep	1:02	29d 7h 46m
+430	23 de sep	16:19	30 de sep	14:50	8 de oct	18:42	16 de oct	10:44	29d 9h 25m
+431	23 de oct	1:43	30 de oct	7:48	7 de nov	11:32	14 de nov	19:00	29d 11h 36m
+432	21 de nov	13:19	29 de nov	3:58	7 de dic	3:16	14 de dic	2:45	29d 13h 53m
+433	21 de dic	3:12	29 de dic	1:52	 	 	 	 	29d 15h 56m
+
+433	 	 	 	 	5 de ene	17:09	12 de ene	11:01	29d 15h 56m
+434	19 de ene	19:08	27 de ene	23:16	4 de feb	5:06	10 de feb	20:34	29d 17h 30m
+435	18 de feb	12:38	26 de feb	17:52	5 de mar	15:28	12 de mar	7:48	29d 18h 11m
+436	20 de mar	6:50	28 de mar	8:19	4 de abr	0:45	10 de abr	20:50	29d 17h 34m
+437	19 de abr	0:23	26 de abr	18:36	3 de may	9:23	10 de may	11:37	29d 15h 37m
+438	18 de may	16:00	26 de may	1:38	1 de jun	17:55	9 de jun	3:58	29d 12h 59m
+439	17 de jun	4:59	24 de jun	6:44	1 de jul	3:04	8 de jul	21:21	29d 10h 34m
+440	16 de jul	15:33	23 de jul	11:19	30 de jul	13:47	7 de ago	14:49	29d 9h 00m
+441	15 de ago	0:33	21 de ago	16:45	29 de ago	2:53	6 de sep	7:24	29d 8h 29m
+442	13 de sep	9:02	20 de sep	0:18	27 de sep	18:44	5 de oct	22:20	29d 8h 50m
+443	12 de oct	17:52	19 de oct	11:07	27 de oct	12:41	4 de nov	11:19	29d 9h 42m
+444	11 de nov	3:34	18 de nov	1:59	26 de nov	7:17	3 de dic	22:24	29d 10h 49m
+445	10 de dic	14:23	17 de dic	20:52	26 de dic	0:54	 	 	29d 12h 11m
+
+445	 	 	 	 	 	 	2 de ene	7:50	29d 12h 11m
+446	9 de ene	2:34	16 de ene	18:27	24 de ene	16:32	31 de ene	16:06	29d 13h 48m
+447	7 de feb	16:22	15 de feb	16:20	23 de feb	5:54	1 de mar	23:54	29d 15h 29m
+448	9 de mar	7:51	17 de mar	12:10	24 de mar	17:02	31 de mar	8:07	29d 16h 38m
+449	8 de abr	0:29	16 de abr	4:33	23 de abr	2:13	29 de abr	17:38	29d 16h 43m
+450	7 de may	17:12	15 de may	17:09	22 de may	9:55	29 de may	5:14	29d 15h 42m
+451	6 de jun	8:53	14 de jun	2:22	20 de jun	16:59	27 de jun	19:12	29d 14h 07m
+452	5 de jul	23:00	13 de jul	9:01	20 de jul	0:33	27 de jul	11:21	29d 12h 34m
+453	4 de ago	11:34	11 de ago	14:10	18 de ago	9:50	26 de ago	5:03	29d 11h 22m
+454	2 de sep	22:55	9 de sep	19:07	16 de sep	21:52	24 de sep	23:22	29d 10h 35m
+455	2 de oct	9:31	9 de oct	1:22	16 de oct	12:58	24 de oct	17:22	29d 10h 10m
+456	31 de oct	19:41	7 de nov	10:23	15 de nov	6:42	23 de nov	10:03	29d 10h 05m
+457	30 de nov	5:46	6 de dic	23:12	15 de dic	1:49	23 de dic	0:28	29d 10h 23m
+458	29 de dic	16:09	 	 	 	 	 	 	29d 11h 06m
+
+458	 	 	5 de ene	15:53	13 de ene	20:50	21 de ene	12:01	29d 11h 06m
+459	28 de ene	3:15	4 de feb	11:26	12 de feb	14:24	19 de feb	20:47	29d 12h 09m
+460	26 de feb	15:23	5 de mar	8:05	13 de mar	5:26	20 de mar	3:40	29d 13h 14m
+461	27 de mar	4:37	4 de abr	4:05	11 de abr	17:27	18 de abr	9:57	29d 14h 07m
+462	25 de abr	18:44	3 de may	22:00	11 de may	2:42	17 de may	16:54	29d 14h 42m
+463	25 de may	9:26	2 de jun	13:01	9 de jun	10:02	16 de jun	1:35	29d 15h 01m
+464	24 de jun	0:27	2 de jul	0:48	8 de jul	16:37	15 de jul	12:42	29d 15h 04m
+465	23 de jul	15:31	31 de jul	9:38	6 de ago	23:41	14 de ago	2:36	29d 14h 45m
+466	22 de ago	6:15	29 de ago	16:22	5 de sep	8:19	12 de sep	19:19	29d 13h 57m
+467	20 de sep	20:13	27 de sep	22:13	4 de oct	19:16	12 de oct	14:25	29d 12h 50m
+468	20 de oct	9:02	27 de oct	4:34	3 de nov	8:58	11 de nov	10:48	29d 11h 44m
+469	18 de nov	20:46	25 de nov	12:42	3 de dic	1:24	11 de dic	6:38	29d 11h 01m
+470	18 de dic	7:47	24 de dic	23:29	 	 	 	 	29d 10h 43m
+
+470	 	 	 	 	1 de ene	20:06	10 de ene	0:02	29d 10h 43m
+471	16 de ene	18:30	23 de ene	13:13	31 de ene	15:47	8 de feb	13:49	29d 10h 40m
+472	15 de feb	5:10	22 de feb	5:34	2 de mar	10:35	9 de mar	23:57	29d 10h 41m
+473	16 de mar	15:51	23 de mar	23:48	1 de abr	2:47	8 de abr	7:16	29d 10h 47m
+474	15 de abr	2:38	22 de abr	18:49	30 de abr	15:40	7 de may	12:57	29d 11h 17m
+475	14 de may	13:54	22 de may	13:19	30 de may	1:37	5 de jun	18:19	29d 12h 22m
+476	13 de jun	2:16	21 de jun	6:02	28 de jun	9:38	5 de jul	0:32	29d 13h 55m
+477	12 de jul	16:11	20 de jul	20:13	27 de jul	16:50	3 de ago	8:47	29d 15h 25m
+478	11 de ago	7:36	19 de ago	7:51	26 de ago	0:13	1 de sep	20:05	29d 16h 14m
+479	9 de sep	23:50	17 de sep	17:23	24 de sep	8:33	1 de oct	11:10	29d 16h 03m
+480	9 de oct	15:53	17 de oct	1:34	23 de oct	18:30	31 de oct	5:58	29d 15h 06m
+481	8 de nov	6:58	15 de nov	9:13	22 de nov	6:44	30 de nov	3:19	29d 13h 53m
+482	7 de dic	20:52	14 de dic	17:06	21 de dic	21:42	30 de dic	0:57	29d 12h 44m
+
+483	6 de ene	9:35	13 de ene	2:01	20 de ene	15:16	28 de ene	20:37	29d 11h 35m
+484	4 de feb	21:10	11 de feb	12:43	19 de feb	10:18	27 de feb	12:50	29d 10h 21m
+485	6 de mar	7:31	13 de mar	1:39	21 de mar	4:56	29 de mar	1:11	29d 9h 14m
+486	4 de abr	16:45	11 de abr	16:50	19 de abr	21:33	27 de abr	9:59	29d 8h 40m
+487	4 de may	1:25	11 de may	9:44	19 de may	11:32	26 de may	16:06	29d 9h 02m
+488	2 de jun	10:27	10 de jun	3:21	17 de jun	23:02	24 de jun	20:43	29d 10h 25m
+489	1 de jul	20:52	9 de jul	20:40	17 de jul	8:41	24 de jul	1:18	29d 12h 32m
+490	31 de jul	9:24	8 de ago	12:55	15 de ago	17:09	22 de ago	7:26	29d 14h 45m
+491	30 de ago	0:09	7 de sep	3:44	14 de sep	1:11	20 de sep	16:36	29d 16h 30m
+492	28 de sep	16:39	6 de oct	16:54	13 de oct	9:33	20 de oct	5:47	29d 17h 25m
+493	28 de oct	10:05	5 de nov	4:14	11 de nov	19:03	18 de nov	23:09	29d 17h 25m
+494	27 de nov	3:29	4 de dic	13:48	11 de dic	6:28	18 de dic	19:42	29d 16h 29m
+495	26 de dic	19:59	 	 	 	 	 	 	29d 14h 43m
+
+495	 	 	2 de ene	22:02	9 de ene	20:08	17 de ene	17:34	29d 14h 43m
+496	25 de ene	10:42	1 de feb	5:50	8 de feb	11:52	16 de feb	14:39	29d 12h 24m
+497	23 de feb	23:06	2 de mar	14:17	10 de mar	4:49	18 de mar	9:07	29d 10h 04m
+498	25 de mar	9:09	1 de abr	0:15	8 de abr	21:57	16 de abr	23:52	29d 8h 19m
+499	23 de abr	17:28	30 de abr	12:08	8 de may	14:23	16 de may	10:36	29d 7h 31m
+500	23 de may	1:00	30 de may	1:55	7 de jun	5:31	14 de jun	17:53	29d 7h 46m
+501	21 de jun	8:46	28 de jun	17:23	6 de jul	18:56	13 de jul	22:57	29d 8h 57m
+502	20 de jul	17:43	28 de jul	10:13	5 de ago	6:31	12 de ago	3:21	29d 10h 52m
+503	19 de ago	4:34	27 de ago	3:54	3 de sep	16:33	10 de sep	8:42	29d 13h 16m
+504	17 de sep	17:51	25 de sep	21:38	3 de oct	0:44	9 de oct	15:27	29d 15h 52m
+505	17 de oct	8:43	25 de oct	13:20	1 de nov	9:55	8 de nov	2:37	29d 18h 07m
+506	16 de nov	2:50	24 de nov	3:55	30 de nov	19:54	7 de dic	17:34	29d 19h 16m
+507	15 de dic	23:06	23 de dic	16:54	30 de dic	8:04	 	 	29d 18h 38m
+
+507	 	 	 	 	 	 	6 de ene	12:58	29d 18h 38m
+508	14 de ene	17:44	22 de ene	2:29	28 de ene	20:23	5 de feb	9:43	29d 16h 18m
+509	13 de feb	10:01	20 de feb	10:24	27 de feb	9:40	6 de mar	6:00	29d 13h 13m
+510	13 de mar	22:14	20 de mar	16:39	27 de mar	22:49	5 de abr	1:45	29d 10h 24m
+511	12 de abr	8:38	19 de abr	0:09	26 de abr	13:50	4 de may	18:20	29d 8h 24m
+512	11 de may	17:02	18 de may	8:42	26 de may	5:29	3 de jun	7:07	29d 7h 21m
+513	10 de jun	0:22	16 de jun	19:02	24 de jun	21:08	2 de jul	16:31	29d 7h 08m
+514	9 de jul	7:31	16 de jul	7:47	24 de jul	11:58	31 de jul	23:30	29d 7h 46m
+515	7 de ago	15:17	14 de ago	23:19	23 de ago	1:25	30 de ago	5:15	29d 9h 17m
+516	6 de sep	0:34	13 de sep	17:24	21 de sep	13:31	28 de sep	11:02	29d 11h 46m
+517	5 de oct	12:20	13 de oct	12:57	21 de oct	1:45	27 de oct	18:59	29d 14h 57m
+518	4 de nov	4:16	12 de nov	9:20	19 de nov	12:43	26 de nov	4:11	29d 18h 02m
+519	3 de dic	22:18	12 de dic	3:01	18 de dic	23:41	25 de dic	16:27	29d 19h 49m
+
+520	2 de ene	18:07	10 de ene	18:00	17 de ene	10:37	24 de ene	8:07	29d 19h 29m
+521	1 de feb	13:36	9 de feb	5:53	15 de feb	21:27	23 de feb	2:40	29d 17h 20m
+522	3 de mar	5:56	10 de mar	13:53	17 de mar	7:24	24 de mar	21:37	29d 14h 25m
+523	1 de abr	20:21	8 de abr	20:40	15 de abr	19:03	23 de abr	17:07	29d 11h 35m
+524	1 de may	7:56	8 de may	2:20	15 de may	7:52	23 de may	10:41	29d 9h 17m
+525	30 de may	17:13	6 de jun	8:11	13 de jun	22:00	22 de jun	1:37	29d 7h 40m
+526	29 de jun	0:53	5 de jul	15:36	13 de jul	13:02	21 de jul	13:53	29d 6h 52m
+527	28 de jul	7:45	4 de ago	1:47	12 de ago	4:23	19 de ago	23:51	29d 7h 06m
+528	26 de ago	14:51	2 de sep	15:28	10 de sep	19:32	18 de sep	7:59	29d 8h 27m
+529	24 de sep	23:18	2 de oct	8:38	10 de oct	10:14	17 de oct	16:00	29d 10h 54m
+530	24 de oct	11:12	1 de nov	5:26	9 de nov	1:15	15 de nov	22:54	29d 13h 59m
+531	23 de nov	1:10	1 de dic	2:25	8 de dic	14:21	15 de dic	6:52	29d 16h 53m
+532	22 de dic	18:03	30 de dic	22:46	 	 	 	 	29d 18h 43m
+
+532	 	 	 	 	7 de ene	2:16	13 de ene	17:00	29d 18h 43m
+533	21 de ene	12:47	29 de ene	16:48	5 de feb	12:58	12 de feb	5:53	29d 19h 03m
+534	20 de feb	7:49	28 de feb	7:15	6 de mar	21:45	13 de mar	20:19	29d 17h 57m
+535	22 de mar	0:46	29 de mar	16:43	5 de abr	7:13	12 de abr	13:28	29d 15h 49m
+536	20 de abr	16:35	27 de abr	23:49	4 de may	17:01	12 de may	7:19	29d 13h 07m
+537	20 de may	5:43	27 de may	4:50	3 de jun	3:40	11 de jun	0:58	29d 10h 26m
+538	18 de jun	16:09	25 de jun	9:22	2 de jul	15:37	10 de jul	17:43	29d 8h 21m
+539	18 de jul	0:30	24 de jul	15:00	1 de ago	5:06	9 de ago	8:56	29d 7h 17m
+540	16 de ago	7:48	22 de ago	23:02	30 de ago	20:14	7 de sep	22:07	29d 7h 25m
+541	14 de sep	15:13	21 de sep	10:25	29 de sep	12:47	7 de oct	9:08	29d 8h 38m
+542	13 de oct	23:52	21 de oct	2:35	29 de oct	7:00	5 de nov	19:18	29d 10h 35m
+543	12 de nov	11:27	19 de nov	21:20	27 de nov	23:41	5 de dic	3:22	29d 12h 47m
+544	12 de dic	0:14	19 de dic	18:41	27 de dic	14:43	 	 	29d 14h 53m
+
+544	 	 	 	 	 	 	3 de ene	11:19	29d 14h 53m
+545	10 de ene	15:06	18 de ene	16:42	26 de ene	3:40	1 de feb	20:03	29d 16h 38m
+546	9 de feb	7:44	17 de feb	12:56	24 de feb	14:43	3 de mar	6:10	29d 17h 46m
+547	11 de mar	1:30	19 de mar	5:31	26 de mar	0:21	1 de abr	17:58	29d 17h 50m
+548	9 de abr	18:20	17 de abr	16:48	24 de abr	8:03	1 de may	6:33	29d 16h 35m
+549	9 de may	10:55	17 de may	1:18	23 de may	16:22	30 de may	21:52	29d 14h 18m
+550	8 de jun	1:14	15 de jun	7:12	22 de jun	0:57	29 de jun	14:39	29d 11h 47m
+551	7 de jul	13:00	14 de jul	11:53	21 de jul	10:39	29 de jul	8:14	29d 9h 48m
+552	5 de ago	22:48	12 de ago	16:44	19 de ago	22:27	28 de ago	1:35	29d 8h 48m
+553	4 de sep	7:37	10 de sep	23:06	18 de sep	13:00	26 de sep	17:44	29d 8h 47m
+554	3 de oct	17:24	10 de oct	9:11	18 de oct	7:11	26 de oct	9:04	29d 9h 25m
+555	2 de nov	2:48	8 de nov	22:00	17 de nov	1:53	24 de nov	21:23	29d 10h 21m
+556	1 de dic	13:10	8 de dic	14:57	16 de dic	20:22	24 de dic	7:48	29d 11h 29m
+557	31 de dic	0:39	 	 	 	 	 	 	29d 12h 51m
+
+557	 	 	7 de ene	11:23	15 de ene	13:11	22 de ene	16:38	29d 12h 51m
+558	29 de ene	13:30	6 de feb	9:21	14 de feb	3:43	21 de feb	0:28	29d 14h 26m
+559	28 de feb	3:56	7 de mar	6:21	14 de mar	15:52	21 de mar	8:08	29d 15h 52m
+560	28 de mar	19:48	6 de abr	0:27	13 de abr	0:52	19 de abr	15:35	29d 16h 33m
+561	27 de abr	11:21	5 de may	13:54	12 de may	9:05	19 de may	1:45	29d 16h 09m
+562	27 de may	3:30	4 de jun	0:47	10 de jun	16:13	17 de jun	14:14	29d 14h 55m
+563	25 de jun	18:25	3 de jul	8:42	9 de jul	23:18	17 de jul	5:12	29d 13h 25m
+564	25 de jul	7:50	1 de ago	14:34	8 de ago	7:33	15 de ago	22:13	29d 12h 07m
+565	23 de ago	19:57	30 de ago	19:35	6 de sep	18:08	14 de sep	16:31	29d 11h 11m
+566	22 de sep	7:08	29 de sep	1:07	6 de oct	8:46	14 de oct	12:06	29d 10h 36m
+567	21 de oct	18:44	28 de oct	9:40	5 de nov	1:25	13 de nov	5:53	29d 10h 18m
+568	20 de nov	5:02	26 de nov	20:30	4 de dic	20:08	12 de dic	21:50	29d 10h 17m
+569	19 de dic	15:19	26 de dic	11:15	 	 	 	 	29d 10h 40m
+
+569	 	 	 	 	3 de ene	15:28	11 de ene	11:01	29d 10h 40m
+570	18 de ene	1:59	25 de ene	5:24	2 de feb	9:56	9 de feb	21:08	29d 11h 27m
+571	16 de feb	13:25	24 de feb	1:30	4 de mar	2:17	11 de mar	4:44	29d 12h 26m
+572	18 de mar	1:52	25 de mar	21:48	2 de abr	15:45	9 de abr	9:58	29d 13h 24m
+573	16 de abr	14:16	24 de abr	15:45	2 de may	1:13	8 de may	16:12	29d 14h 10m
+574	16 de may	4:26	24 de may	8:15	31 de may	9:18	6 de jun	23:40	29d 14h 43m
+575	14 de jun	19:09	22 de jun	21:44	29 de jun	16:04	6 de jul	9:17	29d 15h 03m
+576	14 de jul	10:12	22 de jul	8:10	28 de jul	22:45	4 de ago	21:39	29d 15h 05m
+577	13 de ago	1:17	20 de ago	16:03	27 de ago	6:33	3 de sep	12:58	29d 14h 39m
+578	11 de sep	15:56	18 de sep	22:25	25 de sep	16:21	3 de oct	7:05	29d 13h 43m
+579	11 de oct	6:39	18 de oct	5:32	25 de oct	5:44	2 de nov	4:14	29d 12h 32m
+580	9 de nov	19:11	16 de nov	12:45	23 de nov	20:54	2 de dic	0:50	29d 11h 31m
+581	9 de dic	6:42	15 de dic	22:09	23 de dic	14:35	31 de dic	19:52	29d 10h 54m
+
+582	7 de ene	17:35	14 de ene	10:18	22 de ene	9:55	30 de ene	11:39	29d 10h 37m
+583	6 de feb	4:13	13 de feb	1:10	21 de feb	5:19	28 de feb	23:33	29d 10h 30m
+584	7 de mar	14:43	14 de mar	18:16	22 de mar	22:53	30 de mar	8:04	29d 10h 27m
+585	6 de abr	1:10	13 de abr	12:44	21 de abr	13:21	28 de abr	14:18	29d 10h 41m
+586	5 de may	11:51	13 de may	7:26	21 de may	0:38	27 de may	19:32	29d 11h 30m
+587	3 de jun	23:21	12 de jun	1:07	19 de jun	9:28	26 de jun	1:01	29d 12h 57m
+588	3 de jul	12:18	11 de jul	16:43	18 de jul	16:59	25 de jul	8:00	29d 14h 40m
+589	2 de ago	2:58	10 de ago	5:50	17 de ago	0:15	23 de ago	17:35	29d 16h 03m
+590	31 de ago	19:02	8 de sep	16:38	15 de sep	8:09	22 de sep	6:42	29d 16h 30m
+591	30 de sep	11:32	8 de oct	1:43	14 de oct	17:21	21 de oct	23:47	29d 15h 56m
+592	30 de oct	3:28	6 de nov	9:47	13 de nov	4:28	20 de nov	20:13	29d 14h 46m
+593	28 de nov	18:14	5 de dic	17:36	12 de dic	18:03	20 de dic	18:09	29d 13h 28m
+594	28 de dic	7:42	 	 	 	 	 	 	29d 12h 13m
+
+594	 	 	4 de ene	1:55	11 de ene	10:20	19 de ene	15:08	29d 12h 13m
+595	26 de ene	19:55	2 de feb	11:30	10 de feb	4:41	18 de feb	9:13	29d 10h 53m
+596	25 de feb	6:48	3 de mar	23:01	11 de mar	23:34	19 de mar	23:30	29d 9h 35m
+597	26 de mar	16:23	2 de abr	12:46	10 de abr	17:10	18 de abr	9:58	29d 8h 38m
+598	25 de abr	1:02	2 de may	4:34	10 de may	8:23	17 de may	17:15	29d 8h 30m
+599	24 de may	9:32	31 de may	21:42	8 de jun	21:04	15 de jun	22:24	29d 9h 25m
+600	22 de jun	18:57	30 de jun	15:11	8 de jul	7:37	15 de jul	2:47	29d 11h 18m
+601	22 de jul	6:15	30 de jul	8:07	6 de ago	16:42	13 de ago	7:55	29d 13h 39m
+602	20 de ago	19:53	28 de ago	23:56	5 de sep	1:03	11 de sep	15:23	29d 15h 49m
+603	19 de sep	11:43	27 de sep	14:17	4 de oct	9:20	11 de oct	2:30	29d 17h 17m
+604	19 de oct	4:59	27 de oct	2:54	2 de nov	18:20	9 de nov	17:52	29d 17h 47m
+605	17 de nov	22:46	25 de nov	13:37	2 de dic	4:48	9 de dic	13:02	29d 17h 17m
+606	17 de dic	16:03	24 de dic	22:35	31 de dic	17:20	 	 	29d 15h 49m
+
+606	 	 	 	 	 	 	8 de ene	10:31	29d 15h 49m
+607	16 de ene	7:52	23 de ene	6:29	30 de ene	7:58	7 de feb	8:12	29d 13h 36m
+608	14 de feb	21:29	21 de feb	14:20	29 de feb	0:12	8 de mar	4:05	29d 11h 06m
+609	15 de mar	8:35	21 de mar	23:12	29 de mar	17:06	6 de abr	20:44	29d 8h 56m
+610	13 de abr	17:31	20 de abr	9:45	28 de abr	9:45	6 de may	9:26	29d 7h 37m
+611	13 de may	1:08	19 de may	22:16	28 de may	1:27	4 de jun	18:22	29d 7h 22m
+612	11 de jun	8:30	18 de jun	12:41	26 de jun	15:46	4 de jul	0:25	29d 8h 09m
+613	10 de jul	16:39	18 de jul	4:46	26 de jul	4:23	2 de ago	5:02	29d 9h 47m
+614	9 de ago	2:26	16 de ago	22:09	24 de ago	15:21	31 de ago	9:48	29d 12h 03m
+615	7 de sep	14:28	15 de sep	16:13	23 de sep	1:07	29 de sep	16:16	29d 14h 40m
+616	7 de oct	5:08	15 de oct	9:55	22 de oct	10:25	29 de oct	1:41	29d 17h 13m
+617	5 de nov	22:21	14 de nov	2:01	20 de nov	20:07	27 de nov	14:45	29d 19h 03m
+618	5 de dic	17:24	13 de dic	15:36	20 de dic	6:45	27 de dic	7:28	29d 19h 19m
+
+619	4 de ene	12:43	12 de ene	2:27	18 de ene	18:28	26 de ene	3:05	29d 17h 40m
+620	3 de feb	6:23	10 de feb	11:05	17 de feb	7:07	25 de feb	0:10	29d 14h 44m
+621	4 de mar	21:07	11 de mar	18:26	18 de mar	20:33	26 de mar	20:46	29d 11h 38m
+622	3 de abr	8:45	10 de abr	1:28	17 de abr	10:51	25 de abr	14:58	29d 9h 10m
+623	2 de may	17:55	9 de may	9:07	17 de may	1:58	25 de may	5:40	29d 7h 39m
+624	1 de jun	1:34	7 de jun	18:11	15 de jun	17:35	23 de jun	16:45	29d 7h 04m
+625	30 de jun	8:39	7 de jul	5:26	15 de jul	8:56	23 de jul	0:58	29d 7h 20m
+626	29 de jul	15:59	5 de ago	19:27	13 de ago	23:16	21 de ago	7:22	29d 8h 27m
+627	28 de ago	0:25	4 de sep	12:22	12 de sep	12:16	19 de sep	13:11	29d 10h 29m
+628	26 de sep	10:54	4 de oct	7:32	12 de oct	0:09	18 de oct	19:33	29d 13h 23m
+629	26 de oct	0:17	3 de nov	3:29	10 de nov	11:27	17 de nov	3:35	29d 16h 39m
+630	24 de nov	16:55	2 de dic	22:29	9 de dic	22:35	16 de dic	14:13	29d 19h 12m
+631	24 de dic	12:07	 	 	 	 	 	 	29d 19h 55m
+
+631	 	 	1 de ene	15:07	8 de ene	9:37	15 de ene	4:04	29d 19h 55m
+632	23 de ene	9:02	31 de ene	5:39	6 de feb	21:24	13 de feb	22:04	29d 18h 32m
+633	22 de feb	3:34	1 de mar	16:03	8 de mar	8:03	15 de mar	17:15	29d 15h 50m
+634	23 de mar	19:24	30 de mar	23:44	6 de abr	19:00	14 de abr	12:57	29d 12h 52m
+635	22 de abr	8:17	29 de abr	5:39	6 de may	5:54	14 de may	6:29	29d 10h 18m
+636	21 de may	17:34	28 de may	10:03	4 de jun	19:09	12 de jun	22:45	29d 8h 21m
+637	20 de jun	1:56	26 de jun	16:20	4 de jul	9:40	12 de jul	12:28	29d 7h 11m
+638	19 de jul	9:06	26 de jul	0:51	3 de ago	0:57	10 de ago	23:46	29d 6h 55m
+639	17 de ago	16:01	24 de ago	12:38	1 de sep	16:25	9 de sep	9:01	29d 7h 44m
+640	15 de sep	23:45	23 de sep	4:08	1 de oct	7:38	8 de oct	16:45	29d 9h 40m
+641	15 de oct	9:25	22 de oct	22:53	30 de oct	22:19	6 de nov	23:47	29d 12h 29m
+642	13 de nov	21:53	21 de nov	19:39	29 de nov	12:10	6 de dic	7:10	29d 15h 32m
+643	13 de dic	13:25	21 de dic	16:44	29 de dic	0:51	 	 	29d 17h 55m
+
+643	 	 	 	 	 	 	4 de ene	16:04	29d 17h 55m
+644	12 de ene	7:20	20 de ene	12:15	27 de ene	12:10	3 de feb	3:23	29d 18h 57m
+645	11 de feb	2:17	19 de feb	4:39	25 de feb	22:14	4 de mar	17:20	29d 18h 30m
+646	12 de mar	20:48	20 de mar	17:05	27 de mar	7:36	3 de abr	9:25	29d 16h 51m
+647	11 de abr	13:39	19 de abr	1:41	25 de abr	16:55	3 de may	2:43	29d 14h 26m
+648	11 de may	4:05	18 de may	7:29	25 de may	2:50	1 de jun	20:22	29d 11h 44m
+649	9 de jun	15:49	16 de jun	11:58	23 de jun	13:54	1 de jul	13:37	29d 9h 21m
+650	9 de jul	1:10	15 de jul	16:46	23 de jul	2:28	31 de jul	5:48	29d 7h 47m
+651	7 de ago	8:57	13 de ago	23:23	21 de ago	16:48	29 de ago	20:19	29d 7h 21m
+652	5 de sep	16:18	12 de sep	8:59	20 de sep	8:50	28 de sep	8:46	29d 8h 05m
+653	5 de oct	0:23	11 de oct	22:15	20 de oct	2:06	27 de oct	19:07	29d 9h 41m
+654	3 de nov	10:04	10 de nov	15:20	18 de nov	19:28	26 de nov	3:52	29d 11h 45m
+655	2 de dic	21:50	10 de dic	11:39	18 de dic	11:39	25 de dic	11:52	29d 13h 50m
+
+656	1 de ene	11:40	9 de ene	9:40	17 de ene	1:47	23 de ene	20:04	29d 15h 40m
+657	31 de ene	3:20	8 de feb	7:05	15 de feb	13:43	22 de feb	5:16	29d 17h 05m
+658	29 de feb	20:25	9 de mar	1:38	15 de mar	23:53	22 de mar	15:55	29d 17h 43m
+659	30 de mar	14:08	7 de abr	16:02	14 de abr	8:49	21 de abr	4:14	29d 17h 12m
+660	29 de abr	7:20	7 de may	2:17	13 de may	17:04	20 de may	18:22	29d 15h 27m
+661	28 de may	22:47	5 de jun	9:20	12 de jun	1:15	19 de jun	10:15	29d 13h 03m
+662	27 de jun	11:50	4 de jul	14:28	11 de jul	10:09	19 de jul	3:29	29d 10h 49m
+663	26 de jul	22:39	2 de ago	19:06	9 de ago	20:44	17 de ago	21:13	29d 9h 22m
+664	25 de ago	8:00	1 de sep	0:35	8 de sep	9:52	16 de sep	14:20	29d 8h 54m
+665	23 de sep	16:55	30 de sep	8:12	8 de oct	1:56	16 de oct	5:59	29d 9h 15m
+666	23 de oct	2:10	29 de oct	19:05	6 de nov	20:15	14 de nov	19:39	29d 10h 01m
+667	21 de nov	12:11	28 de nov	9:59	6 de dic	15:15	14 de dic	7:14	29d 10h 57m
+668	20 de dic	23:08	28 de dic	4:48	 	 	 	 	29d 12h 03m
+
+668	 	 	 	 	5 de ene	9:11	12 de ene	16:55	29d 12h 03m
+669	19 de ene	11:11	27 de ene	2:12	4 de feb	0:56	11 de feb	1:07	29d 13h 26m
+670	18 de feb	0:37	25 de feb	23:51	5 de mar	14:14	12 de mar	8:35	29d 14h 56m
+671	19 de mar	15:33	27 de mar	19:27	4 de abr	1:09	10 de abr	16:15	29d 16h 03m
+672	18 de abr	7:36	26 de abr	11:43	3 de may	10:04	10 de may	1:09	29d 16h 16m
+673	17 de may	23:52	26 de may	0:20	1 de jun	17:31	8 de jun	12:07	29d 15h 31m
+674	16 de jun	15:23	24 de jun	9:44	1 de jul	0:24	8 de jul	1:39	29d 14h 14m
+675	16 de jul	5:37	23 de jul	16:38	30 de jul	7:52	6 de ago	17:40	29d 12h 55m
+676	14 de ago	18:31	21 de ago	22:04	28 de ago	17:10	5 de sep	11:33	29d 11h 52m
+677	13 de sep	6:23	20 de sep	3:18	27 de sep	5:18	5 de oct	6:21	29d 11h 08m
+678	12 de oct	17:31	19 de oct	9:46	26 de oct	20:36	4 de nov	0:59	29d 10h 39m
+679	11 de nov	4:10	17 de nov	18:52	25 de nov	14:32	3 de dic	18:16	29d 10h 23m
+680	10 de dic	14:33	17 de dic	7:37	25 de dic	9:49	 	 	29d 10h 27m
+
+680	 	 	 	 	 	 	2 de ene	9:07	29d 10h 27m
+681	9 de ene	1:00	16 de ene	0:03	24 de ene	4:56	31 de ene	20:51	29d 10h 54m
+682	7 de feb	11:54	14 de feb	19:11	22 de feb	22:27	2 de mar	5:34	29d 11h 42m
+683	8 de mar	23:36	16 de mar	15:21	24 de mar	13:20	31 de mar	12:11	29d 12h 39m
+684	7 de abr	12:15	15 de abr	10:56	23 de abr	1:11	29 de abr	18:02	29d 13h 32m
+685	7 de may	1:47	15 de may	4:40	22 de may	10:17	29 de may	0:31	29d 14h 15m
+686	5 de jun	16:02	13 de jun	19:44	20 de jun	17:31	27 de jun	8:44	29d 14h 49m
+687	5 de jul	6:51	13 de jul	7:49	20 de jul	0:05	26 de jul	19:31	29d 15h 10m
+688	3 de ago	22:01	11 de ago	17:06	18 de ago	7:14	25 de ago	9:18	29d 15h 08m
+689	2 de sep	13:09	10 de sep	0:20	16 de sep	16:01	24 de sep	2:07	29d 14h 32m
+690	2 de oct	3:41	9 de oct	6:38	16 de oct	3:09	23 de oct	21:34	29d 13h 26m
+691	31 de oct	17:06	7 de nov	13:18	14 de nov	17:00	22 de nov	18:24	29d 12h 13m
+692	30 de nov	5:19	6 de dic	21:34	14 de dic	9:31	22 de dic	14:42	29d 11h 17m
+693	29 de dic	16:36	 	 	 	 	 	 	29d 10h 43m
+
+693	 	 	5 de ene	8:15	13 de ene	4:09	21 de ene	8:23	29d 10h 43m
+694	28 de ene	3:19	3 de feb	21:36	11 de feb	23:39	19 de feb	22:17	29d 10h 26m
+695	26 de feb	13:45	5 de mar	13:23	13 de mar	18:14	21 de mar	8:22	29d 10h 15m
+696	27 de mar	23:59	4 de abr	6:57	12 de abr	10:15	19 de abr	15:30	29d 10h 15m
+697	26 de abr	10:15	4 de may	1:26	11 de may	23:01	18 de may	20:57	29d 10h 46m
+698	25 de may	21:00	2 de jun	19:38	10 de jun	8:55	17 de jun	2:01	29d 11h 58m
+699	24 de jun	8:58	2 de jul	12:24	9 de jul	17:00	16 de jul	7:59	29d 13h 43m
+700	23 de jul	22:41	1 de ago	2:58	8 de ago	0:21	14 de ago	16:02	29d 15h 30m
+701	22 de ago	14:11	30 de ago	15:09	6 de sep	7:59	13 de sep	3:16	29d 16h 36m
+702	21 de sep	6:47	29 de sep	1:20	5 de oct	16:35	12 de oct	18:24	29d 16h 36m
+703	20 de oct	23:23	28 de oct	10:06	4 de nov	2:47	11 de nov	13:24	29d 15h 40m
+704	19 de nov	15:04	26 de nov	18:09	3 de dic	15:08	11 de dic	10:59	29d 14h 20m
+705	19 de dic	5:23	26 de dic	2:11	 	 	 	 	29d 12h 56m
+
+705	 	 	 	 	2 de ene	6:02	10 de ene	8:50	29d 12h 56m
+706	17 de ene	18:20	24 de ene	10:58	31 de ene	23:21	9 de feb	4:36	29d 11h 31m
+707	16 de feb	5:51	22 de feb	21:14	1 de mar	18:00	9 de mar	20:49	29d 10h 05m
+708	16 de mar	15:56	23 de mar	9:31	31 de mar	12:14	8 de abr	9:06	29d 8h 50m
+709	15 de abr	0:46	22 de abr	0:00	30 de abr	4:35	7 de may	17:51	29d 8h 14m
+710	14 de may	9:00	21 de may	16:16	29 de may	18:28	5 de jun	23:54	29d 8h 38m
+711	12 de jun	17:39	20 de jun	9:32	28 de jun	6:03	5 de jul	4:27	29d 10h 07m
+712	12 de jul	3:46	20 de jul	2:51	27 de jul	15:54	3 de ago	9:01	29d 12h 24m
+713	10 de ago	16:10	18 de ago	19:29	26 de ago	0:43	1 de sep	15:08	29d 14h 51m
+714	9 de sep	7:01	17 de sep	10:55	24 de sep	9:08	1 de oct	0:18	29d 16h 49m
+715	8 de oct	23:50	17 de oct	0:47	23 de oct	17:52	30 de oct	13:33	29d 17h 53m
+716	7 de nov	17:43	15 de nov	12:47	22 de nov	3:39	29 de nov	6:59	29d 17h 53m
+717	7 de dic	11:35	14 de dic	22:47	21 de dic	15:08	29 de dic	3:32	29d 16h 49m
+
+718	6 de ene	4:24	13 de ene	7:10	20 de ene	4:39	28 de ene	1:19	29d 14h 50m
+719	4 de feb	19:14	11 de feb	14:49	18 de feb	19:59	26 de feb	22:15	29d 12h 17m
+720	6 de mar	7:31	12 de mar	22:51	20 de mar	12:23	28 de mar	16:34	29d 9h 48m
+721	4 de abr	17:20	11 de abr	8:11	19 de abr	4:59	27 de abr	7:15	29d 8h 00m
+722	4 de may	1:19	10 de may	19:22	18 de may	21:04	26 de may	18:01	29d 7h 13m
+723	2 de jun	8:32	9 de jun	8:34	17 de jun	12:05	25 de jun	1:25	29d 7h 31m
+724	1 de jul	16:03	8 de jul	23:40	17 de jul	1:39	24 de jul	6:40	29d 8h 49m
+725	31 de jul	0:52	7 de ago	16:27	15 de ago	13:37	22 de ago	11:16	29d 10h 52m
+726	29 de ago	11:44	6 de sep	10:26	14 de sep	0:09	20 de sep	16:48	29d 13h 24m
+727	28 de sep	1:08	6 de oct	4:45	13 de oct	9:50	20 de oct	0:41	29d 16h 06m
+728	27 de oct	17:14	4 de nov	22:09	11 de nov	19:27	18 de nov	11:54	29d 18h 25m
+729	26 de nov	11:38	4 de dic	13:22	11 de dic	5:41	18 de dic	2:47	29d 19h 32m
+730	26 de dic	7:10	 	 	 	 	 	 	29d 18h 46m
+
+730	 	 	3 de ene	1:46	9 de ene	16:53	16 de ene	20:58	29d 18h 46m
+731	25 de ene	1:56	1 de feb	11:28	8 de feb	4:57	15 de feb	17:21	29d 16h 17m
+732	23 de feb	18:14	2 de mar	19:15	9 de mar	17:46	17 de mar	14:15	29d 13h 04m
+733	25 de mar	7:18	1 de abr	2:08	8 de abr	7:19	16 de abr	9:43	29d 10h 11m
+734	23 de abr	17:29	30 de abr	9:07	7 de may	21:45	16 de may	2:11	29d 8h 12m
+735	23 de may	1:41	29 de may	17:07	6 de jun	13:00	14 de jun	15:06	29d 7h 11m
+736	21 de jun	8:52	28 de jun	2:56	6 de jul	4:32	14 de jul	0:47	29d 7h 05m
+737	20 de jul	15:57	27 de jul	15:22	4 de ago	19:34	12 de ago	8:09	29d 7h 48m
+738	18 de ago	23:45	26 de ago	6:50	3 de sep	9:28	10 de sep	14:19	29d 9h 24m
+739	17 de sep	9:09	25 de sep	1:07	2 de oct	22:09	9 de oct	20:26	29d 11h 55m
+740	16 de oct	21:04	24 de oct	21:08	1 de nov	9:57	8 de nov	3:38	29d 15h 06m
+741	15 de nov	12:10	23 de nov	17:06	30 de nov	21:21	7 de dic	12:53	29d 18h 08m
+742	15 de dic	6:18	23 de dic	11:17	30 de dic	8:33	 	 	29d 19h 50m
+
+742	 	 	 	 	 	 	6 de ene	1:00	29d 19h 50m
+743	14 de ene	2:08	22 de ene	2:33	28 de ene	19:26	4 de feb	16:17	29d 19h 24m
+744	12 de feb	21:32	20 de feb	14:32	27 de feb	5:58	6 de mar	10:16	29d 17h 12m
+745	14 de mar	14:44	21 de mar	23:26	28 de mar	16:27	5 de abr	5:39	29d 14h 15m
+746	13 de abr	4:59	20 de abr	5:58	27 de abr	3:31	5 de may	0:43	29d 11h 27m
+747	12 de may	16:25	19 de may	11:17	26 de may	15:48	3 de jun	18:08	29d 9h 12m
+748	11 de jun	1:38	17 de jun	16:46	25 de jun	5:32	3 de jul	9:12	29d 7h 41m
+749	10 de jul	9:19	16 de jul	23:50	24 de jul	20:27	1 de ago	21:52	29d 6h 59m
+750	8 de ago	16:18	15 de ago	9:47	23 de ago	11:59	31 de ago	8:22	29d 7h 17m
+751	6 de sep	23:35	13 de sep	23:24	22 de sep	3:36	29 de sep	17:05	29d 8h 41m
+752	6 de oct	8:16	13 de oct	16:43	21 de oct	18:53	29 de oct	0:37	29d 11h 05m
+753	4 de nov	19:21	12 de nov	12:49	20 de nov	9:29	27 de nov	7:50	29d 14h 05m
+754	4 de dic	9:26	12 de dic	10:09	19 de dic	23:00	26 de dic	15:52	29d 16h 50m
+
+755	3 de ene	2:16	11 de ene	6:48	18 de ene	11:05	25 de ene	1:48	29d 18h 31m
+756	1 de feb	20:47	10 de feb	0:59	16 de feb	21:41	23 de feb	14:12	29d 18h 44m
+757	2 de mar	15:31	10 de mar	15:27	17 de mar	7:09	24 de mar	4:59	29d 17h 39m
+758	1 de abr	9:10	9 de abr	1:52	15 de abr	16:11	22 de abr	21:26	29d 15h 36m
+759	1 de may	0:46	8 de may	8:50	15 de may	1:29	22 de may	14:45	29d 13h 03m
+760	30 de may	13:48	6 de jun	13:42	13 de jun	11:42	21 de jun	8:10	29d 10h 30m
+761	29 de jun	0:19	5 de jul	18:04	12 de jul	23:20	21 de jul	1:02	29d 8h 33m
+762	28 de jul	8:51	3 de ago	23:33	11 de ago	12:43	19 de ago	16:41	29d 7h 34m
+763	26 de ago	16:26	2 de sep	7:30	10 de sep	4:01	18 de sep	6:31	29d 7h 45m
+764	25 de sep	0:11	1 de oct	18:53	9 de oct	20:58	17 de oct	18:14	29d 8h 58m
+765	24 de oct	9:08	31 de oct	10:08	8 de nov	14:43	16 de nov	3:59	29d 10h 49m
+766	22 de nov	19:57	30 de nov	5:01	8 de dic	7:54	15 de dic	12:25	29d 12h 50m
+767	22 de dic	8:47	30 de dic	2:28	 	 	 	 	29d 14h 41m
+
+767	 	 	 	 	6 de ene	23:16	13 de ene	20:27	29d 14h 41m
+768	20 de ene	23:28	29 de ene	0:29	5 de feb	12:19	12 de feb	4:57	29d 16h 14m
+769	19 de feb	15:43	27 de feb	20:41	6 de mar	23:13	13 de mar	14:34	29d 17h 16m
+770	21 de mar	8:59	29 de mar	13:11	5 de abr	8:32	12 de abr	1:42	29d 17h 23m
+771	20 de abr	2:22	28 de abr	1:25	4 de may	16:53	11 de may	14:34	29d 16h 19m
+772	19 de may	18:41	27 de may	9:56	3 de jun	0:50	10 de jun	5:19	29d 14h 17m
+773	18 de jun	8:58	25 de jun	15:53	2 de jul	9:08	9 de jul	21:49	29d 11h 58m
+774	17 de jul	20:57	24 de jul	20:39	31 de jul	18:41	8 de ago	15:29	29d 10h 09m
+775	16 de ago	7:06	23 de ago	1:36	30 de ago	6:27	7 de sep	9:16	29d 9h 14m
+776	14 de sep	16:20	21 de sep	8:03	28 de sep	21:09	7 de oct	2:04	29d 9h 14m
+777	14 de oct	1:33	20 de oct	17:13	28 de oct	14:38	5 de nov	17:07	29d 9h 47m
+778	12 de nov	11:21	19 de nov	6:04	27 de nov	9:42	5 de dic	6:02	29d 10h 34m
+779	11 de dic	21:55	18 de dic	22:58	27 de dic	4:31	 	 	29d 11h 27m
+
+779	 	 	 	 	 	 	3 de ene	16:47	29d 11h 27m
+780	10 de ene	9:22	17 de ene	19:14	25 de ene	21:31	2 de feb	1:41	29d 12h 34m
+781	8 de feb	21:56	16 de feb	16:55	24 de feb	12:02	3 de mar	9:17	29d 13h 56m
+782	10 de mar	11:52	18 de mar	13:39	26 de mar	0:02	1 de abr	16:30	29d 15h 16m
+783	9 de abr	3:08	17 de abr	7:35	24 de abr	9:46	1 de may	0:22	29d 16h 02m
+784	8 de may	19:10	16 de may	22:00	23 de may	17:45	30 de may	9:55	29d 15h 51m
+785	7 de jun	11:01	15 de jun	9:00	22 de jun	0:42	28 de jun	21:53	29d 14h 54m
+786	7 de jul	1:55	14 de jul	17:10	21 de jul	7:40	28 de jul	12:34	29d 13h 41m
+787	5 de ago	15:36	12 de ago	23:22	19 de ago	15:54	27 de ago	5:39	29d 12h 34m
+788	4 de sep	4:11	11 de sep	4:41	18 de sep	2:34	26 de sep	0:18	29d 11h 44m
+789	3 de oct	15:55	10 de oct	10:28	17 de oct	16:22	25 de oct	19:26	29d 11h 07m
+790	2 de nov	3:02	8 de nov	18:11	16 de nov	9:12	24 de nov	13:51	29d 10h 41m
+791	1 de dic	13:43	8 de dic	5:01	16 de dic	4:05	24 de dic	6:17	29d 10h 27m
+792	31 de dic	0:10	 	 	 	 	 	 	29d 10h 35m
+
+792	 	 	6 de ene	19:35	14 de ene	23:31	22 de ene	19:46	29d 10h 35m
+793	29 de ene	10:45	5 de feb	13:21	13 de feb	17:58	21 de feb	5:56	29d 11h 06m
+794	27 de feb	21:51	7 de mar	8:58	15 de mar	10:13	22 de mar	13:21	29d 11h 55m
+795	29 de mar	9:46	6 de abr	4:48	13 de abr	23:31	20 de abr	19:15	29d 12h 49m
+796	27 de abr	22:34	5 de may	23:26	13 de may	9:50	20 de may	1:02	29d 13h 39m
+797	27 de may	12:13	4 de jun	15:53	11 de jun	17:49	18 de jun	8:02	29d 14h 24m
+798	26 de jun	2:37	4 de jul	5:34	11 de jul	0:33	17 de jul	17:17	29d 15h 01m
+799	25 de jul	17:38	2 de ago	16:24	9 de ago	7:17	16 de ago	5:25	29d 15h 21m
+800	24 de ago	8:59	1 de sep	0:48	7 de sep	15:13	14 de sep	20:45	29d 15h 10m
+801	23 de sep	0:09	30 de sep	7:39	7 de oct	1:12	14 de oct	15:06	29d 14h 19m
+802	22 de oct	14:28	29 de oct	14:10	5 de nov	13:46	13 de nov	11:38	29d 13h 05m
+803	21 de nov	3:33	27 de nov	21:37	5 de dic	5:01	13 de dic	8:41	29d 11h 52m
+804	20 de dic	15:25	27 de dic	7:01	 	 	 	 	29d 11h 00m
+
+804	 	 	 	 	3 de ene	22:40	12 de ene	4:04	29d 11h 00m
+805	19 de ene	2:26	25 de ene	18:54	2 de feb	17:52	10 de feb	20:01	29d 10h 29m
+806	17 de feb	12:54	24 de feb	9:15	3 de mar	13:01	11 de mar	7:56	29d 10h 08m
+807	17 de mar	23:02	25 de mar	1:42	2 de abr	6:21	9 de abr	16:21	29d 9h 58m
+808	16 de abr	9:00	23 de abr	19:32	1 de may	20:41	8 de may	22:23	29d 10h 10m
+809	15 de may	19:11	23 de may	13:49	31 de may	7:53	7 de jun	3:21	29d 11h 03m
+810	14 de jun	6:14	22 de jun	7:23	29 de jun	16:46	6 de jul	8:36	29d 12h 39m
+811	13 de jul	18:53	21 de jul	23:15	29 de jul	0:25	4 de ago	15:23	29d 14h 38m
+812	12 de ago	9:31	20 de ago	12:52	27 de ago	7:56	3 de sep	0:51	29d 16h 18m
+813	11 de sep	1:50	19 de sep	0:18	25 de sep	16:07	2 de oct	13:59	29d 17h 00m
+814	10 de oct	18:49	18 de oct	10:01	25 de oct	1:36	1 de nov	7:12	29d 16h 31m
+815	9 de nov	11:20	16 de nov	18:35	23 de nov	12:53	1 de dic	4:50	29d 15h 16m
+816	9 de dic	3:36	16 de dic	3:41	23 de dic	3:29	31 de dic	2:57	29d 13h 46m
+
+817	7 de ene	17:22	14 de ene	11:59	21 de ene	19:34	30 de ene	0:02	29d 12h 15m
+818	6 de feb	5:37	12 de feb	21:15	20 de feb	13:32	28 de feb	18:08	29d 10h 42m
+819	7 de mar	15:19	14 de mar	7:11	22 de mar	6:58	30 de mar	7:22	29d 9h 14m
+820	6 de abr	0:33	12 de abr	20:13	21 de abr	0:14	28 de abr	17:46	29d 8h 14m
+821	5 de may	8:47	12 de may	11:20	20 de may	15:16	28 de may	1:01	29d 8h 06m
+822	3 de jun	16:53	11 de jun	3:59	19 de jun	3:58	26 de jun	6:09	29d 9h 06m
+823	3 de jul	1:59	10 de jul	21:19	18 de jul	14:42	25 de jul	10:31	29d 11h 07m
+824	1 de ago	13:06	9 de ago	14:29	17 de ago	0:07	23 de ago	15:40	29d 13h 39m
+825	31 de ago	2:45	8 de sep	6:50	15 de sep	8:51	21 de sep	23:10	29d 16h 03m
+826	29 de sep	18:48	7 de oct	21:52	14 de oct	17:32	21 de oct	11:19	29d 17h 40m
+827	29 de oct	13:28	6 de nov	12:11	13 de nov	3:52	20 de nov	2:44	29d 18h 13m
+828	28 de nov	7:41	5 de dic	23:26	12 de dic	14:30	19 de dic	21:55	29d 17h 39m
+829	28 de dic	1:20	 	 	 	 	 	 	29d 16h 00m
+
+829	 	 	4 de ene	8:41	11 de ene	2:57	18 de ene	19:18	29d 16h 00m
+830	26 de ene	17:20	2 de feb	16:33	9 de feb	17:16	17 de feb	16:48	29d 13h 34m
+831	25 de feb	6:55	3 de mar	23:05	11 de mar	7:59	19 de mar	11:31	29d 10h 54m
+832	26 de mar	16:48	2 de abr	7:24	10 de abr	0:19	18 de abr	4:02	29d 8h 39m
+833	25 de abr	1:28	1 de may	17:18	9 de may	16:31	17 de may	16:45	29d 7h 20m
+834	24 de may	8:47	31 de may	5:11	8 de jun	8:01	16 de jun	1:48	29d 7h 07m
+835	22 de jun	15:55	29 de jun	19:07	7 de jul	22:24	15 de jul	8:04	29d 8h 00m
+836	21 de jul	23:54	29 de jul	11:01	6 de ago	11:19	13 de ago	12:54	29d 9h 45m
+837	20 de ago	9:39	28 de ago	4:34	4 de sep	22:45	11 de sep	17:53	29d 12h 07m
+838	18 de sep	21:46	26 de sep	23:06	4 de oct	9:02	11 de oct	0:31	29d 14h 51m
+839	18 de oct	12:37	26 de oct	18:26	2 de nov	19:49	9 de nov	11:02	29d 17h 28m
+840	17 de nov	7:05	25 de nov	11:12	2 de dic	5:50	9 de dic	0:04	29d 19h 17m
+841	17 de dic	2:22	25 de dic	1:16	31 de dic	16:35	 	 	29d 19h 28m
+
+841	 	 	 	 	 	 	7 de ene	16:36	29d 19h 28m
+842	15 de ene	21:50	23 de ene	12:22	30 de ene	4:10	6 de feb	11:52	29d 17h 42m
+843	14 de feb	15:32	21 de feb	20:58	28 de feb	16:25	8 de mar	7:32	29d 14h 39m
+844	16 de mar	5:11	23 de mar	3:03	30 de mar	4:18	7 de abr	3:46	29d 11h 27m
+845	14 de abr	16:38	21 de abr	9:39	28 de abr	17:59	6 de may	21:46	29d 8h 58m
+846	14 de may	1:36	20 de may	16:46	28 de may	8:37	5 de jun	12:30	29d 7h 30m
+847	12 de jun	9:06	19 de jun	1:19	26 de jun	23:58	4 de jul	23:50	29d 7h 00m
+848	11 de jul	16:06	18 de jul	12:11	26 de jul	15:24	3 de ago	8:26	29d 7h 21m
+849	9 de ago	23:27	17 de ago	2:01	25 de ago	6:07	1 de sep	15:16	29d 8h 33m
+850	8 de sep	8:01	15 de sep	19:01	23 de sep	19:40	30 de sep	21:30	29d 10h 38m
+851	7 de oct	18:39	15 de oct	14:33	23 de oct	9:08	30 de oct	5:11	29d 13h 32m
+852	6 de nov	9:11	14 de nov	12:02	21 de nov	20:56	28 de nov	13:21	29d 16h 45m
+853	6 de dic	1:56	14 de dic	7:32	21 de dic	8:24	27 de dic	23:55	29d 19h 14m
+
+854	4 de ene	21:10	13 de ene	0:32	19 de ene	19:29	26 de ene	13:28	29d 19h 50m
+855	3 de feb	17:00	11 de feb	14:15	18 de feb	6:04	25 de feb	5:56	29d 18h 22m
+856	4 de mar	10:23	11 de mar	23:36	18 de mar	15:18	25 de mar	23:30	29d 15h 39m
+857	3 de abr	2:02	10 de abr	7:06	17 de abr	1:43	24 de abr	18:40	29d 12h 43m
+858	2 de may	14:45	9 de may	12:44	16 de may	13:03	24 de may	12:54	29d 10h 12m
+859	1 de jun	0:57	7 de jun	17:47	15 de jun	1:50	23 de jun	5:11	29d 8h 21m
+860	30 de jun	9:18	6 de jul	23:43	14 de jul	16:06	22 de jul	19:12	29d 7h 17m
+861	29 de jul	16:35	5 de ago	7:59	13 de ago	7:27	21 de ago	7:01	29d 7h 07m
+862	27 de ago	23:42	3 de sep	19:39	11 de sep	23:17	19 de sep	16:53	29d 7h 58m
+863	26 de sep	7:40	3 de oct	11:12	11 de oct	15:03	19 de oct	2:12	29d 9h 54m
+864	25 de oct	18:34	2 de nov	7:11	10 de nov	7:20	17 de nov	9:39	29d 12h 38m
+865	24 de nov	7:11	2 de dic	4:17	9 de dic	21:41	16 de dic	17:13	29d 15h 32m
+866	23 de dic	22:43	 	 	 	 	 	 	29d 17h 44m
+
+866	 	 	1 de ene	1:39	8 de ene	10:37	15 de ene	2:02	29d 17h 44m
+867	22 de ene	16:27	30 de ene	21:20	6 de feb	21:55	13 de feb	12:57	29d 18h 38m
+868	21 de feb	11:06	1 de mar	13:47	8 de mar	6:46	15 de mar	1:17	29d 18h 09m
+869	23 de mar	4:15	31 de mar	1:10	6 de abr	15:43	13 de abr	16:39	29d 16h 34m
+870	21 de abr	20:49	29 de abr	9:41	6 de may	0:34	13 de may	9:20	29d 14h 18m
+871	21 de may	11:07	28 de may	15:22	4 de jun	10:02	12 de jun	2:36	29d 11h 46m
+872	19 de jun	22:53	26 de jun	19:43	3 de jul	20:45	11 de jul	19:49	29d 9h 31m
+873	19 de jul	8:24	26 de jul	0:25	2 de ago	9:10	10 de ago	12:20	29d 8h 04m
+874	17 de ago	16:28	24 de ago	6:57	31 de ago	23:33	9 de sep	3:26	29d 7h 42m
+875	16 de sep	0:10	22 de sep	16:32	30 de sep	15:54	8 de oct	16:35	29d 8h 26m
+876	15 de oct	8:36	22 de oct	5:52	30 de oct	9:37	7 de nov	3:36	29d 9h 58m
+877	13 de nov	18:34	20 de nov	23:03	29 de nov	3:31	6 de dic	12:49	29d 11h 53m
+878	13 de dic	6:27	20 de dic	19:26	28 de dic	20:05	 	 	29d 13h 44m
+
+878	 	 	 	 	 	 	4 de ene	21:00	29d 13h 44m
+879	11 de ene	20:10	19 de ene	17:27	27 de ene	10:23	3 de feb	5:06	29d 15h 20m
+880	10 de feb	11:30	18 de feb	14:48	25 de feb	22:15	4 de mar	13:53	29d 16h 35m
+881	12 de mar	4:05	20 de mar	9:15	27 de mar	8:10	2 de abr	23:55	29d 17h 12m
+882	10 de abr	21:17	18 de abr	23:34	25 de abr	16:45	2 de may	11:33	29d 16h 49m
+883	10 de may	14:07	18 de may	9:50	25 de may	0:39	1 de jun	1:02	29d 15h 20m
+884	9 de jun	5:27	16 de jun	16:57	23 de jun	8:33	30 de jun	16:31	29d 13h 11m
+885	8 de jul	18:37	15 de jul	22:12	22 de jul	17:16	30 de jul	9:40	29d 11h 08m
+886	7 de ago	5:45	14 de ago	2:57	21 de ago	3:47	29 de ago	3:41	29d 9h 47m
+887	5 de sep	15:33	12 de sep	8:34	19 de sep	17:01	27 de sep	21:23	29d 9h 22m
+888	5 de oct	0:55	11 de oct	16:17	19 de oct	9:18	27 de oct	13:44	29d 9h 40m
+889	3 de nov	10:35	10 de nov	3:14	18 de nov	3:57	26 de nov	4:04	29d 10h 18m
+890	2 de dic	20:54	9 de dic	18:06	17 de dic	23:17	25 de dic	16:06	29d 11h 01m
+
+891	1 de ene	7:55	8 de ene	12:46	16 de ene	17:26	24 de ene	1:58	29d 11h 52m
+892	30 de ene	19:48	7 de feb	9:54	15 de feb	9:15	22 de feb	10:04	29d 13h 00m
+893	1 de mar	8:48	9 de mar	7:14	16 de mar	22:26	23 de mar	17:10	29d 14h 21m
+894	30 de mar	23:08	8 de abr	2:35	15 de abr	9:08	22 de abr	0:18	29d 15h 28m
+895	29 de abr	14:36	7 de may	18:44	14 de may	17:48	21 de may	8:36	29d 15h 51m
+896	29 de may	6:27	6 de jun	7:26	13 de jun	1:03	19 de jun	19:01	29d 15h 23m
+897	27 de jun	21:50	5 de jul	17:02	12 de jul	7:49	19 de jul	8:10	29d 14h 23m
+898	27 de jul	12:13	4 de ago	0:16	10 de ago	15:16	18 de ago	0:04	29d 13h 18m
+899	26 de ago	1:31	2 de sep	6:03	9 de sep	0:37	16 de sep	18:09	29d 12h 24m
+900	24 de sep	13:55	1 de oct	11:36	8 de oct	12:52	16 de oct	13:26	29d 11h 41m
+901	24 de oct	1:36	30 de oct	18:17	7 de nov	4:21	15 de nov	8:40	29d 11h 07m
+902	22 de nov	12:43	29 de nov	3:28	6 de dic	22:27	15 de dic	2:31	29d 10h 39m
+903	21 de dic	23:22	28 de dic	16:06	 	 	 	 	29d 10h 28m
+
+903	 	 	 	 	5 de ene	17:51	13 de ene	17:45	29d 10h 28m
+904	20 de ene	9:50	27 de ene	8:14	4 de feb	12:58	12 de feb	5:37	29d 10h 40m
+905	18 de feb	20:30	26 de feb	2:52	5 de mar	6:23	12 de mar	14:15	29d 11h 15m
+906	19 de mar	7:45	26 de mar	22:31	3 de abr	21:07	10 de abr	20:36	29d 12h 04m
+907	17 de abr	19:49	25 de abr	17:41	3 de may	8:48	10 de may	2:04	29d 12h 57m
+908	17 de may	8:46	25 de may	11:13	1 de jun	17:47	8 de jun	8:06	29d 13h 50m
+909	15 de jun	22:36	24 de jun	2:24	1 de jul	0:58	7 de jul	15:55	29d 14h 39m
+910	15 de jul	13:15	23 de jul	14:49	30 de jul	7:35	6 de ago	2:25	29d 15h 19m
+911	14 de ago	4:34	22 de ago	0:37	28 de ago	14:52	4 de sep	16:06	29d 15h 34m
+912	12 de sep	20:08	20 de sep	8:23	26 de sep	23:51	4 de oct	9:04	29d 15h 07m
+913	12 de oct	11:15	19 de oct	15:09	26 de oct	11:11	3 de nov	4:50	29d 14h 01m
+914	11 de nov	1:16	17 de nov	22:09	25 de nov	1:10	3 de dic	2:06	29d 12h 40m
+915	10 de dic	13:56	17 de dic	6:31	24 de dic	17:41	 	 	29d 11h 29m
+
+915	 	 	 	 	 	 	1 de ene	22:45	29d 11h 29m
+916	9 de ene	1:26	15 de ene	17:02	23 de ene	12:11	31 de ene	16:40	29d 10h 40m
+917	7 de feb	12:06	14 de feb	5:57	22 de feb	7:27	2 de mar	6:38	29d 10h 08m
+918	8 de mar	22:14	15 de mar	21:06	24 de mar	1:45	31 de mar	16:38	29d 9h 48m
+919	7 de abr	8:02	14 de abr	14:00	22 de abr	17:34	29 de abr	23:37	29d 9h 45m
+920	6 de may	17:47	14 de may	7:55	22 de may	6:13	29 de may	4:51	29d 10h 17m
+921	5 de jun	4:04	13 de jun	1:52	20 de jun	16:09	27 de jun	9:42	29d 11h 36m
+922	4 de jul	15:40	12 de jul	18:44	20 de jul	0:21	26 de jul	15:28	29d 13h 34m
+923	3 de ago	5:14	11 de ago	9:43	18 de ago	7:56	24 de ago	23:24	29d 15h 38m
+924	1 de sep	20:52	9 de sep	22:31	16 de sep	15:51	23 de sep	10:36	29d 17h 00m
+925	1 de oct	13:52	9 de oct	9:22	16 de oct	0:46	23 de oct	1:49	29d 17h 09m
+926	31 de oct	7:02	7 de nov	18:44	14 de nov	11:12	21 de nov	20:58	29d 16h 13m
+927	29 de nov	23:14	7 de dic	3:10	13 de dic	23:38	21 de dic	18:44	29d 14h 42m
+928	29 de dic	13:57	 	 	 	 	 	 	29d 13h 04m
+
+928	 	 	5 de ene	11:18	12 de ene	14:24	20 de ene	16:41	29d 13h 04m
+929	28 de ene	3:01	3 de feb	19:54	11 de feb	7:23	19 de feb	12:27	29d 11h 25m
+930	26 de feb	14:26	5 de mar	5:41	13 de mar	1:35	21 de mar	4:38	29d 9h 48m
+931	28 de mar	0:14	3 de abr	17:19	11 de abr	19:24	19 de abr	16:53	29d 8h 28m
+932	26 de abr	8:41	3 de may	7:04	11 de may	11:29	19 de may	1:35	29d 7h 51m
+933	25 de may	16:32	1 de jun	22:45	10 de jun	1:18	17 de jun	7:38	29d 8h 18m
+934	24 de jun	0:50	1 de jul	15:43	9 de jul	13:01	16 de jul	12:14	29d 9h 54m
+935	23 de jul	10:44	31 de jul	9:06	7 de ago	23:10	14 de ago	16:49	29d 12h 19m
+936	21 de ago	23:03	30 de ago	2:07	6 de sep	8:21	12 de sep	22:58	29d 14h 59m
+937	20 de sep	14:02	28 de sep	18:11	5 de oct	17:12	12 de oct	8:11	29d 17h 08m
+938	20 de oct	7:10	28 de oct	8:46	4 de nov	2:18	10 de nov	21:28	29d 18h 17m
+939	19 de nov	1:27	26 de nov	21:23	3 de dic	12:19	10 de dic	14:54	29d 18h 16m
+940	18 de dic	19:43	26 de dic	7:46	 	 	 	 	29d 17h 04m
+
+940	 	 	 	 	1 de ene	23:50	9 de ene	11:22	29d 17h 04m
+941	17 de ene	12:46	24 de ene	16:15	31 de ene	13:07	8 de feb	8:58	29d 14h 53m
+942	16 de feb	3:39	22 de feb	23:43	2 de mar	3:59	10 de mar	5:41	29d 12h 09m
+943	17 de mar	15:48	24 de mar	7:18	31 de mar	19:49	8 de abr	23:51	29d 9h 34m
+944	16 de abr	1:22	22 de abr	16:02	30 de abr	11:55	8 de may	14:28	29d 7h 43m
+945	15 de may	9:05	22 de may	2:34	30 de may	3:40	7 de jun	1:20	29d 6h 58m
+946	13 de jun	16:03	20 de jun	15:13	28 de jun	18:38	6 de jul	8:57	29d 7h 21m
+947	12 de jul	23:24	20 de jul	6:00	28 de jul	8:25	4 de ago	14:27	29d 8h 45m
+948	11 de ago	8:09	18 de ago	22:47	26 de ago	20:48	2 de sep	19:18	29d 10h 54m
+949	9 de sep	19:02	17 de sep	17:06	25 de sep	7:51	2 de oct	1:02	29d 13h 32m
+950	9 de oct	8:35	17 de oct	12:00	24 de oct	18:03	31 de oct	9:04	29d 16h 19m
+951	8 de nov	0:53	16 de nov	6:03	23 de nov	4:04	29 de nov	20:19	29d 18h 38m
+952	7 de dic	19:32	15 de dic	21:50	22 de dic	14:31	29 de dic	11:05	29d 19h 42m
+
+953	6 de ene	15:14	14 de ene	10:34	21 de ene	1:40	28 de ene	4:57	29d 18h 50m
+954	5 de feb	10:04	12 de feb	20:22	19 de feb	13:27	27 de feb	0:54	29d 16h 13m
+955	6 de mar	2:17	13 de mar	3:59	20 de mar	1:45	27 de mar	21:21	29d 12h 55m
+956	4 de abr	15:12	11 de abr	10:31	18 de abr	14:42	26 de abr	16:31	29d 10h 00m
+957	4 de may	1:12	10 de may	17:01	18 de may	4:35	26 de may	8:55	29d 8h 02m
+958	2 de jun	9:14	9 de jun	0:29	16 de jun	19:27	24 de jun	22:00	29d 7h 06m
+959	1 de jul	16:20	8 de jul	9:53	16 de jul	10:56	24 de jul	8:02	29d 7h 05m
+960	30 de jul	23:25	6 de ago	22:02	15 de ago	2:13	22 de ago	15:51	29d 7h 54m
+961	29 de ago	7:19	5 de sep	13:28	13 de sep	16:37	20 de sep	22:29	29d 9h 34m
+962	27 de sep	16:53	5 de oct	8:00	13 de oct	5:53	20 de oct	4:59	29d 12h 05m
+963	27 de oct	4:58	4 de nov	4:27	11 de nov	18:15	18 de nov	12:25	29d 15h 13m
+964	25 de nov	20:12	4 de dic	0:56	11 de dic	6:03	17 de dic	21:42	29d 18h 10m
+965	25 de dic	14:22	 	 	 	 	 	 	29d 19h 45m
+
+965	 	 	2 de ene	19:32	9 de ene	17:25	16 de ene	9:35	29d 19h 45m
+966	24 de ene	10:07	1 de feb	11:03	8 de feb	4:12	15 de feb	0:24	29d 19h 14m
+967	23 de feb	5:22	2 de mar	23:03	9 de mar	14:23	16 de mar	17:46	29d 17h 00m
+968	24 de mar	22:22	1 de abr	7:50	8 de abr	0:22	15 de abr	12:32	29d 14h 05m
+969	23 de abr	12:26	30 de abr	14:08	7 de may	10:53	15 de may	7:11	29d 11h 20m
+970	22 de may	23:47	29 de may	19:10	5 de jun	22:40	14 de jun	0:29	29d 9h 12m
+971	21 de jun	8:58	28 de jun	0:20	5 de jul	12:04	13 de jul	15:46	29d 7h 46m
+972	20 de jul	16:45	27 de jul	7:08	4 de ago	2:56	12 de ago	4:53	29d 7h 11m
+973	18 de ago	23:55	25 de ago	16:55	2 de sep	18:43	10 de sep	16:00	29d 7h 32m
+974	17 de sep	7:28	24 de sep	6:32	2 de oct	10:49	10 de oct	1:20	29d 8h 56m
+975	16 de oct	16:24	23 de oct	23:59	1 de nov	2:41	8 de nov	9:22	29d 11h 17m
+976	15 de nov	3:40	22 de nov	20:21	30 de nov	17:49	7 de dic	16:52	29d 14h 07m
+977	14 de dic	17:48	22 de dic	17:57	30 de dic	7:41	 	 	29d 16h 41m
+
+977	 	 	 	 	 	 	6 de ene	0:55	29d 16h 41m
+978	13 de ene	10:29	21 de ene	14:47	28 de ene	19:50	4 de feb	10:33	29d 18h 12m
+979	12 de feb	4:41	20 de feb	9:02	27 de feb	6:16	5 de mar	22:25	29d 18h 22m
+980	13 de mar	23:03	21 de mar	23:28	28 de mar	15:25	4 de abr	12:30	29d 17h 18m
+981	12 de abr	16:21	20 de abr	9:49	27 de abr	0:00	4 de may	4:16	29d 15h 24m
+982	12 de may	7:45	19 de may	16:42	26 de may	8:52	2 de jun	21:05	29d 13h 02m
+983	10 de jun	20:47	17 de jun	21:29	24 de jun	18:43	2 de jul	14:20	29d 10h 39m
+984	10 de jul	7:26	17 de jul	1:47	24 de jul	6:07	1 de ago	7:22	29d 8h 49m
+985	8 de ago	16:15	15 de ago	7:12	22 de ago	19:29	30 de ago	23:31	29d 7h 55m
+986	7 de sep	0:10	13 de sep	15:08	21 de sep	10:59	29 de sep	14:03	29d 8h 07m
+987	6 de oct	8:18	13 de oct	2:33	21 de oct	4:20	29 de oct	2:28	29d 9h 17m
+988	4 de nov	17:35	11 de nov	17:52	19 de nov	22:34	27 de nov	12:46	29d 11h 00m
+989	4 de dic	4:35	11 de dic	12:49	19 de dic	16:10	26 de dic	21:31	29d 12h 49m
+
+990	2 de ene	17:23	10 de ene	10:15	18 de ene	7:48	25 de ene	5:33	29d 14h 25m
+991	1 de feb	7:49	9 de feb	8:11	16 de feb	20:51	23 de feb	13:46	29d 15h 46m
+992	2 de mar	23:35	11 de mar	4:15	18 de mar	7:34	24 de mar	22:51	29d 16h 44m
+993	1 de abr	16:18	9 de abr	20:40	16 de abr	16:35	23 de abr	9:18	29d 16h 56m
+994	1 de may	9:15	9 de may	8:53	16 de may	0:36	22 de may	21:31	29d 16h 05m
+995	31 de may	1:20	7 de jun	17:28	14 de jun	8:16	21 de jun	11:45	29d 14h 19m
+996	29 de jun	15:39	6 de jul	23:32	13 de jul	16:21	21 de jul	4:01	29d 12h 14m
+997	29 de jul	3:53	5 de ago	4:28	12 de ago	1:48	19 de ago	21:48	29d 10h 33m
+998	27 de ago	14:26	3 de sep	9:34	10 de sep	13:36	18 de sep	16:03	29d 9h 43m
+999	26 de sep	0:09	2 de oct	16:09	10 de oct	4:28	18 de oct	9:31	29d 9h 41m
+1000	25 de oct	9:50	1 de nov	1:25	8 de nov	22:14	17 de nov	1:15	29d 10h 09m
+1001	23 de nov	19:59	30 de nov	14:16	8 de dic	17:37	16 de dic	14:42	29d 10h 44m
+1002	23 de dic	6:43	30 de dic	7:04	 	 	 	 	29d 11h 22m
+
+1002	 	 	 	 	7 de ene	12:41	15 de ene	1:46	29d 11h 22m
+1003	21 de ene	18:05	29 de ene	3:04	6 de feb	5:47	13 de feb	10:40	29d 12h 13m
+1004	20 de feb	6:18	28 de feb	0:24	6 de mar	20:14	13 de mar	18:01	29d 13h 23m
+1005	20 de mar	19:41	28 de mar	20:48	5 de abr	8:03	12 de abr	0:46	29d 14h 40m
+1006	19 de abr	10:21	27 de abr	14:33	4 de may	17:33	11 de may	8:04	29d 15h 31m
+1007	19 de may	1:52	27 de may	4:57	3 de jun	1:20	9 de jun	17:02	29d 15h 35m
+1008	17 de jun	17:27	25 de jun	16:08	2 de jul	8:09	9 de jul	4:34	29d 14h 57m
+1009	17 de jul	8:24	25 de jul	0:37	31 de jul	15:05	7 de ago	19:01	29d 14h 00m
+1010	15 de ago	22:24	23 de ago	7:12	29 de ago	23:23	6 de sep	12:11	29d 13h 05m
+1011	14 de sep	11:29	21 de sep	12:54	28 de sep	10:10	6 de oct	7:12	29d 12h 19m
+1012	13 de oct	23:48	20 de oct	18:59	28 de oct	0:08	5 de nov	2:54	29d 11h 39m
+1013	12 de nov	11:27	19 de nov	2:51	26 de nov	17:07	4 de dic	21:53	29d 11h 02m
+1014	11 de dic	22:29	18 de dic	13:40	26 de dic	12:07	 	 	29d 10h 34m
+
+1014	 	 	 	 	 	 	3 de ene	14:46	29d 10h 34m
+1015	10 de ene	9:03	17 de ene	3:58	25 de ene	7:33	2 de feb	4:27	29d 10h 25m
+1016	8 de feb	19:28	15 de feb	21:16	24 de feb	1:54	3 de mar	14:37	29d 10h 43m
+1017	10 de mar	6:11	17 de mar	16:19	25 de mar	17:59	1 de abr	21:50	29d 11h 22m
+1018	8 de abr	17:32	16 de abr	11:38	24 de abr	7:07	1 de may	3:24	29d 12h 13m
+1019	8 de may	5:45	16 de may	5:57	23 de may	17:18	30 de may	8:47	29d 13h 10m
+1020	6 de jun	18:55	14 de jun	22:22	22 de jun	1:14	28 de jun	15:23	29d 14h 08m
+1021	6 de jul	9:03	14 de jul	12:20	21 de jul	8:00	28 de jul	0:19	29d 15h 02m
+1022	5 de ago	0:05	12 de ago	23:39	19 de ago	14:53	26 de ago	12:19	29d 15h 41m
+1023	3 de sep	15:46	11 de sep	8:37	17 de sep	23:01	25 de sep	3:41	29d 15h 43m
+1024	3 de oct	7:28	10 de oct	16:01	17 de oct	9:14	24 de oct	22:17	29d 14h 56m
+1025	1 de nov	22:25	8 de nov	22:57	15 de nov	21:58	23 de nov	19:11	29d 13h 36m
+1026	1 de dic	12:01	8 de dic	6:36	15 de dic	13:16	23 de dic	16:36	29d 12h 11m
+1027	31 de dic	0:12	 	 	 	 	 	 	29d 11h 03m
+
+1027	 	 	6 de ene	15:57	14 de ene	6:48	22 de ene	12:14	29d 11h 03m
+1028	29 de ene	11:15	5 de feb	3:29	13 de feb	1:45	21 de feb	4:17	29d 10h 16m
+1029	27 de feb	21:31	6 de mar	17:16	14 de mar	20:36	22 de mar	16:11	29d 9h 45m
+1030	29 de mar	7:15	5 de abr	9:01	13 de abr	13:40	21 de abr	0:28	29d 9h 29m
+1031	27 de abr	16:44	5 de may	2:13	13 de may	3:51	20 de may	6:21	29d 9h 41m
+1032	27 de may	2:26	3 de jun	20:06	11 de jun	15:03	18 de jun	11:08	29d 10h 40m
+1033	25 de jun	13:05	3 de jul	13:37	11 de jul	0:02	17 de jul	16:12	29d 12h 26m
+1034	25 de jul	1:31	2 de ago	5:46	9 de ago	7:54	15 de ago	22:51	29d 14h 39m
+1035	23 de ago	16:10	31 de ago	19:56	7 de sep	15:42	14 de sep	8:16	29d 16h 35m
+1036	22 de sep	8:45	30 de sep	8:04	7 de oct	0:13	13 de oct	21:26	29d 17h 29m
+1037	22 de oct	2:14	29 de oct	18:25	5 de nov	9:58	12 de nov	14:45	29d 17h 04m
+1038	20 de nov	19:18	28 de nov	3:29	4 de dic	21:25	12 de dic	11:32	29d 15h 43m
+1039	20 de dic	11:01	27 de dic	11:48	 	 	 	 	29d 14h 00m
+
+1039	 	 	 	 	3 de ene	10:57	11 de ene	9:45	29d 14h 00m
+1040	19 de ene	1:01	25 de ene	20:01	2 de feb	2:45	10 de feb	6:51	29d 12h 14m
+1041	17 de feb	13:14	24 de feb	4:56	3 de mar	20:17	12 de mar	0:54	29d 10h 28m
+1042	18 de mar	23:43	25 de mar	15:16	2 de abr	14:15	10 de abr	15:04	29d 8h 53m
+1043	17 de abr	8:36	24 de abr	3:36	2 de may	7:10	10 de may	1:27	29d 7h 51m
+1044	16 de may	16:27	23 de may	18:03	31 de may	22:04	8 de jun	8:43	29d 7h 46m
+1045	15 de jun	0:13	22 de jun	10:15	30 de jun	10:49	7 de jul	13:54	29d 8h 51m
+1046	14 de jul	9:04	22 de jul	3:29	29 de jul	21:48	5 de ago	18:20	29d 10h 59m
+1047	12 de ago	20:02	20 de ago	20:54	28 de ago	7:35	3 de sep	23:32	29d 13h 42m
+1048	11 de sep	9:44	19 de sep	13:48	26 de sep	16:45	3 de oct	7:06	29d 16h 17m
+1049	11 de oct	2:01	19 de oct	5:33	26 de oct	1:52	1 de nov	18:18	29d 18h 02m
+1050	9 de nov	20:03	17 de nov	19:32	24 de nov	11:30	1 de dic	9:44	29d 18h 37m
+1051	9 de dic	14:40	17 de dic	7:18	23 de dic	22:16	31 de dic	5:51	29d 17h 57m
+
+1052	8 de ene	9:37	15 de ene	17:46	22 de ene	11:35	30 de ene	3:03	29d 16h 07m
+1053	7 de feb	1:44	14 de feb	1:33	21 de feb	1:31	29 de feb	0:18	29d 13h 30m
+1054	7 de mar	15:14	14 de mar	8:46	21 de mar	15:40	29 de mar	18:47	29d 10h 41m
+1055	6 de abr	0:55	12 de abr	15:32	20 de abr	7:26	28 de abr	11:12	29d 8h 23m
+1056	5 de may	9:18	12 de may	0:47	19 de may	23:12	27 de may	23:57	29d 7h 04m
+1057	3 de jun	16:23	10 de jun	12:04	18 de jun	14:31	26 de jun	9:10	29d 6h 56m
+1058	2 de jul	23:19	10 de jul	1:35	18 de jul	4:59	25 de jul	15:42	29d 7h 54m
+1059	1 de ago	7:12	8 de ago	17:20	16 de ago	18:16	23 de ago	20:49	29d 9h 45m
+1060	30 de ago	16:58	7 de sep	11:04	15 de sep	6:13	22 de sep	2:04	29d 12h 14m
+1061	29 de sep	5:12	7 de oct	6:04	14 de oct	17:02	21 de oct	9:55	29d 15h 02m
+1062	28 de oct	21:14	6 de nov	2:03	13 de nov	4:18	19 de nov	19:31	29d 17h 41m
+1063	27 de nov	14:55	5 de dic	19:26	12 de dic	14:38	19 de dic	8:30	29d 19h 28m
+1064	27 de dic	10:23	 	 	 	 	 	 	29d 19h 33m
+
+1064	 	 	4 de ene	9:56	11 de ene	1:27	18 de ene	0:46	29d 19h 33m
+1065	26 de ene	5:56	2 de feb	21:13	9 de feb	12:49	16 de feb	19:37	29d 17h 40m
+1066	24 de feb	23:35	4 de mar	5:46	11 de mar	0:38	18 de mar	14:48	29d 14h 31m
+1067	26 de mar	13:06	2 de abr	11:34	9 de abr	11:56	17 de abr	10:37	29d 11h 17m
+1068	25 de abr	0:23	1 de may	17:44	9 de may	1:02	17 de may	4:26	29d 8h 49m
+1069	24 de may	9:11	31 de may	0:22	7 de jun	15:12	15 de jun	19:15	29d 7h 24m
+1070	22 de jun	16:35	29 de jun	8:29	7 de jul	6:22	15 de jul	6:53	29d 6h 59m
+1071	21 de jul	23:35	28 de jul	19:00	5 de ago	21:55	13 de ago	15:55	29d 7h 27m
+1072	20 de ago	7:01	27 de ago	8:42	4 de sep	13:02	11 de sep	23:16	29d 8h 43m
+1073	18 de sep	15:44	26 de sep	1:49	4 de oct	3:10	11 de oct	5:56	29d 10h 49m
+1074	18 de oct	2:33	25 de oct	21:42	2 de nov	16:14	9 de nov	12:56	29d 13h 41m
+1075	16 de nov	16:14	24 de nov	18:39	2 de dic	4:31	8 de dic	21:14	29d 16h 48m
+1076	16 de dic	9:02	24 de dic	14:36	31 de dic	16:13	 	 	29d 19h 10m
+
+1076	 	 	 	 	 	 	7 de ene	7:40	29d 19h 10m
+1077	15 de ene	4:12	23 de ene	7:54	30 de ene	3:18	5 de feb	20:49	29d 19h 40m
+1078	13 de feb	23:52	21 de feb	21:43	28 de feb	13:38	7 de mar	12:42	29d 18h 10m
+1079	15 de mar	18:01	23 de mar	8:00	29 de mar	23:25	6 de abr	6:37	29d 15h 28m
+1080	14 de abr	9:29	21 de abr	15:20	28 de abr	9:19	6 de may	1:15	29d 12h 36m
+1081	13 de may	22:05	20 de may	20:43	27 de may	20:08	4 de jun	19:13	29d 10h 10m
+1082	12 de jun	8:15	19 de jun	1:30	26 de jun	8:31	4 de jul	11:36	29d 8h 26m
+1083	11 de jul	16:41	18 de jul	7:11	25 de jul	22:37	3 de ago	1:59	29d 7h 27m
+1084	10 de ago	0:08	16 de ago	15:14	24 de ago	14:05	1 de sep	14:22	29d 7h 21m
+1085	8 de sep	7:30	15 de sep	2:50	23 de sep	6:17	1 de oct	0:52	29d 8h 15m
+1086	7 de oct	15:44	14 de oct	18:27	22 de oct	22:36	30 de oct	9:46	29d 10h 07m
+1087	6 de nov	1:52	13 de nov	13:38	21 de nov	14:27	28 de nov	17:36	29d 12h 44m
+1088	5 de dic	14:36	13 de dic	10:59	21 de dic	5:13	28 de dic	1:18	29d 15h 27m
+
+1089	4 de ene	6:03	12 de ene	8:32	19 de ene	18:21	26 de ene	9:57	29d 17h 28m
+1090	2 de feb	23:31	11 de feb	4:18	18 de feb	5:36	24 de feb	20:27	29d 18h 15m
+1091	4 de mar	17:46	12 de mar	20:45	19 de mar	15:10	26 de mar	9:08	29d 17h 46m
+1092	3 de abr	11:32	11 de abr	9:06	17 de abr	23:44	24 de abr	23:47	29d 16h 18m
+1093	3 de may	3:51	10 de may	17:33	17 de may	8:09	24 de may	15:52	29d 14h 12m
+1094	1 de jun	18:03	8 de jun	23:11	15 de jun	17:14	23 de jun	8:48	29d 11h 51m
+1095	1 de jul	5:54	8 de jul	3:29	15 de jul	3:40	23 de jul	2:02	29d 9h 46m
+1096	30 de jul	15:40	6 de ago	8:08	13 de ago	15:58	21 de ago	18:55	29d 8h 24m
+1097	29 de ago	0:04	4 de sep	14:39	12 de sep	6:27	20 de sep	10:39	29d 8h 05m
+1098	27 de sep	8:09	4 de oct	0:15	11 de oct	23:06	20 de oct	0:30	29d 8h 47m
+1099	26 de oct	16:56	2 de nov	13:38	10 de nov	17:16	18 de nov	12:09	29d 10h 14m
+1100	25 de nov	3:10	2 de dic	6:52	10 de dic	11:36	17 de dic	21:48	29d 11h 57m
+1101	24 de dic	15:06	 	 	 	 	 	 	29d 13h 33m
+
+9 de ene	4:30	full
+23 de ene	4:39	new
+7 de feb	18:52 	full
+21 de feb	19:35	new
+8 de mar	6:40 	full
+22 de mar	11:37	new
+6 de abr	16:19   full
+21 de abr	4:19	new
+6 de may	0:35 	full
+20 de may	20:47	new
+4 de jun	8:12 	full
+19 de jun	12:03	new
+3 de jul	15:52 	full
+19 de jul	1:25	new
+2 de ago	0:28 	full
+17 de ago	12:55	new
+31 de ago	10:59 	full
+15 de sep	23:11	new
+30 de sep	0:19 	full
+15 de oct	9:03	new
+29 de oct	16:50 	full
+13 de nov	19:08	new
+28 de nov	11:46 	full
+13 de dic	5:42	new
+28 de dic	7:22 	full

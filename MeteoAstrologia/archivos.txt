@@ -1,0 +1,78 @@
+Tabla de signos
+
+Nombre: signos.tps (comun)  xsignos.tps (la que tiene sizigia)
+Los campos (*) son los que estan en sizigia
+
+Fecha	long
+hora	long
+signo	string(2)
+columna string(2)
+planeta short
+tipo	string(32) (*)   
+
+Nombre: cuadrante.tps (comun) xcuadrante.tps (la que tiene sizigia)
+
+Fecha	   long
+hora	   long
+codigo	   string(2)
+esteoeste  string(2)
+planeta    short
+tipo       string(32) (*)   
+
+Nombre Casas.tps (comun)  xcasas.tps (la que tiene sizigia)
+
+Fecha	   long
+hora	   long
+codigocasa short
+codigotipo string(2)
+planeta    short
+tipo       string(32) (*)   
+
+Nombre posiciones.tps (comun) xposiciones.tps (la que tiene sizigia)
+
+Fecha		   long
+hora		   long
+planeta   	   short
+Signo		   short
+Glon		   short
+Mlon		   short
+Slon		   short
+Glat		   short
+Mlat	           short
+Slat	           short
+GVel		   short
+MVel		   short
+SVel		   short
+Distancia	   decimal (7,4)
+Casa		   short
+tipo		   string(32)  (*)
+
+Nombre Aspectarium.tps (comun) xaspectarium.tps  (la que tiene sizigia)
+
+Fecha		   long
+hora		   long
+Plan1		   short
+Nombre1		   string(20)
+Plan2		   short
+Nombre2		   string(20)
+Conjuncion	   SHORT
+strconjuncion	   STRING(20)
+totaldif           DECIMAL(6,0)
+mindiF		   DECIMAL (4,0)
+segdif		   DECIMAL (4,0)
+tipo		  string(32) (*)
+
+Nombre estadotiempo.tps (comun) xestadotiemp (la que tiene sizigia)
+
+Fecha		   long
+hora		   long
+maxima		   decimal(7,2)
+minima	           decimal(7,2)
+vientovel	   decimal(7,2)
+direccviento	   decimal(7,2)
+Precipitacion	   short
+Mil500		   short
+Observaciones	   memo(1000)
+tipo		 string(32)  (*)
+
+tipo		  string(32) (*)

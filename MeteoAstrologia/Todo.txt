@@ -1,0 +1,51 @@
+ToDo
+RC:
+[x] tabla de datos, mantener fijo la columna fecha
+[x] ver dias, memory leak
+[x] ver dias, al cambiar de combobox se clarean los mismos
+[x] ver dias, columna fija
+[x] datos mensaules, fecha fija
+[x] datos mensuales, cargar max y minimos absolutos
+[x] datos mensuales, poder agregarlos al export
+[ ] exportar al excel, checuear locale nacional
+[ ] exportar al excel, achicar al minimo
+[x] aspectos, fecha fija
+[x] aspectos, menu
+[x] aspectos, para cuadro inf a ppal
+[x] ciclos, cascada
+[x] ciclos, resize column to content
+[x] ciclos, click derecho a excel
+[x] mes-lluvia, por noaa
+[x] mes-lluvia, agregar noaa
+[x] exportar pp
+[x] poder calcular un pto primordial especifico (solo uno)
+
+
+Release:
+[ ] Revisar Ortografia y carteleria
+[ ] Instalador
+[ ] Iconografia
+
+aaaammdd hh
+temperatura max
+temperatura min (-99)
+altura nubes --
+*visibilidad --
+*cantidad de cielo  cubierto -- [0 - 8]
+velocidad del viento (nudos * 1.852)
+direccion del viento [0-36]
+*temperatura
+*punto de rocio
+*indicador de lluvia [6x lluvia 7x nieve 8x chaparrones 9x tormenta 5x llovizna 4x niebla]
+11
+12
+*precion barometrica (en hectopascales)
+tendencia barometrica () [0-8] --
+valor de la tendencia barometrica --
+precipitacion (mm.) 991 = 0.1 mm.  sino 00x.x = x.x milimetros
+
+
+en sizigias cambian temperaturas por, temperatura media y precipitacion mensual, promedio de los dias que llovieron
+aaaammddhh
+temperatura (850 mmbares)
+1000/500

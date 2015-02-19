@@ -1,0 +1,1 @@
+EventData.New(_auto);_eventData.Latitude = "38S43'00";_eventData.Longitude = "62W17'00";_eventData.Date = "21.7222 GMT-3:00";_eventData.Caption = "test";_eventData.Location = "Bahía Blanca";_eventData.Zone = "America/Argentina/Buenos_Aires";_eventData.Note = "";_eventData.Keywords = "";Horoscope.New("test", _settings, _eventData);
