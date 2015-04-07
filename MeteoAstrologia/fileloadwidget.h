@@ -8,6 +8,7 @@
 #include <QProgressBar>
 #include <QDebug>
 #include <QtSql>
+#include "filedownloader.h"
 
 namespace Ui {
 class fileLoadWidget;
@@ -26,6 +27,10 @@ public slots:
     void    processFiles();
     void    refresh();
 
+private slots:
+    void on_btnDownload_released();
+    void fileDownloaded(const QString &filename);
+
 private:
     bool    processDiaryWeather(QString filename);
     bool    processNinoMonthly(QString filename);
@@ -36,6 +41,7 @@ private:
 
     QList<QString> filenames;
     QList<int> fileprogress;
+    FileDownloader *downloader;
 };
 
 #endif // FILELOADWIDGET_H

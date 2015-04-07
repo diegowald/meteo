@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui sql widgets axcontainer network
 
 TARGET = AstroMeteorologia
 TEMPLATE = app
@@ -55,7 +55,9 @@ SOURCES += main.cpp\
     rbdtoweatherdialog.cpp \
     weathertonoaadialog.cpp \
     calcptosprimordialesdialog.cpp \
-    monthcalcdialog.cpp
+    monthcalcdialog.cpp \
+    filedownloader.cpp \
+    qcompressor.cpp
 
 HEADERS  += mainwindow.h \
     grabdatawidget.h \
@@ -76,7 +78,7 @@ HEADERS  += mainwindow.h \
     cuadrantesdialog.h \
     pingpongwidget.h \
     batchastrologicgrabdata.h \
-    E:\shaka\dev\current\soft\MeteoAstrologia\sweph\src\swephexp.h \
+    sweph\src\swephexp.h \
     sweph.h \
     astroinfo.h \
     utils.h \
@@ -100,7 +102,9 @@ HEADERS  += mainwindow.h \
     rbdtoweatherdialog.h \
     weathertonoaadialog.h \
     calcptosprimordialesdialog.h \
-    monthcalcdialog.h
+    monthcalcdialog.h \
+    filedownloader.h \
+    qcompressor.h
 
 FORMS    += mainwindow.ui \
     grabdatawidget.ui \
@@ -142,20 +146,27 @@ OTHER_FILES += \
     ToDo.txt \
     archivos.txt
 
-INCLUDEPATH += "E:\shaka\dev\current\soft\MeteoAstrologia\sweph\src"
+#INCLUDEPATH += "E:\shaka\dev\current\soft\MeteoAstrologia\sweph\src"
+INCLUDEPATH += "./sweph/src"
+INCLUDEPATH += "E:\QtProjects\meteo\MeteoAstrologia\3rdparty\zlib\include"
+
 DEFINES += USE_DLL
 DEFINES += DOS32
 DEFINES += DOS_DEGREE
-#LIBS += -L "E:\shaka\dev\current\soft\MeteoAstrologia\sweph\bin"
-LIBS += "C:\trabajos\MeteoAstrologia\sweph\bin\swedll32.lib"
-LIBS += "C:\trabajos\MeteoAstrologia\sweph\bin\swetrm32.lib"
-LIBS += "C:\trabajos\MeteoAstrologia\sweph\bin\swetrs32.lib"
 
-LIBS += -lqaxserver
+#LIBS += -L "E:\shaka\dev\current\soft\MeteoAstrologia\sweph\bin"
+LIBS += -L "E:\QtProjects\meteo\MeteoAstrologia\sweph\bin"
+LIBS += -lswedll32
+LIBS += -lswetrm32
+LIBS += -lswetrs32
+LIBS += -L "E:\QtProjects\meteo\MeteoAstrologia\3rdparty\zlib\lib"
+LIBS += -lzdll
+
+###LIBS += -lqaxserver
 
 CONFIG += thread
 CONFIG += no_lflags_merge
-CONFIG += qaxcontainer
+CONFIG += axcontainer
 
 RESOURCES += \
     resource.qrc

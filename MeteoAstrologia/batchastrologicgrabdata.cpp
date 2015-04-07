@@ -83,7 +83,7 @@ void batchAstrologicGrabData::next(){
                                      "_eventData.Zone = \"America/Argentina/Buenos_Aires\";"
                                      "_eventData.Note = \"\";"
                                      "_eventData.Keywords = \"\";"
-                                     "Horoscope.New(\"test\", _settings, _eventData);").arg(currentDate.toString("yyyy-MM-dd hh:mm:ss")).toAscii());
+                                     "Horoscope.New(\"test\", _settings, _eventData);").arg(currentDate.toString("yyyy-MM-dd hh:mm:ss")).toLatin1());
         starfisherfile.close();
 
         QSettings sets("config.ini");
@@ -374,7 +374,7 @@ void batchAstrologicGrabData::parseAspectarium(QString basedata){
                     f += QString("%1").arg(aspecto).rightJustified(2, '0');
                     f += min + seg + "." + mil;
                     qDebug() << f;
-                    file->write(f.toAscii());
+                    file->write(f.toLatin1());
                     file->write("\r\n");
                 };
             }else{
@@ -653,7 +653,7 @@ void batchAstrologicGrabData::saveSignLine(int x, int y, QString data, QFile *fi
         };
 
         //qDebug() << elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0');
-        file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toAscii());
+        file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toLatin1());
         file->write("\r\n");
 
     };
@@ -693,7 +693,7 @@ void batchAstrologicGrabData::saveHouseLine(int x, int y, QString data, QFile *f
         };
 
         //qDebug() << elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0');
-        file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toAscii());
+        file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toLatin1());
         file->write("\r\n");
     };
 }
@@ -722,7 +722,7 @@ void batchAstrologicGrabData::saveQuadrantLine(int x, int y, QString data, QFile
         };
 
         //qDebug() << elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0');
-        file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toAscii());
+        file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toLatin1());
         file->write("\r\n");
     };
 }
@@ -772,7 +772,7 @@ void batchAstrologicGrabData::savePositionLine(int x, int y, QString data, QFile
             f += data.mid(begin).rightJustified(2, '0');
             f = f + "\r\n";
             //qDebug() << f;
-            file->write(f.toAscii());
+            file->write(f.toLatin1());
             //guardar en archivo
             f = "";
             break;
@@ -804,7 +804,7 @@ void batchAstrologicGrabData::savePosition2Line(int x, int y, QString data, QFil
         qDebug() << "number: " << number;
         f += QString("%1").arg(horoscopenumber).rightJustified(2, '0') + number.rightJustified(2, '0') + data.mid(begin2, 2) + data.mid(begin2 + 3, 2);
         qDebug() << "pos2: " << f;
-        file->write(f.toAscii());
+        file->write(f.toLatin1());
         file->write("\r\n");
         f = "";
     };

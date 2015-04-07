@@ -1,4 +1,4 @@
-#include <QtGui/QApplication>
+#include <QtWidgets>
 #include <QtSql>
 #include <QFile>
 #include <QLibrary>

@@ -3,11 +3,11 @@
 QString utils::addSlashes(QString value){
     QString result;
     for(int i = 0; i < value.length(); ++i){
-        if(value.at(i).toAscii() == '\''){
+        if(value.at(i).toLatin1() == '\''){
                 result.append("\\'");
                 continue;
         };
-        if(value.at(i).toAscii() == '\\'){
+        if(value.at(i).toLatin1() == '\\'){
             result.append("\\\\");
             continue;
         };

@@ -1,6 +1,6 @@
 #include "processbymonths.h"
 #include "ui_processbymonths.h"
-#include "ui_monthParameterDialog.h"
+//#include "ui_monthParameterDialog.h"
 
 processByMonths::processByMonths(QWidget *parent) :
     QWidget(parent),

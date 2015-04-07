@@ -36,7 +36,7 @@ double sweph::swe_julday(int Day, int Month, int Year, double Hour){
 }
 
 void sweph::swe_set_ephe_path(QString path){
-    set_path(path.toAscii().data());
+    set_path(path.toLatin1().data());
 }
 
 QString sweph::swe_get_planet_name(int planet){

@@ -1,4 +1,5 @@
 #include "specialrowtablemodel.h"
+#include <QColor>
 
 specialRowTableModel::specialRowTableModel(QDateTime d, modelType t, QObject *parent) :
     QSqlTableModel(parent)
@@ -40,7 +41,7 @@ QVariant specialRowTableModel::data(const QModelIndex &index, int role) const
         if(t_type == noaa && t_date.daysTo(i.data().toDateTime()) == 0){};
         if(t_type == month && t_date.date().month() == i.data().toDateTime().date().month()){};*/
         if(specialBackground){
-            return Qt::green;
+            return QColor(Qt::green);
         };
     };
 

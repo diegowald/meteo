@@ -61,7 +61,7 @@ void optionsWidget::searchForSF(){
 
 QString optionsWidget::searchForFile(QString kind){
     QFileDialog dialog;
-    dialog.setFilter(kind);
+    dialog.setNameFilter(kind);
     QString response = "";
     if(dialog.exec()){
         QFileInfo fileinfo(dialog.selectedFiles().at(0));

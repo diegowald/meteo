@@ -5,7 +5,7 @@
 #include <QtSql>
 #include <QDateTime>
 #include <QDateTimeEdit>
-#include <QAxObject>
+#include <ActiveQt/QAxObject>
 #include <QProgressDialog>
 
 namespace Ui {

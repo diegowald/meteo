@@ -16,7 +16,7 @@ public:
 
     QByteArray downloadedData() const;
 signals:
-    void downloaded();
+    void downloaded(const QString &file);
 
 private slots:
     void fileDownloaded(QNetworkReply *reply);
@@ -24,6 +24,7 @@ private slots:
 private:
     QNetworkAccessManager webCtrl;
     QByteArray _downloadedData;
+    QString filename;
 };
 
 #endif // FILEDOWNLOADER_H

@@ -79,6 +79,47 @@
       </layout>
      </item>
      <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Ciudad</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cboCiudad">
+       <item>
+        <property name="text">
+         <string>Bahia Blanca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tres Arroyos</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mar del Plata</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Buenos Aires</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnDownload">
+       <property name="text">
+        <string>Descargar Datos</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <spacer name="horizontalSpacer_2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>

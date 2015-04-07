@@ -2,7 +2,7 @@
 #define SIZIGIAEXCELREPORTWIDGET_H
 
 #include <QWidget>
-#include <QAxObject>
+#include <ActiveQt/QAxObject>
 #include <QProgressDialog>
 #include <QtSql>
 

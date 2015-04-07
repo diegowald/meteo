@@ -38,7 +38,7 @@ monthViewWidget::monthViewWidget(QWidget *parent) :
     ui->astroDailyTableView->setModel(astroModel);
     ui->astralTableView->setModel(astralModel);
 
-    QModelIndexList list = monthModel->match(monthModel->index(0, 0), Qt::BackgroundRole,Qt::green);
+    QModelIndexList list = monthModel->match(monthModel->index(0, 0), Qt::BackgroundRole, QColor(Qt::green));
     if(!list.isEmpty()){
         qDebug() << list.at(0);
         ui->monthTableView->scrollTo(list.at(0), QAbstractItemView::PositionAtCenter);
