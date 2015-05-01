@@ -65,6 +65,7 @@ public slots:
 
     void    batchProcessor();
     void    fileProcessor();
+    void onSeteoEstaciones();
     void    showForm(QWidget *form, bool modal = false);
 
     //void    doBatch();

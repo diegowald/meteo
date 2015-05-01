@@ -20,6 +20,7 @@
 #include "weathertonoaadialog.h"
 #include "calcptosprimordialesdialog.h"
 #include "monthcalcdialog.h"
+#include "seteoestacioneswidget.h"
 
 MainWindow* MainWindow::mahself = 0;
 
@@ -54,6 +55,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionCargar_datos_RBD_y_SFD, SIGNAL(triggered()), this, SLOT(loadRDBData()));
     connect(ui->actionTiempos_Astrales_a_NOAA, SIGNAL(triggered()), this, SLOT(weatherToNOAA()));
     connect(ui->actionRBD_a_Tiempos_Astrales, SIGNAL(triggered()), this, SLOT(refreshFromRBD()));
+    connect(ui->actionEstaciones_a_trabajar, SIGNAL(triggered()), this, SLOT(onSeteoEstaciones()));
 
     connect(ui->actionCalcular_Pto_Primordiales, SIGNAL(triggered()), this, SLOT(calcPrimordialPoints()));
     connectToDatabase();
@@ -1079,6 +1081,12 @@ void MainWindow::showExcel(){
 
 void MainWindow::fileProcessor(){
     fileLoadWidget *form = new fileLoadWidget();
+    showForm(form);
+}
+
+void MainWindow::onSeteoEstaciones()
+{
+    SeteoEstacionesWidget *form = new SeteoEstacionesWidget(this);
     showForm(form);
 }
 

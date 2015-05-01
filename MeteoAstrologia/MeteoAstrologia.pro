@@ -57,7 +57,8 @@ SOURCES += main.cpp\
     calcptosprimordialesdialog.cpp \
     monthcalcdialog.cpp \
     filedownloader.cpp \
-    qcompressor.cpp
+    qcompressor.cpp \
+    seteoestacioneswidget.cpp
 
 HEADERS  += mainwindow.h \
     grabdatawidget.h \
@@ -104,7 +105,8 @@ HEADERS  += mainwindow.h \
     calcptosprimordialesdialog.h \
     monthcalcdialog.h \
     filedownloader.h \
-    qcompressor.h
+    qcompressor.h \
+    seteoestacioneswidget.h
 
 FORMS    += mainwindow.ui \
     grabdatawidget.ui \
@@ -140,7 +142,8 @@ FORMS    += mainwindow.ui \
     rbdtoweatherdialog.ui \
     weathertonoaadialog.ui \
     calcptosprimordialesdialog.ui \
-    monthcalcdialog.ui
+    monthcalcdialog.ui \
+    seteoestacioneswidget.ui
 
 OTHER_FILES += \
     ToDo.txt \
@@ -148,18 +151,18 @@ OTHER_FILES += \
 
 #INCLUDEPATH += "E:\shaka\dev\current\soft\MeteoAstrologia\sweph\src"
 INCLUDEPATH += "./sweph/src"
-INCLUDEPATH += "E:\QtProjects\meteo\MeteoAstrologia\3rdparty\zlib\include"
+INCLUDEPATH += "F:\QtProjects\meteo\MeteoAstrologia\3rdparty\zlib\include"
 
 DEFINES += USE_DLL
 DEFINES += DOS32
 DEFINES += DOS_DEGREE
 
 #LIBS += -L "E:\shaka\dev\current\soft\MeteoAstrologia\sweph\bin"
-LIBS += -L "E:\QtProjects\meteo\MeteoAstrologia\sweph\bin"
+LIBS += -L "F:\QtProjects\meteo\MeteoAstrologia\sweph\bin"
 LIBS += -lswedll32
 LIBS += -lswetrm32
 LIBS += -lswetrs32
-LIBS += -L "E:\QtProjects\meteo\MeteoAstrologia\3rdparty\zlib\lib"
+LIBS += -L "F:\QtProjects\meteo\MeteoAstrologia\3rdparty\zlib\lib"
 LIBS += -lzdll
 
 ###LIBS += -lqaxserver
@@ -170,11 +173,3 @@ CONFIG += axcontainer
 
 RESOURCES += \
     resource.qrc
-
-
-
-
-
-
-
-

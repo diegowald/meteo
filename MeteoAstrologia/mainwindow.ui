@@ -70,6 +70,8 @@
     <addaction name="actionCarga_en_Batch"/>
     <addaction name="actionCarga_de_Archivos"/>
     <addaction name="actionRecalcular_datos_Mensuales"/>
+    <addaction name="separator"/>
+    <addaction name="actionEstaciones_a_trabajar"/>
    </widget>
    <widget class="QMenu" name="menuInformacion_Guardada">
     <property name="title">
@@ -259,6 +261,11 @@
   <action name="actionTiempos_Astrales_a_NOAA">
    <property name="text">
     <string>Tiempos Astrales a NOAA</string>
+   </property>
+  </action>
+  <action name="actionEstaciones_a_trabajar">
+   <property name="text">
+    <string>Estaciones a trabajar...</string>
    </property>
   </action>
  </widget>

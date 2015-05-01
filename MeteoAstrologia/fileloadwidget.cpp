@@ -108,14 +108,23 @@ void fileLoadWidget::refresh(){
     };
 }
 
-bool fileLoadWidget::processDiaryWeather(QString filename){
+bool fileLoadWidget::processDiaryWeather(QString filename)
+{
     qDebug() << "processDiary Weather";
 
-    QString file2 = filename + ".decompressed";
+    QString _filename;
+    if (filename.endsWith(".gz", Qt::CaseInsensitive))
+    {
+        QString file2 = filename + ".decompressed";
 
-    QCompressor::gzipDecompress(filename, file2);
-
-    QFile file(file2);
+        QCompressor::gzipDecompress(filename, file2);
+        _filename = file2;
+    }
+    else
+    {
+        _filename = filename;
+    }
+    QFile file(_filename);
     bool first;
 
     first = true;
@@ -418,15 +427,15 @@ void fileLoadWidget::on_btnDownload_released()
         }
         else if (ui->cboCiudad->currentText() == "Tres Arroyos")
         {
-            url = "ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/087688-99999-2015.op.gz";
+            url = "ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/876880-99999-2015.op.gz";
         }
         else if (ui->cboCiudad->currentText() == "Mar del Plata")
         {
-            url = "ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/08692-99999-2015.op.gz";
+            url = "ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/876960-99999-2015.op.gz";
         }
         else if (ui->cboCiudad->currentText() == "Buenos Aires")
         {
-            url = "ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/087582-99999-2015.op.gz";
+            url = "ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/875820-99999-2015.op.gz";
         }
     }
 
