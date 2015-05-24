@@ -32,6 +32,7 @@ processByCyclesWidget::processByCyclesWidget(QWidget *parent) :
     ui->tipoFechaComboBox->addItems(items);
 
     fechaModel->setTable("estadotiempos");
+//TODO: terminar aca
     phase19Model->setTable("estadotiempos_diarios");
     phase19Model->setSort(0, Qt::AscendingOrder);
     phase37Model->setTable("estadotiempos_diarios");

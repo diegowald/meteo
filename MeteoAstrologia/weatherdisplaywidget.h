@@ -24,6 +24,8 @@ public slots:
     void    changeType(int index);
     
 private:
+    QString usaf() const;
+private:
     Ui::weatherDisplayWidget *ui;
     QSqlTableModel *model;
     QSqlTableModel *datesModel;

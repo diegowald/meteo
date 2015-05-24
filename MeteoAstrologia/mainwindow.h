@@ -70,7 +70,10 @@ public slots:
 
     //void    doBatch();
 
-private:    
+private slots:
+    void on_actionActualizar_Datos_triggered();
+
+private:
     Ui::MainWindow *ui;
     excelExportWidget *excel;
     QSqlDatabase db;

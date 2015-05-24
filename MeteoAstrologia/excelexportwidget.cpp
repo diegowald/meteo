@@ -40,6 +40,15 @@ excelExportWidget::excelExportWidget(QWidget *parent) :
     ui->typeComboBox->addItem("Sunspots", "sunspots");
     ui->typeComboBox->addItem("Corriente Niño", "ENSO");
 
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
+
 }
 
 excelExportWidget::~excelExportWidget()
@@ -162,8 +171,12 @@ void excelExportWidget::filter(){
             };
         };
         filter = filterList.join(" OR ");
-        query.exec(QString("SELECT strftime('%m', fecha) as month, strftime('%Y', fecha) as year, %1 as q FROM %2 WHERE %3 ORDER BY year, month").arg(ui->typeComboBox->itemData(ui->typeComboBox->currentIndex()).toString()).arg(ppTable).arg(filter));
-
+        query.exec(
+                    QString("SELECT strftime('%m', fecha) as month, strftime('%Y', fecha) as year, %1 as q FROM %2 WHERE %3 AND usaf = '%4'' ORDER BY year, month")
+                    .arg(ui->typeComboBox->itemData(ui->typeComboBox->currentIndex()).toString())
+                    .arg(ppTable)
+                    .arg(filter)
+                    .arg(usaf()));
 
         i = 0;
         row = -1;
@@ -276,4 +289,9 @@ void excelExportWidget::excelExport(){
     };
 
     app->setProperty("Visible", true );
+}
+
+QString excelExportWidget::usaf() const
+{
+    return ui->cboEstacion->currentText();
 }

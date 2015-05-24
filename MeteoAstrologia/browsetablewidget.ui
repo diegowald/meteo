@@ -30,6 +30,16 @@
       </spacer>
      </item>
      <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Estacion</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cboEstacion"/>
+     </item>
+     <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
         <string>Tipo:</string>

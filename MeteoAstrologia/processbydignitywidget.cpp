@@ -38,6 +38,15 @@ processByDignityWidget::processByDignityWidget(QWidget *parent) :
     ui->tableView->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(ui->noaaTableView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(noaaMenu(QPoint)));
     connect(ui->tableView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(dailyMenu(QPoint)));
+
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
 }
 
 processByDignityWidget::~processByDignityWidget()
@@ -107,7 +116,9 @@ void processByDignityWidget::doCalc(){
     filter = QString("SELECT DISTINCT fecha FROM posiciones WHERE %1").arg(filterlist.join(" AND "));*/
     resultModel->setFilter(QString("fecha IN (%1)").arg(filter));
     resultModel->select();
-    noaaResultModel->setFilter(QString("fecha IN (%1)").arg(filter.replace(7, 5, "strftime('%Y-%m-%d', fecha)")));
+    noaaResultModel->setFilter(QString("fecha IN (%1) AND usaf = '%2'")
+                               .arg(filter.replace(7, 5, "strftime('%Y-%m-%d', fecha)"))
+                               .arg(usaf()));
     noaaResultModel->select();
     qDebug() << resultModel->query().lastQuery() << resultModel->lastError();
     qDebug() << noaaResultModel->query().lastQuery() << noaaResultModel->lastError();
@@ -241,4 +252,9 @@ void processByDignityWidget::noaaMenu(QPoint pt){
             }
         };
     };
+}
+
+QString processByDignityWidget::usaf() const
+{
+    return ui->cboEstacion->currentText();
 }

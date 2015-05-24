@@ -20,6 +20,8 @@ public slots:
     void    doCalc();
 
 private:
+    QString usaf() const;
+private:
     Ui::weatherToNoaaDialog *ui;
     void    processDay(QDateTime date);
 };

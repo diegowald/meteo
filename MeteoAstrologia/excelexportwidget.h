@@ -30,7 +30,9 @@ public slots:
     void    refreshList();
     void    filter();
     void    excelExport();
-    
+
+private:
+    QString usaf() const;
 private:
     Ui::excelExportWidget *ui;
 

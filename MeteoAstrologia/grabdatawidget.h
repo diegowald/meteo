@@ -31,6 +31,9 @@ public slots:
     void    calculateAstro();
 
 private:
+    QString usaf() const;
+
+private:
     Ui::grabDataWidget *ui;
     bool                sizigia;
     QProcess*           starFisher;

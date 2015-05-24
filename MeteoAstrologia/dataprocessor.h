@@ -212,6 +212,9 @@ public slots:
     void setSigns(bool value){doSigns = value; }
     void setStrongSigns(bool value){doStrongSigns = value; }
     void setWeakSigns(bool value){doWeakSigns = value; }
+    void setUSAF(const QString &usaf) { _usaf = usaf; }
+
+    QString USAF() const { return _usaf; }
 
     void	setWeatherPercent(int percent){  weatherPercent = percent; }
     void	setAspectPercent(int percent){  aspectPercent = percent; }
@@ -237,7 +240,6 @@ public slots:
 
     void    setNOAAWeather(){ this->weatherTable = "estadotiempos_diarios"; }
     void    setAstralWeather(){ this->weatherTable = "validweather"; }
-
 public:
     QList<metAstro::aspectResultParam> aspectsResult;
     QList<metAstro::houseResultParam> housesResult;
@@ -309,6 +311,7 @@ private:
 
     QString lastSqlResult;
     QString weatherTable;
+    QString _usaf;
 };
 
 #endif // DATAPROCESSOR_H

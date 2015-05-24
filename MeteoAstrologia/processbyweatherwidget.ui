@@ -17,6 +17,16 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Estación</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cboEstacion"/>
+     </item>
+     <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
         <string>Estados del Tiempo:</string>

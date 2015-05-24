@@ -66,6 +66,9 @@ public slots:
     void    eraseData();
 
 
+private slots:
+    void on_cboEstacion_currentTextChanged(const QString &arg1);
+
 private:
     QDateTime *timespan;
     QList<metAstro::aspectParameter*> aspects;
@@ -76,6 +79,7 @@ private:
 
     Ui::dataModificationWidget *ui;
     dataProcessor *dataMeaning;
+    QString usaf;
 };
 
 #endif // DATAMODIFICATIONWIDGET_H

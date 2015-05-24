@@ -26,6 +26,16 @@ weatherDisplayWidget::weatherDisplayWidget(QDateTime *current, QWidget *parent) 
     ui->typeComboBox->addItem("Equinoccio de Primavera", "Equinoccio de Primavera");
     ui->typeComboBox->addItem("Equinoccio de Otoño", "Equinoccio de Otoño");
 
+
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
+
     if(current != 0){
         datetime = current;
         /*ui->comboBox->setEnabled(false);
@@ -142,6 +152,8 @@ void weatherDisplayWidget::refresh(){
         filter += " AND tipo = 'normal'";
     };
 
+    filter += QString(" AND usaf = '%1'").arg(usaf());
+
     //filter += " ORDER BY fechas ASC";
     //qDebug() << filter;
     model->setFilter(filter);
@@ -163,4 +175,9 @@ void weatherDisplayWidget::changeType(int index){
     if(cbi == -1) cbi = ui->comboBox->findText(d.toString("yyyy-MM-dd"), Qt::MatchStartsWith);
     if(cbi == -1) cbi = ui->comboBox->findText(d.toString("yyyy-MM"), Qt::MatchStartsWith);
     ui->comboBox->setCurrentIndex(cbi);
+}
+
+QString weatherDisplayWidget::usaf() const
+{
+    return ui->cboEstacion->currentText();
 }

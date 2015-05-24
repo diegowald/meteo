@@ -24,6 +24,9 @@ public slots:
     void    resize();
 
 private:
+    QString usaf() const;
+
+private:
     Ui::monthViewWidget *ui;
     QSqlTableModel /**monthModel,*/ *astroModel, *dailyModel;
     QSqlQueryModel *astralModel;

@@ -20,6 +20,10 @@ public slots:
     void    changeType();
     void    changeTable(int table);
     void    fechaChange(QString date);
+
+private:
+    QString usaf() const;
+
 private:
     Ui::browseTableWidget *ui;
     //QSqlTableModel *comboModel;

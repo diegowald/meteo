@@ -22,6 +22,15 @@ grabDataWidget::grabDataWidget(bool isSizigia, QWidget *parent) :
     /*ui->fechaGroupBox->setEnabled(!sizigia);
     ui->fechaGroupBox->setVisible(!sizigia);*/
     this->wheaterData = new QList<QStringList>;
+
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
 }
 
 grabDataWidget::~grabDataWidget()
@@ -288,8 +297,8 @@ H          codigo 1-12
         if(ui->fullMoonRadioButton->isChecked()) luna = "llena";
         if(ui->newMoonRadioButton->isChecked()) luna = "nueva";
     };
-    query->exec(QString("INSERT INTO estadotiempos (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna) VALUES "
-                        "('%1', %2, %3, %4, %5, %6, %7, '%8', '%9', '%10')")
+    query->exec(QString("INSERT INTO estadotiempos (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna, usaf) VALUES "
+                        "('%1', %2, %3, %4, %5, %6, %7, '%8', '%9', '%10', '%11')")
                 .arg(ui->dateTimeEdit->dateTime().toString("yyyy-MM-dd hh:mm:ss"))
                 .arg(ui->tempMaxDoubleSpinBox->value())
                 .arg(ui->tempMinDoubleSpinBox->value())
@@ -299,7 +308,8 @@ H          codigo 1-12
                 .arg(ui->data1000500SpinBox->value())
                 .arg(ui->observacionesTextEdit->toPlainText())
                 .arg(tipo)
-                .arg(luna));
+                .arg(luna)
+                .arg(usaf()));
     qDebug() << query->lastQuery() << query->lastError();
 
     delete query;
@@ -436,8 +446,8 @@ H          codigo 1-12
         if(ui->fullMoonRadioButton->isChecked()) luna = "llena";
         if(ui->newMoonRadioButton->isChecked()) luna = "nueva";
     };
-    query->exec(QString("INSERT INTO estadotiempos (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna) VALUES "
-                        "('%1', %2, %3, %4, %5, %6, %7, '%8', '%9', '%10')")
+    query->exec(QString("INSERT INTO estadotiempos (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna, usaf) VALUES "
+                        "('%1', %2, %3, %4, %5, %6, %7, '%8', '%9', '%10', '%11')")
                 .arg(ui->dateTimeEdit->dateTime().toString("yyyy-MM-dd hh:mm:ss"))
                 .arg(ui->tempMaxDoubleSpinBox->value())
                 .arg(ui->tempMinDoubleSpinBox->value())
@@ -447,10 +457,16 @@ H          codigo 1-12
                 .arg(ui->data1000500SpinBox->value())
                 .arg(ui->observacionesTextEdit->toPlainText())
                 .arg(tipo)
-                .arg(luna));
+                .arg(luna)
+                .arg(ui->cboEstacion->currentText()));
     qDebug() << query->lastQuery() << query->lastError();
 
     delete query;
 
     close();
+}
+
+QString grabDataWidget::usaf() const
+{
+    return ui->cboEstacion->currentText();
 }

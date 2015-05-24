@@ -11,6 +11,7 @@ dataModificationWidget::dataModificationWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::dataModificationWidget)
 {
+    usaf = "";
     ui->setupUi(this);
     dataMeaning = new dataProcessor();
     ui->typeComboBox->addItem("Normal", "normal");
@@ -24,6 +25,15 @@ dataModificationWidget::dataModificationWidget(QWidget *parent) :
     connect(ui->delButton, SIGNAL(clicked()), this, SLOT(eraseData()));
 
     connect(ui->loadButton, SIGNAL(clicked()), this, SLOT(loadData()));
+
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
     /*connect(ui->aspectsAddButton, SIGNAL(clicked()), this, SLOT(addAspect()));
     connect(ui->aspectsModButton, SIGNAL(clicked()), this, SLOT(modAspect()));
     connect(ui->aspectsDelButton, SIGNAL(clicked()), this, SLOT(delAspect()));
@@ -255,7 +265,7 @@ void dataModificationWidget::saveData(){
     };*/
 
     query->exec(QString("UPDATE estadotiempos SET maxima = %1, minima = %2, vientovel= %3, direccionviento = %4, precipitacion = %5, mil500 = %6, observaciones = %7 "
-                        " WHERE fecha = '%8'")
+                        " WHERE fecha = '%8' AND USAF = '%9'")
                 //.arg(ui->dateTimeEdit->dateTime().toString("yyyy-MM-dd hh:mm:ss"))
                 .arg(ui->tempMaxDoubleSpinBox->value())
                 .arg(ui->tempMinDoubleSpinBox->value())
@@ -265,7 +275,8 @@ void dataModificationWidget::saveData(){
                 .arg(ui->data1000500SpinBox->value())
                 .arg(ui->observacionTextEdit->toPlainText())
                 //.arg(ui->dateComboBox->dateTime().toString("yyyy-MM-dd hh:mm:ss")));
-                .arg(ui->dateComboBox->currentText()));
+                .arg(ui->dateComboBox->currentText())
+                .arg(usaf));
     qDebug() << query->lastQuery() << query->lastError();
 
     delete query;
@@ -568,3 +579,8 @@ void dataModificationWidget::positionModed(metAstro::positionParameter *asp){
     refreshPositions();
 }
 */
+
+void dataModificationWidget::on_cboEstacion_currentTextChanged(const QString &arg1)
+{
+    usaf = arg1;
+}

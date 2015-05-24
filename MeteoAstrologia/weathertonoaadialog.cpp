@@ -9,6 +9,15 @@ weatherToNoaaDialog::weatherToNoaaDialog(QWidget *parent) :
 
     connect(ui->buttonBox, SIGNAL(accepted()), this, SLOT(doCalc()));
     connect(ui->buttonBox, SIGNAL(rejected()), this, SLOT(close()));
+
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
 }
 
 weatherToNoaaDialog::~weatherToNoaaDialog()
@@ -23,7 +32,11 @@ void weatherToNoaaDialog::doCalc()
     QProgressDialog dialog(tr("Calculando "), tr("Cancelar"), 0, ui->desdeDateEdit->date().daysTo(ui->hastaDateEdit->date()), this);
     dialog.setWindowModality(Qt::ApplicationModal);
     dialog.setMinimumDuration(500);
-    query.exec(QString("SELECT * FROM estadotiempos_diarios WHERE fecha >= '%1 00:00:00' AND fecha <= '%2 00:00:00'").arg(ui->desdeDateEdit->date().toString("yyyy-MM-dd")).arg(ui->hastaDateEdit->date().toString("yyyy-MM-dd")));
+    query.exec(
+                QString("SELECT * FROM estadotiempos_diarios WHERE fecha >= '%1 00:00:00' AND fecha <= '%2 00:00:00' AND usaf = '%3'")
+                .arg(ui->desdeDateEdit->date().toString("yyyy-MM-dd"))
+                .arg(ui->hastaDateEdit->date().toString("yyyy-MM-dd"))
+                .arg(usaf()));
     while(query.next() && !dialog.wasCanceled()){
         dialog.setValue(dialog.value() + 1);
         QDateTime date = QDateTime::fromString(query.record().field("fecha").value().toString(), "yyyy-MM-dd");
@@ -92,7 +105,10 @@ void weatherToNoaaDialog::processDay(QDateTime date)
         };
     };
 
-    if(ctemperatura != 0)   select.exec(QString("UPDATE estadotiempos_diarios SET temp_media = %1 WHERE fecha = '%2' AND temp_media = -99").arg(temperatura / ctemperatura).arg(date.toString("yyyy-MM-dd")));
+    if(ctemperatura != 0)   select.exec(QString("UPDATE estadotiempos_diarios SET temp_media = %1 WHERE fecha = '%2' AND temp_media = -99 AND usaf = '%3'")
+                                        .arg(temperatura / ctemperatura)
+                                        .arg(date.toString("yyyy-MM-dd"))
+                                        .arg(usaf()));
     qDebug() << select.lastQuery() << select.lastError();
     if(ctempmax != 0)       select.exec(QString("UPDATE estadotiempos_diarios SET temp_max = %1 WHERE fecha = '%2' AND temp_max = -99").arg(tempmax).arg(date.toString("yyyy-MM-dd")));
     qDebug() << select.lastQuery() << select.lastError();
@@ -109,4 +125,9 @@ void weatherToNoaaDialog::processDay(QDateTime date)
     if(cprecipitaciones !=0)select.exec(QString("UPDATE estadotiempos_diarios SET precipitaciones = %1 WHERE fecha = '%2' AND precipitaciones = -99").arg(precipitaciones).arg(date.toString("yyyy-MM-dd")));
     qDebug() << select.lastQuery() << select.lastError();
 
+}
+
+QString weatherToNoaaDialog::usaf() const
+{
+    return ui->cboEstacion->currentText();
 }

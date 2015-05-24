@@ -47,6 +47,15 @@ processByMonths::processByMonths(QWidget *parent) :
     connect(ui->monthResultTableView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(monthMenu(QPoint)));
     connect(ui->dayResultTableView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(dayMenu(QPoint)));
     connect(ui->noaaResultTableView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(noaaMenu(QPoint)));
+
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
 }
 
 processByMonths::~processByMonths()
@@ -69,7 +78,8 @@ void processByMonths::weatherChange(QModelIndex index){
     QModelIndex dato = indexes.at(0).sibling(indexes.at(0).row(), 0);
     weatherModel->setFilter(QString("fecha LIKE '%1-%'").arg(dato.data().toString()));
     weatherModel->select();
-    noaaModel->setFilter(QString("fecha LIKE '%1-%'").arg(dato.data().toString()));
+    noaaModel->setFilter(QString("fecha LIKE '%1-%' AND usaf = '%2'").arg(dato.data().toString())
+                         .arg(usaf()));
     noaaModel->select();
     qDebug()<< noaaModel->query().lastQuery() << noaaModel->lastError();
     ui->dayResultTableView->resizeColumnsToContents();
@@ -133,7 +143,12 @@ void processByMonths::doCalc(){
     double rainmax, rainmin;
     rainmax = ui->lluviasDoubleSpinBox->value() + ui->toleranciaDoubleSpinBox->value();
     rainmin = ui->lluviasDoubleSpinBox->value() - ui->toleranciaDoubleSpinBox->value();
-    resultModel->setQuery(QString("SELECT strftime('%Y-%m', fecha) as result, strftime('%m', fecha) as month FROM estadotiempos_mensuales WHERE month = '%1' AND precipitaciones >= %2 AND precipitaciones <=%3 ORDER BY result").arg(QString("%1").arg(ui->mesSpinBox->value()).rightJustified(2, '0')).arg(rainmin).arg(rainmax));
+    resultModel->setQuery(QString("SELECT strftime('%Y-%m', fecha) as result, strftime('%m', fecha) as month FROM estadotiempos_mensuales WHERE month = '%1' AND precipitaciones >= %2 AND precipitaciones <=%3 AND usaf = '%4' ORDER BY result")
+                          .arg(QString("%1")
+                               .arg(ui->mesSpinBox->value()).rightJustified(2, '0'))
+                          .arg(rainmin)
+                          .arg(rainmax)
+                          .arg(usaf()));
     qDebug() << resultModel->query().lastQuery() << resultModel->lastError();
 }
 
@@ -226,4 +241,9 @@ void processByMonths::noaaMenu(QPoint pt)
             }
         };
     };
+}
+
+QString processByMonths::usaf() const
+{
+    return ui->cboEstacion->currentText();
 }

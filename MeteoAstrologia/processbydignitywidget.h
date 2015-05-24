@@ -33,6 +33,9 @@ public slots:
     void    noaaMenu(QPoint pt);
 
 private:
+    QString usaf() const;
+
+private:
     Ui::processByDignityWidget *ui;
     QList<metAstro::dignityParam> dignityList;
 

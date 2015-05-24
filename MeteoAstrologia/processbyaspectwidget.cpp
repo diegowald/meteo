@@ -31,6 +31,15 @@ processByAspectWidget::processByAspectWidget(QWidget *parent) :
     astroModel->setTable("view_estadotiempos");
     signModel->setTable("pedro");
 
+
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
+
     refreshResult();
 
     connect(ui->addlButton, SIGNAL(clicked()), this, SLOT(add()));

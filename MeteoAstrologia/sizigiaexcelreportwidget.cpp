@@ -50,6 +50,14 @@ sizigiaExcelReportWidget::sizigiaExcelReportWidget(QWidget *parent) :
 
     ui->fechaComboBox->setModel(fechaTable);
 
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
+
     typeChange(ui->tipoDeDatoComboBox->currentText());
 }
 
@@ -114,24 +122,37 @@ void sizigiaExcelReportWidget::filter(){
     QString value = ui->tipoDeDatoComboBox->currentText();
     QDateTime selectedTime;
     QString ppTable;
-    if(value.startsWith("Sizigia")){
+    if(value.startsWith("Sizigia"))
+    {
         selectedTime = QDateTime::fromString(ui->fechaComboBox->currentText(), "yyyy-MM-dd hh:mm:ss");
-        query.exec(QString("SELECT * FROM estadotiempos_diarios WHERE fecha >= '%1' AND fecha <='%2'").arg(ui->fechaComboBox->currentText()).arg(selectedTime.addDays(28).toString("yyyy-MM-dd hh:mm:ss")));
-    };
-    if(value.startsWith("Solsticio") || value.startsWith("Equinoccios")){
+        query.exec(QString("SELECT * FROM estadotiempos_diarios WHERE fecha >= '%1' AND fecha <='%2' AND usaf = '%3'")
+                   .arg(ui->fechaComboBox->currentText())
+                   .arg(selectedTime.addDays(28).toString("yyyy-MM-dd hh:mm:ss"))
+                   .arg(usaf()));
+    }
+    if(value.startsWith("Solsticio") || value.startsWith("Equinoccios"))
+    {
         selectedTime = QDateTime::fromString(ui->fechaComboBox->currentText(), "yyyy-MM-dd hh:mm:ss");
-        query.exec(QString("SELECT * FROM estadotiempos_diarios WHERE fecha >= '%1' AND fecha <='%2'").arg(ui->fechaComboBox->currentText()).arg(selectedTime.addMonths(3).toString("yyyy-MM-dd hh:mm:ss")));
-    };
+        query.exec(QString("SELECT * FROM estadotiempos_diarios WHERE fecha >= '%1' AND fecha <='%2' AND usaf = '%3'")
+                   .arg(ui->fechaComboBox->currentText())
+                   .arg(selectedTime.addMonths(3).toString("yyyy-MM-dd hh:mm:ss"))
+                   .arg(usaf()));
+    }
 
-    if(value.contains("Pto. Primordial")){
+    if(value.contains("Pto. Primordial"))
+    {
         selectedTime = QDateTime::fromString(ui->fechaComboBox->currentText(), "yyyy-MM-dd");
         ppTable = ui->aExportarComboBox->itemData(ui->aExportarComboBox->currentIndex()).toString();
         //ppTable = ui->tipoDeDatoComboBox->itemData(ui->tipoDeDatoComboBox->currentIndex()).toString();
         qDebug() << ppTable;
-        query.exec(QString("SELECT * FROM view_estadotiempos_mensuales WHERE fecha >= '%1-01' AND fecha <='%2-01'").arg(selectedTime.toString("yyyy-MM")).arg(selectedTime.addYears(1).toString("yyyy-MM")));
-    };
+        query.exec(QString("SELECT * FROM view_estadotiempos_mensuales WHERE fecha >= '%1-01' AND fecha <='%2-01' AND usaf = '%3'")
+                   .arg(selectedTime.toString("yyyy-MM"))
+                   .arg(selectedTime.addYears(1).toString("yyyy-MM"))
+                   .arg(usaf()));
+    }
 
-    if(value.contains("Pto. Primordial") && !ui->allInCheckBox->isChecked()){
+    if(value.contains("Pto. Primordial") && !ui->allInCheckBox->isChecked())
+    {
         qDebug() << query.lastQuery() << query.lastError();
         //fechaTable->setQuery(QString("SELECT fecha FROM puntosprimordiales WHERE tipo = '%1' ORDER BY fecha").arg(ui->tipoDeDatoComboBox->itemData(ui->tipoDeDatoComboBox->currentIndex())));
         QDate tempDate;
@@ -238,3 +259,7 @@ void sizigiaExcelReportWidget::test(){
     app->setProperty("Visible", true );
 }
 
+QString sizigiaExcelReportWidget::usaf() const
+{
+    return ui->cboEstacion->currentText();
+}

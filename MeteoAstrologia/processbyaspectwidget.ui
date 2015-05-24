@@ -23,6 +23,16 @@
       <number>10</number>
      </property>
      <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Estación</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cboEstacion"/>
+     </item>
+     <item>
       <widget class="QLabel" name="label">
        <property name="text">
         <string>Aspectos:</string>

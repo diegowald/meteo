@@ -20,6 +20,9 @@ public:
     static int  moonTolerance;
     static int  sunTolerance;
 
+private:
+    QString usaf() const;
+
 public slots:
     void    test();
     void    exportToExcel();

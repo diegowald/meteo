@@ -186,14 +186,15 @@ void dataProcessor::processWeather(){
     };
 
     querystring = "SELECT strftime('%Y-%m-%d', fecha) as fecha FROM " + weatherTable;
+    Q_ASSERT(_usaf.length() > 0);
     if(doStrongWeathers){
         if(!strongWeatherQuery.isEmpty()){
-            querystring += " WHERE " + strongWeatherQuery.join(" AND ");
+            querystring += " WHERE usaf = '" + _usaf + "'" + strongWeatherQuery.join(" AND ");
         };
     }else{
         if(doWeakWeathers){
             if(!weakWeatherQuery.isEmpty()){
-                querystring += " WHERE " + strongWeatherQuery.join(" OR ");
+                querystring += " WHERE usaf = '" + _usaf + "'" + strongWeatherQuery.join(" OR ");
             };
         };
     };

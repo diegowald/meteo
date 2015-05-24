@@ -45,6 +45,16 @@ monthViewWidget::monthViewWidget(QWidget *parent) :
     }
 
     changeCombo("Posiciones");
+
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
+
     resize();
 }
 
@@ -64,7 +74,7 @@ void monthViewWidget::selectedMonth(QModelIndex index){
     data = data.sibling(data.row(), 0);
     qDebug() << data.data().toDateTime().toString("yyyy-MM-dd");
     astroModel->setFilter(QString("fecha LIKE '%1%'").arg(data.data().toDateTime().toString("yyyy-MM")));
-    dailyModel->setFilter(QString("fecha LIKE '%1%'").arg(data.data().toDateTime().toString("yyyy-MM")));
+    dailyModel->setFilter(QString("fecha LIKE '%1%' AND usaf = '%2'").arg(data.data().toDateTime().toString("yyyy-MM")).arg(usaf()));
     qDebug() << astroModel->lastError() << astroModel->query().lastQuery();
     qDebug() << dailyModel->lastError() << dailyModel->query().lastQuery();
     changeCombo(ui->astralComboBox->currentText());
@@ -151,4 +161,9 @@ void monthViewWidget::resize()
     ui->astroDailyTableView->resizeColumnsToContents();
     ui->dailyTableView->resizeColumnsToContents();
     ui->monthTableView->resizeColumnsToContents();
+}
+
+QString monthViewWidget::usaf() const
+{
+    return ui->cboEstacion->currentText();
 }

@@ -32,6 +32,9 @@ public slots:
     void    noaaMenu(QPoint pt);
 
 private:
+    QString usaf() const;
+
+private:
     Ui::processByMonths *ui;
     QSqlTableModel *positionModel, *aspectsModel, *quadrantsModel, *signsModel, *housesModel, *weatherModel, *noaaModel;
     QSqlQueryModel *resultModel;

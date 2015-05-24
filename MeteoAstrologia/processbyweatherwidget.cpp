@@ -32,6 +32,14 @@ processByWeatherWidget::processByWeatherWidget(QWidget *parent) :
     ui->desdeLaTablaComboBox->addItem("Astral", "validweather");
     ui->desdeLaTablaComboBox->addItem("NOAA", "estadotiempos_diarios");
 
+    QSqlQuery query;
+    query.exec("SELECT * FROM STATIONS WHERE SELECTED = 1;");
+    ui->cboEstacion->clear();
+    while (query.next())
+    {
+        ui->cboEstacion->addItem(query.record().field("USAF").value().toString());
+    }
+    ui->cboEstacion->setCurrentIndex(0);
     ui->datesList->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(ui->datesList, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(dayMenu(QPoint)));
 }
@@ -216,6 +224,7 @@ void processByWeatherWidget::doFilter(){
     for(int i = 0; i < weatherList.count(); i++){
         information->addWeather(weatherList.at(i));
     };
+    information->setUSAF(usaf());
     information->processWeather();
     QList<QDateTime> result = information->getMatchDates();    
     for(int i = 0; i < result.count(); i++){
@@ -258,4 +267,9 @@ void processByWeatherWidget::dayMenu(QPoint pt){
             }
         };
     };
+}
+
+QString processByWeatherWidget::usaf() const
+{
+    return ui->cboEstacion->currentText();
 }

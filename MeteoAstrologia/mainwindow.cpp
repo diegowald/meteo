@@ -21,6 +21,7 @@
 #include "calcptosprimordialesdialog.h"
 #include "monthcalcdialog.h"
 #include "seteoestacioneswidget.h"
+#include "automaticdownloaderwidget.h"
 
 MainWindow* MainWindow::mahself = 0;
 
@@ -63,7 +64,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->actionProceso_por_Posicion_Astral->setVisible(false);
     //ui->actionCalcular_Pto_Primordiales->setVisible(false);
     ui->actionCarga_en_Batch->setEnabled(false);
-    ui->actionCarga_de_Dia->setVisible(false);
+    ui->actionCarga_de_Dia->setVisible(true);
     ui->actionCarga_de_Sizigia->setVisible(false);
     ui->actionCarga_en_Batch->setVisible(false);
 
@@ -1283,4 +1284,10 @@ MainWindow* MainWindow::instance(){
         mahself = new MainWindow();
     };
     return mahself;
+}
+
+void MainWindow::on_actionActualizar_Datos_triggered()
+{
+    AutomaticDownloaderWidget *form =  new AutomaticDownloaderWidget(this);
+    showForm(form);
 }

@@ -58,7 +58,8 @@ SOURCES += main.cpp\
     monthcalcdialog.cpp \
     filedownloader.cpp \
     qcompressor.cpp \
-    seteoestacioneswidget.cpp
+    seteoestacioneswidget.cpp \
+    automaticdownloaderwidget.cpp
 
 HEADERS  += mainwindow.h \
     grabdatawidget.h \
@@ -106,7 +107,8 @@ HEADERS  += mainwindow.h \
     monthcalcdialog.h \
     filedownloader.h \
     qcompressor.h \
-    seteoestacioneswidget.h
+    seteoestacioneswidget.h \
+    automaticdownloaderwidget.h
 
 FORMS    += mainwindow.ui \
     grabdatawidget.ui \
@@ -143,7 +145,8 @@ FORMS    += mainwindow.ui \
     weathertonoaadialog.ui \
     calcptosprimordialesdialog.ui \
     monthcalcdialog.ui \
-    seteoestacioneswidget.ui
+    seteoestacioneswidget.ui \
+    automaticdownloaderwidget.ui
 
 OTHER_FILES += \
     ToDo.txt \

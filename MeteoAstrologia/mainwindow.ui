@@ -72,6 +72,7 @@
     <addaction name="actionRecalcular_datos_Mensuales"/>
     <addaction name="separator"/>
     <addaction name="actionEstaciones_a_trabajar"/>
+    <addaction name="actionActualizar_Datos"/>
    </widget>
    <widget class="QMenu" name="menuInformacion_Guardada">
     <property name="title">
@@ -266,6 +267,11 @@
   <action name="actionEstaciones_a_trabajar">
    <property name="text">
     <string>Estaciones a trabajar...</string>
+   </property>
+  </action>
+  <action name="actionActualizar_Datos">
+   <property name="text">
+    <string>Actualizar Datos...</string>
    </property>
   </action>
  </widget>

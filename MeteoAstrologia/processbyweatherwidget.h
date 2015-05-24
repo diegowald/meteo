@@ -35,6 +35,8 @@ public slots:
 signals:
 
 private:
+    QString usaf() const;
+private:
     Ui::processByWeatherWidget *ui;
     weatherDialog *form;
     QList<metAstro::weatherParameter*> weatherList;
