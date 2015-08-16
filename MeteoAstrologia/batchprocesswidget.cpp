@@ -38,12 +38,19 @@ void BatchProcessWidget::doCalc(){
     ui->progressBar->setEnabled(true);
     dates.exec("BEGIN TRANSACTION");
 
-    dates.exec(QString("SELECT count(fecha) as t FROM estadotiempos WHERE fecha >= '%1' AND fecha <= '%2'").arg(ui->initDateEdit->date().toString("yyyy-MM-dd")).arg(ui->endDateEdit->date().toString("yyyy-MM-dd")));
+    QString _usaf = "diego";
+    dates.exec(QString("SELECT count(fecha) as t FROM estadotiempos_diarios WHERE fecha >= '%1' AND fecha <= '%2' AND usaf = '%3'")
+               .arg(ui->initDateEdit->date().toString("yyyy-MM-dd"))
+               .arg(ui->endDateEdit->date().toString("yyyy-MM-dd"))
+               .arg(_usaf));
     dates.next();
     ui->progressBar->setMaximum(dates.record().field("t").value().toInt());
 
 
-    dates.exec(QString("SELECT fecha FROM estadotiempos WHERE fecha >= '%1' AND fecha <= '%2'").arg(ui->initDateEdit->date().toString("yyyy-MM-dd")).arg(ui->endDateEdit->date().toString("yyyy-MM-dd")));
+    dates.exec(QString("SELECT fecha FROM estadotiempos_diarios WHERE fecha >= '%1' AND fecha <= '%2' AND usaf = '%3'")
+               .arg(ui->initDateEdit->date().toString("yyyy-MM-dd"))
+               .arg(ui->endDateEdit->date().toString("yyyy-MM-dd"))
+               .arg(_usaf));
     qDebug() << dates.lastQuery() << dates.lastError();
     int i = 0;
     while(dates.next()){

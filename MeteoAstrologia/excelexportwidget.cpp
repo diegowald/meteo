@@ -146,7 +146,7 @@ void excelExportWidget::filter(){
     bool isMonth = false;
     int row, column, i;
 
-    if(ui->astralRadio->isChecked()) ppTable = "estadotiempos";
+    if(ui->astralRadio->isChecked()) ppTable = "estadotiempos_diarios"; // Modificacion de diego
     if(ui->noaaRadio->isChecked()) ppTable = "estadotiempos_diarios";
     if(ui->rbdButton->isChecked()) ppTable = "tiempos";
     if(ui->monthRadio->isChecked()){ ppTable = "view_estadotiempos_mensuales"; isMonth = true; };

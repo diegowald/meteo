@@ -20,7 +20,7 @@ void RBDtoWeatherDialog::doCalc()
     QProgressDialog dialog(tr("Calculando "), tr("Cancelar"), 0, ui->desdeDateEdit->date().daysTo(ui->hastaDateEdit->date()), this);
     dialog.setWindowModality(Qt::ApplicationModal);
     dialog.setMinimumDuration(500);
-    query.exec(QString("SELECT * FROM estadotiempos WHERE fecha >= '%1 00:00:00' AND fecha <= '%2 00:00:00'").arg(ui->desdeDateEdit->date().toString("yyyy-MM-dd")).arg(ui->hastaDateEdit->date().toString("yyyy-MM-dd")));
+    query.exec(QString("SELECT * FROM estadotiempos_diarios WHERE fecha >= '%1 00:00:00' AND fecha <= '%2 00:00:00'").arg(ui->desdeDateEdit->date().toString("yyyy-MM-dd")).arg(ui->hastaDateEdit->date().toString("yyyy-MM-dd"))); // Modificacion de diego
     while(query.next() && !dialog.wasCanceled()){
         dialog.setValue(dialog.value() + 1);
         QDateTime date = QDateTime::fromString(query.record().field("fecha").value().toString(), "yyyy-MM-dd hh:mm:ss");
@@ -48,7 +48,7 @@ void RBDtoWeatherDialog::processDay(QDateTime date)
     select.exec(QString("SELECT * FROM tiempos WHERE fecha = '%1'").arg(dates.toString("yyyy-MM-dd hh:mm:ss")));
     qDebug() << select.lastQuery() << select.lastError();
     if(select.next()){
-        insert.exec(QString("UPDATE estadotiempos SET maxima = %1, minima = %2, vientovel = %3, direccionviento = %4"
+        insert.exec(QString("UPDATE estadotiempos_diarios SET maxima = %1, minima = %2, vientovel = %3, direccionviento = %4"
                             ", precipitacion = %5, mil500 = %6 WHERE fecha LIKE '%7'")
                     .arg(select.record().field("maxima").value().toDouble())
                     .arg(select.record().field("minima").value().toDouble())
@@ -57,7 +57,7 @@ void RBDtoWeatherDialog::processDay(QDateTime date)
                     .arg(select.record().field("precipitacion").value().toInt())
                     .arg(select.record().field("mil500").value().toInt())
                     .arg(date.toString("yyyy-MM-dd hh:mm:ss"))
-                    );
+                    ); // Modificacion de diego
         qDebug() << insert.lastQuery() << insert.lastError();
     };
 }

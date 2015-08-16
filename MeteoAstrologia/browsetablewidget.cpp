@@ -39,7 +39,7 @@ browseTableWidget::browseTableWidget(QWidget *parent) :
     qDebug() << index;
     if(index != -1) ui->datesComboBox->setCurrentIndex(index);*/
     QString type = ui->typeComboBox->itemData(ui->typeComboBox->currentIndex()).toString();
-    fechaModel->setQuery(QString("SELECT DISTINCT fecha FROM estadotiempos WHERE tipo LIKE '%1' AND usaf = '%2' ORDER BY fecha ASC")
+    fechaModel->setQuery(QString("SELECT DISTINCT fecha FROM estadotiempos_diarios WHERE tipo LIKE '%1' AND usaf = '%2' ORDER BY fecha ASC")
                          .arg(type)
                          .arg(usaf()));
     while(fechaModel->canFetchMore()) fechaModel->fetchMore();
@@ -67,8 +67,10 @@ void browseTableWidget::changeType()
     model->setTable(tablename);
     //qDebug() << model->lastError();
     model->select();*/
+    QString _usaf = "diego";
     QString fecha = ui->datesComboBox->currentText();
-    fechaModel->setQuery(QString("SELECT DISTINCT fecha FROM estadotiempos WHERE tipo LIKE '%1' ORDER BY fecha ASC").arg(type));
+    fechaModel->setQuery(QString("SELECT DISTINCT fecha FROM estadotiempos_diarios WHERE tipo LIKE '%1' and usaf = '%2' ORDER BY fecha ASC")
+                         .arg(type).arg(_usaf));
     while(fechaModel->canFetchMore()) fechaModel->fetchMore();
     int index = ui->datesComboBox->findText(fecha, Qt::MatchStartsWith);
     if(index != -1) ui->datesComboBox->setCurrentIndex(index);

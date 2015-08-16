@@ -42,8 +42,10 @@ batchAstrologicGrabData::~batchAstrologicGrabData()
 
 void batchAstrologicGrabData::loadFechas(){
     QSqlQuery *query = new QSqlQuery();
-
-    query->exec(QString("SELECT fecha, tipo FROM estadotiempos WHERE fecha >= '%1'").arg(ui->dateEdit->date().toString("yyyy-MM-dd")));
+QString _usaf = "diego";
+    query->exec(QString("SELECT fecha, tipo FROM estadotiempos_diarios WHERE fecha >= '%1' AND usaf = '%2'")
+                .arg(ui->dateEdit->date().toString("yyyy-MM-dd")
+                     .arg(_usaf)));
 
     qDebug() << query->lastQuery() << query->lastError();
     while(query->next()){

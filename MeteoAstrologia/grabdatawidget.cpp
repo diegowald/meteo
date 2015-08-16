@@ -297,7 +297,9 @@ H          codigo 1-12
         if(ui->fullMoonRadioButton->isChecked()) luna = "llena";
         if(ui->newMoonRadioButton->isChecked()) luna = "nueva";
     };
-    query->exec(QString("INSERT INTO estadotiempos (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna, usaf) VALUES "
+
+    // Modificacion de diego
+    query->exec(QString("INSERT INTO estadotiempos_diarios (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna, usaf) VALUES "
                         "('%1', %2, %3, %4, %5, %6, %7, '%8', '%9', '%10', '%11')")
                 .arg(ui->dateTimeEdit->dateTime().toString("yyyy-MM-dd hh:mm:ss"))
                 .arg(ui->tempMaxDoubleSpinBox->value())
@@ -446,7 +448,8 @@ H          codigo 1-12
         if(ui->fullMoonRadioButton->isChecked()) luna = "llena";
         if(ui->newMoonRadioButton->isChecked()) luna = "nueva";
     };
-    query->exec(QString("INSERT INTO estadotiempos (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna, usaf) VALUES "
+     // Modificacion de diego
+    query->exec(QString("INSERT INTO estadotiempos_diarios (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna, usaf) VALUES "
                         "('%1', %2, %3, %4, %5, %6, %7, '%8', '%9', '%10', '%11')")
                 .arg(ui->dateTimeEdit->dateTime().toString("yyyy-MM-dd hh:mm:ss"))
                 .arg(ui->tempMaxDoubleSpinBox->value())

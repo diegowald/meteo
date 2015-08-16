@@ -10,7 +10,7 @@ weatherDisplayWidget::weatherDisplayWidget(QDateTime *current, QWidget *parent) 
     model = new QSqlTableModel();
     model->setTable("estadotiempos_diarios");
     datesModel = new QSqlTableModel();
-    datesModel->setTable("estadotiempos");
+    datesModel->setTable("estadotiempos_diarios"); // Modificacion de diego
     ui->comboBox->setModel(datesModel);
     ui->comboBox->setModelColumn(1);
     datesModel->select();

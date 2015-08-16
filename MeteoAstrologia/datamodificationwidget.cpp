@@ -63,7 +63,7 @@ dataModificationWidget::~dataModificationWidget()
 void dataModificationWidget::changeType(){
     QSqlQuery *query = new QSqlQuery();
     ui->dateComboBox->clear();
-    query->exec(QString("SELECT DISTINCT fecha FROM estadotiempos WHERE tipo LIKE '%1' ORDER BY fecha").arg(ui->typeComboBox->itemData(ui->typeComboBox->currentIndex()).toString()));
+    query->exec(QString("SELECT DISTINCT fecha FROM estadotiempos_diarios WHERE tipo LIKE '%1' ORDER BY fecha").arg(ui->typeComboBox->itemData(ui->typeComboBox->currentIndex()).toString())); // Modificacion de diego
     qDebug() << query->lastQuery() << query->lastError();
     while(query->next()){
         ui->dateComboBox->addItem(query->record().field("fecha").value().toString());
@@ -168,7 +168,7 @@ void dataModificationWidget::loadData(){
     };*/
 
     //weather
-    query->exec(QString("SELECT * FROM estadotiempos WHERE fecha = '%1'").arg(ui->dateComboBox->currentText()));
+    query->exec(QString("SELECT * FROM estadotiempos_diarios WHERE fecha = '%1'").arg(ui->dateComboBox->currentText()));  // Modificacion de diego
     query->next();
     /*maxima	minima	vientovel	direccionviento	precipitacion	mil500	observaciones*/
     ui->data1000500SpinBox->setValue(query->record().field("mil500").value().toInt());
@@ -264,7 +264,8 @@ void dataModificationWidget::saveData(){
         qDebug() << query->lastQuery() << query->lastError();
     };*/
 
-    query->exec(QString("UPDATE estadotiempos SET maxima = %1, minima = %2, vientovel= %3, direccionviento = %4, precipitacion = %5, mil500 = %6, observaciones = %7 "
+     // Modificacion de diego
+    query->exec(QString("UPDATE estadotiempos_diarios SET maxima = %1, minima = %2, vientovel= %3, direccionviento = %4, precipitacion = %5, mil500 = %6, observaciones = %7 "
                         " WHERE fecha = '%8' AND USAF = '%9'")
                 //.arg(ui->dateTimeEdit->dateTime().toString("yyyy-MM-dd hh:mm:ss"))
                 .arg(ui->tempMaxDoubleSpinBox->value())
@@ -286,7 +287,7 @@ void dataModificationWidget::saveData(){
 void dataModificationWidget::eraseData(){
     QSqlQuery *query = new QSqlQuery();
 
-    query->exec(QString("DELETE FROM estadotiempos WHERE fecha = '%1'").arg(ui->dateComboBox->currentText()));
+    query->exec(QString("DELETE FROM estadotiempos_diarios WHERE fecha = '%1'").arg(ui->dateComboBox->currentText()));  // Modificacion de diego
     qDebug() << query->lastQuery() << query->lastError();
 
     query->exec(QString("DELETE FROM aspectariums WHERE fecha = '%1'").arg(ui->dateComboBox->currentText()));

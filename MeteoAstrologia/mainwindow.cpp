@@ -64,9 +64,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->actionProceso_por_Posicion_Astral->setVisible(false);
     //ui->actionCalcular_Pto_Primordiales->setVisible(false);
     ui->actionCarga_en_Batch->setEnabled(false);
-    ui->actionCarga_de_Dia->setVisible(true);
+    ui->actionCarga_de_Dia->setVisible(false);
     ui->actionCarga_de_Sizigia->setVisible(false);
     ui->actionCarga_en_Batch->setVisible(false);
+
+    ui->actionCarga_de_Archivos->setVisible(false);
 
     date = QDateTime::currentDateTime();
 }
@@ -282,7 +284,7 @@ void MainWindow::refreshWeather(){
             };
 
             //query->exec(QString("SELECT *, date(fecha) as t FROM estadotiempos WHERE t = '%1'").arg(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")).toString("yyyy-MM-dd")));
-            query->exec(QString("SELECT *, date(fecha) as t, time(fecha) as h, timediff(time(fecha), '%1:00:00') as dif, hour(timediff(time(fecha), '%1:00:00')) * 60 + minute(timediff(time(fecha), '%1:00:00')) as minutes FROM estadotiempos WHERE date(fecha) = '%2'").arg(parsed.at(0).mid(9,2)).arg(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")).toString("yyyy-MM-dd")));
+            query->exec(QString("SELECT *, date(fecha) as t, time(fecha) as h, timediff(time(fecha), '%1:00:00') as dif, hour(timediff(time(fecha), '%1:00:00')) * 60 + minute(timediff(time(fecha), '%1:00:00')) as minutes FROM estadotiempos_diarios WHERE date(fecha) = '%2'").arg(parsed.at(0).mid(9,2)).arg(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")).toString("yyyy-MM-dd")));  // Modificacion de diego
 
             /*if(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")) < ui->dateTimeEdit->date()) continue;
             if(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")) > ui->dateTimeEdit->date()){
@@ -297,7 +299,9 @@ void MainWindow::refreshWeather(){
                     if(precipitaciones >= 990){ precipitaciones = (precipitaciones - 990) / 10; };
                     if(parsed.at(1).toDouble() == -99) continue;
                     if(parsed.at(2).toDouble() == -99) continue;
-                    insert->exec(QString("UPDATE estadotiempos SET maxima = %1, minima = %2, vientovel = %3, direccionviento = %4,"
+
+                    // Modificacion de diego
+                    insert->exec(QString("UPDATE estadotiempos_diarios SET maxima = %1, minima = %2, vientovel = %3, direccionviento = %4,"
                                         "precipitacion = %5 WHERE id = %6 AND maxima = 0 AND minima = 0")
                                 .arg(parsed.at(1).toDouble() == -99 ? 0 : parsed.at(1).toDouble())
                                 .arg(parsed.at(2).toDouble() == -99 ? 0 : parsed.at(2).toDouble())
@@ -329,7 +333,7 @@ void MainWindow::refreshWeather(){
             if(parsed.count("M ", Qt::CaseSensitive) == 2) continue; //no fue tomado
 
             //ui->data1000500SpinBox->setValue(readed.mid(21,7).toInt());
-            query->exec(QString("SELECT *, date(fecha) as t, time(fecha) as h, timediff(time(fecha), '%1:00:00') as dif, hour(timediff(time(fecha), '%1:00:00')) * 60 + minute(timediff(time(fecha), '%1:00:00')) as minutes FROM estadotiempos WHERE date(fecha) = '%2'").arg(parsed.mid(9,2)).arg(QDate::fromString(parsed.mid(1, 8), tr("yyyyMMdd")).toString("yyyy-MM-dd")));
+            query->exec(QString("SELECT *, date(fecha) as t, time(fecha) as h, timediff(time(fecha), '%1:00:00') as dif, hour(timediff(time(fecha), '%1:00:00')) * 60 + minute(timediff(time(fecha), '%1:00:00')) as minutes FROM estadotiempos_diarios WHERE date(fecha) = '%2'").arg(parsed.mid(9,2)).arg(QDate::fromString(parsed.mid(1, 8), tr("yyyyMMdd")).toString("yyyy-MM-dd"))); // Modificacion de diego
 
             /*if(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")) < ui->dateTimeEdit->date()) continue;
             if(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")) > ui->dateTimeEdit->date()){
@@ -340,9 +344,9 @@ void MainWindow::refreshWeather(){
             while(query->next()){
                 qDebug() << query->record().field("minutes").value();
                 if(query->record().field("minutes").value().toInt() < 120){
-                    query->exec(QString("UPDATE estadotiempos SET mil500 = %1 WHERE id = %2")
+                    query->exec(QString("UPDATE estadotiempos_diarios SET mil500 = %1 WHERE id = %2")
                                 .arg(parsed.mid(21,7).toInt())
-                                .arg(query->record().field("id").value().toInt()));
+                                .arg(query->record().field("id").value().toInt())); // Modificacion de diego
                     qDebug() << query->lastQuery() << query->lastError();
                 };
 
@@ -425,11 +429,11 @@ void MainWindow::loadSQLiteData(){
     };
 
     /*("ASPECTARIUM", "CASAS", "CUADRA", "ESTADO", "MESES", "PLANETAS", "POSICIO", "SIGNOS") */
-    lite->exec("SELECT * FROM estadotiempos");
+    lite->exec("SELECT * FROM estadotiempos_diarios");  // Modificacion de diego
     while(lite->next()){
         //qDebug() << lite->record();
         span = QDateTime::fromString(lite->record().field("fecha").value().toString(), QString("ddd d. MMM hh:mm:ss yyyy"));
-        query->exec(QString("INSERT INTO estadotiempos (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo) VALUES "
+        query->exec(QString("INSERT INTO estadotiempos_diarios (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo) VALUES "
                             "('%1', %2, %3, %4, %5, %6, %7, '%8', '%9')")
                     .arg(lite->record().field("fecha").value().toString())
                     .arg(lite->record().field("maxima").value().toDouble())
@@ -439,7 +443,7 @@ void MainWindow::loadSQLiteData(){
                     .arg(lite->record().field("precipitacio").value().toDouble())
                     .arg(lite->record().field("mil500").value().toInt())
                     .arg(lite->record().field("observacione").value().toString())
-                    .arg(lite->record().field("tipo").value().toString()));
+                    .arg(lite->record().field("tipo").value().toString())); // Modificacion de diego
         qDebug() << query->lastQuery() << query->lastError();
     };
 

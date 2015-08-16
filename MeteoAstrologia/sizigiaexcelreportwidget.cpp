@@ -72,12 +72,12 @@ void sizigiaExcelReportWidget::typeChange(QString value){
     qDebug() << value.startsWith("Sizigia");
     qDebug() << value.contains("Pto. Primordia");*/
     if(value.startsWith("Sizigia")){
-        fechaTable->setQuery(QString("SELECT fecha FROM estadotiempos WHERE luna = '%1' ORDER BY fecha").arg(ui->tipoDeDatoComboBox->itemData(ui->tipoDeDatoComboBox->currentIndex()).toString()));
+        fechaTable->setQuery(QString("SELECT fecha FROM estadotiempos_diarios WHERE luna = '%1' ORDER BY fecha").arg(ui->tipoDeDatoComboBox->itemData(ui->tipoDeDatoComboBox->currentIndex()).toString())); // Modificacion de diego
         ui->aExportarComboBox->setEnabled(false);
         ui->allInCheckBox->setEnabled(false);
     };
     if(value.startsWith("Solsticio") || value.startsWith("Equinoccios")){
-        fechaTable->setQuery(QString("SELECT fecha FROM estadotiempos WHERE tipo LIKE '%1' ORDER BY fecha").arg(ui->tipoDeDatoComboBox->itemData(ui->tipoDeDatoComboBox->currentIndex()).toString()));
+        fechaTable->setQuery(QString("SELECT fecha FROM estadotiempos_diarios WHERE tipo LIKE '%1' ORDER BY fecha").arg(ui->tipoDeDatoComboBox->itemData(ui->tipoDeDatoComboBox->currentIndex()).toString())); // Modificacion de diego
         ui->aExportarComboBox->setEnabled(false);
         ui->allInCheckBox->setEnabled(false);
     };

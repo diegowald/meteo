@@ -463,7 +463,7 @@ QString dataProcessor::getSqlResult(processTypeReturn ret){
             sqlquery += "aspectariums";
             break;
         case Weathers:
-            sqlquery += "estadotiempos";
+            sqlquery += "estadotiempos_diarios";  // Modificacion de diego
             break;
         case Houses:
             sqlquery += "casas";

@@ -31,7 +31,7 @@ processByCyclesWidget::processByCyclesWidget(QWidget *parent) :
     items << "Normal" << "Luna llena" << "Luna nueva" << "Equinoccios" << "Solsticios";
     ui->tipoFechaComboBox->addItems(items);
 
-    fechaModel->setTable("estadotiempos");
+    fechaModel->setTable("estadotiempos_diarios"); // Modificacion de diego
 //TODO: terminar aca
     phase19Model->setTable("estadotiempos_diarios");
     phase19Model->setSort(0, Qt::AscendingOrder);
