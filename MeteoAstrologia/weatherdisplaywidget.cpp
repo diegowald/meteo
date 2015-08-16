@@ -17,7 +17,6 @@ weatherDisplayWidget::weatherDisplayWidget(QDateTime *current, QWidget *parent) 
     while(datesModel->canFetchMore()) datesModel->fetchMore();
     ui->tableView->setModel(model);
     datetime = 0;
-    //ui->tableView->hideColumn(0);
 
     ui->typeComboBox->addItem("Normal", "normal");
     ui->typeComboBox->addItem("Mensual", "mensual");
@@ -38,44 +37,24 @@ weatherDisplayWidget::weatherDisplayWidget(QDateTime *current, QWidget *parent) 
 
     if(current != 0){
         datetime = current;
-        /*ui->comboBox->setEnabled(false);
-        ui->typeComboBox->setEnabled(false);*/
     }else{
-        /*qDebug()<< ui->comboBox->currentText();
-        qDebug() << QDateTime::fromString(ui->comboBox->currentText(), "yyyy-MM-dd hh:mm:ss");*/
-        //datetime = new QDateTime(QDateTime::fromString(ui->comboBox->currentText(), "yyyy-MM-dd hh:mm:ss"));
         QDateTime d = MainWindow::instance()->getWorkingDate();
         datetime = &d;
-    };
+    }
     refresh();
 
-    //if(current != 0){
         QModelIndex index;
         QItemSelection selection;
-        /*bool finded = false;
-        int i = 0;
-        QModelIndex index = model->index(0, 1);
-        while(!finded && index.sibling(i, 1).isValid()){
-            if(index.sibling(i, 1).data().toString() == datetime->toString("yyyy-MM-dd hh:mm:ss")){
-                finded = true;
-            }else{
-                i++;
-            };
-        };*/
-        //index = index.sibling(i, 1);
+
         int id = ui->comboBox->findText(datetime->toString("yyyy-MM-dd"), Qt::MatchStartsWith);
         if(id != -1) ui->comboBox->setCurrentIndex(id);
         QModelIndexList list = model->match(model->index(0, 1), Qt::DisplayRole, datetime->toString("yyyy-MM-dd"), 1, Qt::MatchStartsWith);
         if(!list.isEmpty()){
-            //qDebug() << list.at(0);
             index = list.at(0);
             selection.select(index.sibling(index.row(), 0), index.sibling(index.row(), model->columnCount() - 1));
             ui->tableView->selectionModel()->select(selection, QItemSelectionModel::Select);
             ui->tableView->scrollTo(index.sibling(index.row(), 0), QAbstractItemView::PositionAtCenter);
-        };
-
-        //ui->tableView->scrollTo(index.sibling(i, 0), QAbstractItemView::PositionAtBottom);
-    //};
+        }
 
     connect(ui->buttonBox, SIGNAL(rejected()), this, SLOT(close()));
 
@@ -96,49 +75,18 @@ weatherDisplayWidget::~weatherDisplayWidget()
 
 void weatherDisplayWidget::openDate(QModelIndex index){
     //open StarFisher
-    //qDebug() << "Open Starfisher";
     QString currentDate = index.sibling(index.row(), 1).data().toString();
     excelExportWidget* excel = MainWindow::instance()->getExcelExport();
     excel->addDateTime(new QDateTime(QDateTime::fromString(currentDate, "yyyy-MM-dd hh:mm:ss")));
     excel->show();
-    /*QFile starfisherfile("test.sfs");
-    starfisherfile.open(QIODevice::WriteOnly);
-    starfisherfile.write(QString("EventData.New(_auto);"
-                                 "_eventData.Latitude = \"38S43'00\";"
-                                 "_eventData.Longitude = \"62W17'00\";"
-                                 "_eventData.Date = \"%1 GMT-3:00\";"
-                                 "_eventData.Caption = \"test\";"
-                                 "_eventData.Location = \"Bahía Blanca\";"
-                                 "_eventData.Zone = \"America/Argentina/Buenos_Aires\";"
-                                 "_eventData.Note = \"\";"
-                                 "_eventData.Keywords = \"\";"
-                                 "Horoscope.New(\"test\", _settings, _eventData);").arg(currentDate).toAscii());
-    starfisherfile.close();
-
-    QSettings sets("config.ini");
-    sets.beginGroup("program");
-    qDebug() << starFisher->state();
-    //qDebug() << starFisherParser->state();
-    //qDebug() << sets.value("SFfile").toString();
-    if(starFisher->state() == QProcess::NotRunning){
-        starFisher->start(sets.value("SFfile").toString(), QStringList() << qApp->applicationDirPath() + "/" + starfisherfile.fileName());
-    };*/
-    //connect(starFisherParser, SIGNAL(finished(int)), this, SLOT(saveData()));
 }
 
 void weatherDisplayWidget::refresh(){
-    /*if(dynamic_cast<QComboBox*>(sender()) != NULL){
-        delete datetime;
-        datetime = new QDateTime(QDateTime::fromString(ui->comboBox->currentText(), "yyyy-MM-dd hh:mm:ss"));
-    }*/
     QDateTime temp = QDateTime::fromString(ui->comboBox->currentText(), "yyyy-MM-dd hh:mm:ss");
     datetime->setDate(temp.date());
     datetime->setTime(temp.time());
     QString filter;
     setWindowTitle(QString("Rangos de Dias (fecha: %1)").arg(datetime->toString("yyyy-MM-dd hh:mm:ss")));
-    /*qDebug() << "halo";
-    qDebug() << datetime;
-    qDebug() << datetime->toString();*/
     QDateTime date1(*datetime);
     QDateTime date2(*datetime);
     date1 = date1.addDays(-1 * ui->daysSpinBox->value());
@@ -150,12 +98,10 @@ void weatherDisplayWidget::refresh(){
 
     if(!ui->sizigiasCheckBox->isChecked()){
         filter += " AND tipo = 'normal'";
-    };
+    }
 
     filter += QString(" AND usaf = '%1'").arg(usaf());
 
-    //filter += " ORDER BY fechas ASC";
-    //qDebug() << filter;
     model->setFilter(filter);
     model->setSort(0, Qt::AscendingOrder);
     model->select();

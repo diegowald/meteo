@@ -75,13 +75,13 @@ aspectsDialog::aspectsDialog(metAstro::aspectParameter *aspect, bool modif, QWid
         this->meinAspect->minutes = 0; this->meinAspect->minutesTolerance = 0;
         this->meinAspect->seconds = 0; this->meinAspect->secondsTolerance = 0;
         isMod = false;
-    };
+    }
 
     if(modif){
         ui->toleranciaGradosSpinBox->setEnabled(false);
         ui->toleranciaMinutosSpinBox->setEnabled(false);
         ui->toleranciaSegundosSpinBox->setEnabled(false);
-    };
+    }
 
     loadAspect();
 }
@@ -108,14 +108,14 @@ void aspectsDialog::accepted(){
         emit aspectsMod(meinAspect);
     }else{
         emit aspectsAdd(meinAspect);
-    };
+    }
     QDialog::accept();
 }
 
 void aspectsDialog::closed(){
     if(!isMod){
         delete meinAspect;
-    };
+    }
     QDialog::close();
 }
 

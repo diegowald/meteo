@@ -35,9 +35,6 @@ browseTableWidget::browseTableWidget(QWidget *parent) :
     }
     ui->cboEstacion->setCurrentIndex(0);
 
-    /*int index = ui->datesComboBox->findText(MainWindow::instance()->getWorkingDate().toString("yyyy-MM-dd"), Qt::MatchStartsWith);
-    qDebug() << index;
-    if(index != -1) ui->datesComboBox->setCurrentIndex(index);*/
     QString type = ui->typeComboBox->itemData(ui->typeComboBox->currentIndex()).toString();
     fechaModel->setQuery(QString("SELECT DISTINCT fecha FROM estadotiempos_diarios WHERE tipo LIKE '%1' AND usaf = '%2' ORDER BY fecha ASC")
                          .arg(type)
@@ -47,11 +44,8 @@ browseTableWidget::browseTableWidget(QWidget *parent) :
     if(index != -1) ui->datesComboBox->setCurrentIndex(index);
     QString tablename = ui->tableComboBox->itemData(ui->tableComboBox->currentIndex()).toString();
     model->setTable(tablename);
-   // setWindowTitle(QString("Visualizar Tablas de Datos (%1)").arg());
     connect(ui->datesComboBox, SIGNAL(currentIndexChanged(QString)), this, SLOT(fechaChange(QString)));
     fechaChange(ui->datesComboBox->currentText());
-
-
 }
 
 browseTableWidget::~browseTableWidget()
@@ -63,11 +57,7 @@ browseTableWidget::~browseTableWidget()
 void browseTableWidget::changeType()
 {
     QString type = ui->typeComboBox->itemData(ui->typeComboBox->currentIndex()).toString();
-   /* model->clear();
-    model->setTable(tablename);
-    //qDebug() << model->lastError();
-    model->select();*/
-    QString _usaf = "diego";
+    QString _usaf = ""; // TODO: diego chequear aca
     QString fecha = ui->datesComboBox->currentText();
     fechaModel->setQuery(QString("SELECT DISTINCT fecha FROM estadotiempos_diarios WHERE tipo LIKE '%1' and usaf = '%2' ORDER BY fecha ASC")
                          .arg(type).arg(_usaf));
@@ -78,20 +68,13 @@ void browseTableWidget::changeType()
 }
 
 void browseTableWidget::changeTable(int table){
-    //QString tablename = ui->tableComboBox->itemData(table).toString();
     QString tablename = ui->tableComboBox->itemData(ui->tableComboBox->currentIndex()).toString();
-    //QString type = ui->typeComboBox->itemData(ui->typeComboBox->currentIndex()).toString();
     model->clear();
     model->setTable(tablename);
     model->setFilter(QString("fecha = '%1' AND usaf = '%2'")
                      .arg(ui->datesComboBox->currentText())
                      .arg(usaf()));
-    //qDebug() << model->lastError();
     model->select();
-
-    /*fechaModel->setQuery(QString("SELECT DISTINCT fecha FROM estadotiempos WHERE tipo LIKE '%1' ORDER BY fecha ASC").arg(type));
-    while(fechaModel->canFetchMore()) fechaModel->fetchMore();*/
-    //qDebug() << fechaModel->query().lastQuery() << fechaModel->lastError();
 }
 
 void browseTableWidget::fechaChange(QString date){

@@ -138,7 +138,7 @@ void processDataWidget::refreshAspect(){
         ui->aspectTableWidget->setItem(i, 6, new QTableWidgetItem(QString("%1").arg(asp->minutesTolerance)));
         ui->aspectTableWidget->setItem(i, 7, new QTableWidgetItem(QString("%1").arg(asp->seconds)));
         ui->aspectTableWidget->setItem(i, 8, new QTableWidgetItem(QString("%1").arg(asp->secondsTolerance)));
-    };
+    }
 
 }
 void processDataWidget::refreshWeather(){
@@ -155,7 +155,7 @@ void processDataWidget::refreshWeather(){
         ui->weatherTableWidget->setItem(i, 0, new QTableWidgetItem(wea->parameter));
         ui->weatherTableWidget->setItem(i, 1, new QTableWidgetItem(QString("%1").arg(wea->value)));
         ui->weatherTableWidget->setItem(i, 2, new QTableWidgetItem(QString("%1").arg(wea->tolerance)));
-    };
+    }
 }
 
 void processDataWidget::processAspect(){

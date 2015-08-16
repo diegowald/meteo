@@ -6,13 +6,13 @@ QString utils::addSlashes(QString value){
         if(value.at(i).toLatin1() == '\''){
                 result.append("\\'");
                 continue;
-        };
+        }
         if(value.at(i).toLatin1() == '\\'){
             result.append("\\\\");
             continue;
-        };
+        }
         result.append(value.at(i));
-    };
+    }
     return result;
 }
 
@@ -83,5 +83,4 @@ QString utils::zodiacName(int sign){
     if(sign == 10) return "Capricornio";
     if(sign == 11) return "Acuario";
     if(sign == 12) return "Pisis";
-
 }

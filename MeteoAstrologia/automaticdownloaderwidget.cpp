@@ -333,13 +333,11 @@ bool AutomaticDownloaderWidget::processDiarySunspots(const QString &filename){
                         querystring = querystring.arg(line.mid(0, 4));
                         querystring = querystring.arg(line.mid(4, 2));
                         querystring = querystring.arg(line.mid(6, 2));
-                        //querystring = querystring.arg(line.mid(10,5));
                         querystring = querystring.arg(rec[2]);
                         querystring = querystring.arg(usaf);
                     }
                     query.exec(querystring);
 
-                    //qDebug() << query.lastQuery() << query.lastError();
                 }
             }
         }
@@ -425,25 +423,12 @@ void AutomaticDownloaderWidget::generarListadoArchivosADescargar()
         query.exec(QString("SELECT BEGINDATA, ENDDATA FROM STATIONS WHERE USAF || '-' || WBAN = '%1';").arg(estacion));
         while(query.next())
         {
-            /*
-            QString beginData = query.record().field("BEGINDATA").value().toString();
-            QString endData = query.record().field("ENDDATA").value().toString();
-            En realidad BeginData y END Data no son validos
-            */
-            //for (int i = beginData.left(4).toInt(); i <= endData.left(4).toInt(); ++i)
             for (int i = 1901; i <= QDate::currentDate().year(); ++i)
             {
                 QString filename = filePattern.arg(estacion).arg(i);
                 QString url = urlPattern.arg(i).arg(filename);
                 addFile(filename, url, "Estado Tiempo");
             }
-            /*int year = QDate::currentDate().year();
-            if (endData.left(4).toInt() < year)
-            {
-                QString filename = filePattern.arg(estacion).arg(year);
-                QString url = urlPattern.arg(year).arg(filename);
-                addFile(filename, url, "Estado Tiempo");
-            }*/
         }
     }
 

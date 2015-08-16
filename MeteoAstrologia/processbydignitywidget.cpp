@@ -23,7 +23,6 @@ processByDignityWidget::processByDignityWidget(QWidget *parent) :
     ui->tipoComboBox->addItems(items);
     fechaModel->setTable("view_estadotiempos");
     fechaModel->select();
-    //resultModel->setTable("validweather");
     resultModel->setTable("view_estadotiempos");
     noaaResultModel->setTable("estadotiempos_diarios");
     ui->tableView->setModel(resultModel);
@@ -80,7 +79,6 @@ void processByDignityWidget::add(){
 
 void processByDignityWidget::doCalc(){
     QString filter, filterTemp;
-    //QStringList filterlist;
     metAstro::dignityParam param;
 
     foreach(param, dignityList){
@@ -92,28 +90,14 @@ void processByDignityWidget::doCalc(){
            filterTemp = QString("(planeta = %1 AND (signo = %2 OR signo = %3))").arg(param.planet).arg(sign).arg(sign2);
        }else{
            filterTemp = QString("(planeta = %1 AND signo = %2)").arg(param.planet).arg(sign);
-       };
+       }
        if(filter == ""){
            filter = QString("SELECT fecha FROM posiciones WHERE fecha IN (SELECT DISTINCT fecha FROM posiciones WHERE %1)").arg(filterTemp);
        }else{
            filter = QString("SELECT fecha FROM posiciones WHERE fecha IN (%1) AND fecha IN (SELECT DISTINCT fecha FROM posiciones WHERE %2)").arg(filter).arg(filterTemp);
-       };
-   };
+       }
+   }
 
-
-   /* foreach(param, dignityList){
-        int sign = information->getSignByDignity(param);
-        if(sign == 0) continue;
-        if(sign > 12){
-            int sign2 = sign / 100;
-            sign = sign - (sign2 * 100);
-            filterlist << QString("(planeta = %1 AND (signo = %2 OR signo = %3))").arg(param.planet).arg(sign).arg(sign2);
-        }else{
-            filterlist << QString("(planeta = %1 AND signo = %2)").arg(param.planet).arg(sign);
-        };
-    };
-
-    filter = QString("SELECT DISTINCT fecha FROM posiciones WHERE %1").arg(filterlist.join(" AND "));*/
     resultModel->setFilter(QString("fecha IN (%1)").arg(filter));
     resultModel->select();
     noaaResultModel->setFilter(QString("fecha IN (%1) AND usaf = '%2'")
@@ -136,7 +120,7 @@ void processByDignityWidget::refresh(){
         metAstro::dignityParam param = dignityList.at(i);
         ui->dignityTableWidget->setItem(i, 0, new QTableWidgetItem(utils::planetName(param.planet)));
         ui->dignityTableWidget->setItem(i, 1, new QTableWidgetItem(information->getDignityName(param.dignity)));
-    };
+    }
 }
 
 void processByDignityWidget::calcDignity(){
@@ -154,26 +138,26 @@ void processByDignityWidget::calcDignity(){
             param.planet = planet;
             param.dignity = metAstro::Rules;
             dignityList << param;
-        };
+        }
         if(dignities & metAstro::Exaltation){
             metAstro::dignityParam param;
             param.planet = planet;
             param.dignity = metAstro::Exaltation;
             dignityList << param;
-        };
+        }
         if(dignities & metAstro::Detriment){
             metAstro::dignityParam param;
             param.planet = planet;
             param.dignity = metAstro::Detriment;
             dignityList << param;
-        };
+        }
         if(dignities & metAstro::Fall){
             metAstro::dignityParam param;
             param.planet = planet;
             param.dignity = metAstro::Fall;
             dignityList << param;
-        };
-    };
+        }
+    }
     refresh();
 }
 
@@ -188,7 +172,7 @@ void processByDignityWidget::dateTypeChanged(QString value){
     fechaModel->select();
     while(fechaModel->canFetchMore()){
         fechaModel->fetchMore();
-    };
+    }
     qDebug() << MainWindow::instance()->getWorkingDate().toString("yyyy-MM-dd");
     int index = ui->fechaComboBox->findText(MainWindow::instance()->getWorkingDate().toString("yyyy-MM-dd"), Qt::MatchContains);
     qDebug() << index;
@@ -212,7 +196,7 @@ void processByDignityWidget::dailyMenu(QPoint pt){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->tableView->rootIndex();
@@ -221,8 +205,8 @@ void processByDignityWidget::dailyMenu(QPoint pt){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 void processByDignityWidget::noaaMenu(QPoint pt){
@@ -241,7 +225,7 @@ void processByDignityWidget::noaaMenu(QPoint pt){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->noaaTableView->rootIndex();
@@ -250,8 +234,8 @@ void processByDignityWidget::noaaMenu(QPoint pt){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 QString processByDignityWidget::usaf() const

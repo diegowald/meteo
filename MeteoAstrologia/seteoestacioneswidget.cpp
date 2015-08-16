@@ -62,7 +62,7 @@ void SeteoEstacionesWidget::processEstaciones(const QString &filename)
         while(!file.atEnd())
         {
             QString line(file.readLine());
-            if(first){ first = false; continue; };
+            if(first){ first = false; continue; }
             line = line.replace('\"', "").replace('\n', "");
             QStringList fields = line.split(',');
             QString querystring, selectstring;
@@ -76,15 +76,15 @@ void SeteoEstacionesWidget::processEstaciones(const QString &filename)
                     querystring = "INSERT INTO STATIONS (USAF, WBAN, NAME, COUNTRY, BEGINDATA, ENDDATA, selected) VALUES ('%1', '%2', '%3', '%4', '%5', '%6', %7)";
                     querystring = querystring.arg(fields[0]).arg(fields[1])
                             .arg(fields[2]).arg(fields[3]).arg(fields[8]).arg(fields[9]).arg(0);
-                };
+                }
 
                 query.exec(querystring);
 
                 qDebug() << query.lastQuery() << query.lastError();
             }
-        };
+        }
         query.exec("COMMIT TRANSACTION");
-    };
+    }
     llenarListadoConEstaciones();
 }
 
@@ -109,7 +109,7 @@ void SeteoEstacionesWidget::llenarListadoConEstaciones()
         item->setCheckState(query->record().field("selected").value().toInt() != 0 ? Qt::Checked : Qt::Unchecked);
         item->setData(Qt::UserRole, query->record().field("USAF").value().toString());
         ui->lstCiudades->addItem(item);
-    };
+    }
 }
 
 void SeteoEstacionesWidget::on_btnSave_released()

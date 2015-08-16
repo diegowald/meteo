@@ -46,11 +46,8 @@ processByCyclesWidget::processByCyclesWidget(QWidget *parent) :
     astralDailyModel->setTable("view_estadotiempos");
 
     ui->phase19ListView->setModel(phase19Model);
-    //ui->phase19ListView->setModelColumn(1);
     ui->phase37ListView->setModel(phase37Model);
-    //ui->phase37ListView->setModelColumn(1);
     ui->phase96ListView->setModel(phase96Model);
-    //ui->phase96ListView->setModelColumn(1);
     ui->nMonthListView->setModel(nPhaseModel);
 
     ui->astrologycalDaysTableView->setModel(astralDailyModel);
@@ -117,7 +114,6 @@ void processByCyclesWidget::doCalc(){
     QDate currentdate, tempdate;
     qDebug() << strdate;
     currentdate = QDateTime::fromString(strdate, "yyyy-MM-dd hh:mm:ss").date();
-    //QStringList phase19, phase37, phase96;
     phase19.clear();
     phase37.clear();
     phase96.clear();
@@ -134,8 +130,7 @@ void processByCyclesWidget::doCalc(){
         phase19 << tempdate.toString("yyyy-MM-dd");
         phase19month << tempdate.toString("yyyy-MM");
         tempdate = tempdate.addYears(18.6);
-       // qDebug() << tempdate;
-    };
+    }
     qDebug() << "done 19 up";
 
     tempdate = currentdate;
@@ -143,7 +138,7 @@ void processByCyclesWidget::doCalc(){
         phase96 << tempdate.toString("yyyy-MM-dd");
         phase96month << tempdate.toString("yyyy-MM");
         tempdate = tempdate.addMonths((12*8) + 10);
-    };
+    }
     qDebug() << "done 96 up";
 
     tempdate = currentdate;
@@ -151,7 +146,7 @@ void processByCyclesWidget::doCalc(){
         phase37 << tempdate.toString("yyyy-MM-dd");
         phase37month << tempdate.toString("yyyy-MM");
         tempdate = tempdate.addYears(37);
-    };
+    }
     qDebug() << "done 37 up";
 
     tempdate = currentdate;
@@ -159,7 +154,7 @@ void processByCyclesWidget::doCalc(){
         phaseN << tempdate.toString("yyyy-MM-dd");
         phaseNmonth << tempdate.toString("yyyy-MM");
         tempdate = tempdate.addMonths(ui->nMonthSpinBox->value());
-    };
+    }
     qDebug() << "done N up";
 
     tempdate = currentdate;
@@ -167,7 +162,7 @@ void processByCyclesWidget::doCalc(){
         phase19 << tempdate.toString("yyyy-MM-dd");
         phase19month << tempdate.toString("yyyy-MM");
         tempdate = tempdate.addYears(-18.6);
-    };
+    }
     qDebug() << "done 19 down";
 
     tempdate = currentdate;
@@ -175,7 +170,7 @@ void processByCyclesWidget::doCalc(){
         phase96 << tempdate.toString("yyyy-MM-dd");
         phase96month << tempdate.toString("yyyy-MM");
         tempdate = tempdate.addMonths(-((12*8) + 10));
-    };
+    }
     qDebug() << "done 96 down";
 
     tempdate = currentdate;
@@ -183,7 +178,7 @@ void processByCyclesWidget::doCalc(){
         phase37 << tempdate.toString("yyyy-MM-dd");
         phase37month << tempdate.toString("yyyy-MM");
         tempdate = tempdate.addYears(-37);
-    };
+    }
 
     qDebug() << "done 37 down";
 
@@ -192,7 +187,7 @@ void processByCyclesWidget::doCalc(){
         phaseN << tempdate.toString("yyyy-MM-dd");
         phaseNmonth << tempdate.toString("yyyy-MM");
         tempdate = tempdate.addMonths(-ui->nMonthSpinBox->value());
-    };
+    }
     qDebug() << "done N up";
     int i;
     for(i = 0; i < phase19.count(); i++) phase19.replace(i, QString("(fecha LIKE '%1%')").arg(phase19.at(i)));
@@ -222,10 +217,6 @@ void processByCyclesWidget::doCalc(){
 
     nPhaseModel->select();
     qDebug() << nPhaseModel->query().lastQuery() << nPhaseModel->lastError();
-    /*monthlyModel
-    dailyModel
-    astralDailyModel*/
-
 }
 
 void processByCyclesWidget::phaseSelected(QModelIndex index){
@@ -235,57 +226,25 @@ void processByCyclesWidget::phaseSelected(QModelIndex index){
     QString datem = QString("fecha LIKE '%1%'").arg(index.data().toString().left(4+1+2));
     if(ui->phase19ListView->hasFocus()){
         monthlyModel->setFilter(phase19month.join(" OR "));
-//        dailyModel->setFilter(phase19Model->filter());
         dailyModel->setFilter(datem);
-//        astralDailyModel->setFilter(phase19Model->filter());
         astralDailyModel->setFilter(datem);
     }
     if(ui->phase37ListView->hasFocus()){
         monthlyModel->setFilter(phase37month.join(" OR "));
-//        dailyModel->setFilter(phase37Model->filter());
         dailyModel->setFilter(datem);
-//        astralDailyModel->setFilter(phase37Model->filter());
         astralDailyModel->setFilter(datem);
     }
     if(ui->phase96ListView->hasFocus()){
         monthlyModel->setFilter(phase96month.join(" OR "));
-//        dailyModel->setFilter(phase96Model->filter());
         dailyModel->setFilter(datem);
-//        astralDailyModel->setFilter(phase96Model->filter());
         astralDailyModel->setFilter(datem);
     }
 
     if(ui->nMonthListView->hasFocus()){
         monthlyModel->setFilter(phaseNmonth.join(" OR "));
-//        dailyModel->setFilter(nPhaseModel->filter());
         dailyModel->setFilter(datem);
-//        astralDailyModel->setFilter(nPhaseModel->filter());
         astralDailyModel->setFilter(datem);
     }
-
-    /*QString datem = QString("fecha LIKE '%1%'").arg(index.data().toString().left(4+1+2));
-    QString dated = QString("fecha LIKE '%1'").arg(index.data().toString());
-    if(ui->phase19ListView->hasFocus()){
-        monthlyModel->setFilter(datem);
-        dailyModel->setFilter(dated);
-        astralDailyModel->setFilter(dated);
-    }
-    if(ui->phase37ListView->hasFocus()){
-        monthlyModel->setFilter(datem);
-        dailyModel->setFilter(dated);
-        astralDailyModel->setFilter(dated);
-    }
-    if(ui->phase96ListView->hasFocus()){
-        monthlyModel->setFilter(datem);
-        dailyModel->setFilter(dated);
-        astralDailyModel->setFilter(dated);
-    }
-
-    if(ui->nMonthListView->hasFocus()){
-        monthlyModel->setFilter(datem);
-        dailyModel->setFilter(dated);
-        astralDailyModel->setFilter(dated);
-    }*/
 
     monthlyModel->select();
     dailyModel->select();
@@ -307,7 +266,6 @@ void processByCyclesWidget::astralMenu(QPoint pt){
     menu.addAction("Agregar todas las fechas a planilla");
     QAction* result = menu.exec(gpt);
     if(result){
-        //QMessageBox::warning(this, tr("wo"), result->text(), QMessageBox::Ok);
         excelExportWidget* excel = MainWindow::instance()->getExcelExport();
         if(result->text() == "Agregar fecha a planilla"){
             QModelIndexList list = ui->astrologycalDaysTableView->selectionModel()->selectedRows(0);
@@ -315,7 +273,7 @@ void processByCyclesWidget::astralMenu(QPoint pt){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->astrologycalDaysTableView->rootIndex();
@@ -324,8 +282,8 @@ void processByCyclesWidget::astralMenu(QPoint pt){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 void processByCyclesWidget::noaaMenu(QPoint pt){
@@ -336,7 +294,6 @@ void processByCyclesWidget::noaaMenu(QPoint pt){
     menu.addAction("Agregar todas las fechas a planilla");
     QAction* result = menu.exec(gpt);
     if(result){
-        //QMessageBox::warning(this, tr("wo"), result->text(), QMessageBox::Ok);
         excelExportWidget* excel = MainWindow::instance()->getExcelExport();
         if(result->text() == "Agregar fecha a planilla"){
             QModelIndexList list = ui->daysTableView->selectionModel()->selectedRows(0);
@@ -344,7 +301,7 @@ void processByCyclesWidget::noaaMenu(QPoint pt){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->daysTableView->rootIndex();
@@ -353,8 +310,8 @@ void processByCyclesWidget::noaaMenu(QPoint pt){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 void processByCyclesWidget::monthMenu(QPoint pt){
@@ -365,7 +322,6 @@ void processByCyclesWidget::monthMenu(QPoint pt){
     menu.addAction("Agregar todas las fechas a planilla");
     QAction* result = menu.exec(gpt);
     if(result){
-        //QMessageBox::warning(this, tr("wo"), result->text(), QMessageBox::Ok);
         excelExportWidget* excel = MainWindow::instance()->getExcelExport();
         if(result->text() == "Agregar fecha a planilla"){
             QModelIndexList list = ui->monthTableView->selectionModel()->selectedRows(0);
@@ -373,7 +329,7 @@ void processByCyclesWidget::monthMenu(QPoint pt){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->monthTableView->rootIndex();
@@ -382,8 +338,8 @@ void processByCyclesWidget::monthMenu(QPoint pt){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 void processByCyclesWidget::phaseMenu(QPoint pt)
@@ -396,7 +352,6 @@ void processByCyclesWidget::phaseMenu(QPoint pt)
     menu.addAction("Agregar todas las fechas a planilla");
     QAction* result = menu.exec(gpt);
     if(result){
-        //QMessageBox::warning(this, tr("wo"), result->text(), QMessageBox::Ok);
         excelExportWidget* excel = MainWindow::instance()->getExcelExport();
         if(result->text() == "Agregar fecha a planilla"){
             QModelIndexList list = view->selectionModel()->selectedRows(0);
@@ -404,7 +359,7 @@ void processByCyclesWidget::phaseMenu(QPoint pt)
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = view->rootIndex();
@@ -413,7 +368,7 @@ void processByCyclesWidget::phaseMenu(QPoint pt)
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 

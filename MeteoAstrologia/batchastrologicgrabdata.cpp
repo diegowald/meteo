@@ -25,12 +25,8 @@ batchAstrologicGrabData::batchAstrologicGrabData(QWidget *parent) :
 
     file = 0;
 
-    //connect(ui->actionPegar_Clipboard, SIGNAL(triggered()), this, SLOT(clipboardChanged()));
-    //connect(ui->actionGenerar_Archivo, SIGNAL(triggered()), this, SLOT(parseData()));
     connect(clipboard, SIGNAL(dataChanged()), this, SLOT(clipboardChanged()));
 
-    //connect(ui->genPushButton, SIGNAL(clicked()), this, SLOT(parseData()));
-    //connect(ui->pastePushButton, SIGNAL(clicked()), this, SLOT(clipboardChanged()));
     log(tr("Programa iniciado"));
 }
 
@@ -51,16 +47,14 @@ QString _usaf = "diego";
     while(query->next()){
         fechas << query->record().field("fecha").value().toDateTime();
         tipos  << query->record().field("tipo").value().toString();
-    };
+    }
     for(int i = 0; i < fechas.count(); i++){
         query->exec(QString("SELECT * FROM aspectariums WHERE fecha = '%1'").arg(fechas.at(i).toString("yyyy-MM-dd hh:mm:ss")));
-        //qDebug() << query->lastQuery() << query->lastError();
         if(query->next()){
-            //qDebug() << "Remove: " + fechas.at(i).toString("yyyy-MM-dd hh:mm:ss");
             fechas.removeAt(i);
             i--;
-        };
-    };
+        }
+    }
     if(!fechas.isEmpty()) ui->nextButton->setEnabled(true);
     delete query;
 
@@ -95,15 +89,14 @@ void batchAstrologicGrabData::next(){
         qDebug() << sets.value("SFfile").toString();
         if(starFisher->state() == QProcess::NotRunning){
             starFisher->start(sets.value("SFfile").toString());
-        };
+        }
         if(starFisherParser->state() == QProcess::NotRunning){
             starFisherParser->start("starFisherParser.exe");
-        };
+        }
 
         connect(starFisherParser, SIGNAL(finished(int)), this, SLOT(saveData()));
-        //qDebug() << starFisher->waitForStarted(-1);
         sets.endGroup();
-    };
+    }
 }
 
 void batchAstrologicGrabData::saveData(){
@@ -113,10 +106,8 @@ void batchAstrologicGrabData::saveData(){
     QSqlQuery *query = new QSqlQuery();
     QFile file;
     file.setFileName("aspectarium.dat");
-    //qDebug() << file.open(QIODevice::ReadOnly);
     while(!file.atEnd()){
         QString readed = file.readLine();
-        //qDebug() << readed;
         query->exec(QString("INSERT INTO aspectariums (fecha, planeta1, planeta2, conjuncion, totaldif, mindif, segdif, tipo)"
                             "VALUES ('%1', %2, %3, '%4', %5, %6,%7, '%8')")
                     .arg(currentDate.toString("yyyy-MM-dd hh:mm:ss"))
@@ -136,14 +127,13 @@ P1,P2 Planetas en conjuncion
 CC codigo de conjuncion
 MM    Minutos Diferencia
 */
-    };
+    }
     file.close();
 
     file.setFileName("distributionsigns.dat");
     file.open(QIODevice::ReadOnly);
     while(!file.atEnd()){
         QString readed = file.readLine();
-        //qDebug() << readed;
         query->exec(QString("INSERT INTO `signos` (fecha, signo, columna, planeta, tipo) VALUES"
                             "('%1', '%2', '%3', %4, '%5')")
                     .arg(currentDate.toString("yyyy-MM-dd hh:mm:ss"))
@@ -151,15 +141,13 @@ MM    Minutos Diferencia
                     .arg(readed.mid(2, 2))
                     .arg(readed.mid(4, 2))
                     .arg(currentType));
-        //qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
     file.close();
 
     file.setFileName("distributionhouses.dat");
     file.open(QIODevice::ReadOnly);
     while(!file.atEnd()){
         QString readed = file.readLine();
-        //qDebug() << readed;
         query->exec(QString("INSERT INTO `casas` (fecha, codigocasa, codigocurrentType, planeta, tipo) VALUES "
                             "('%1', %2, '%3', %4, '%5')")
                     .arg(currentDate.toString("yyyy-MM-dd hh:mm:ss"))
@@ -167,8 +155,7 @@ MM    Minutos Diferencia
                     .arg(readed.mid(2, 2))
                     .arg(readed.mid(4, 2))
                     .arg(currentType));
-        //qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
     file.close();
 
     file.setFileName("distributionquadrants.dat");
@@ -182,15 +169,13 @@ MM    Minutos Diferencia
                     .arg(readed.mid(2, 2))
                     .arg(readed.mid(4, 2))
                     .arg(currentType));
-        //qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
     file.close();
 
     file.setFileName("positions.dat");
     file.open(QIODevice::ReadOnly);
     while(!file.atEnd()){
         QString readed = file.readLine();
-        //qDebug() << readed;
         query->exec(QString("INSERT INTO posiciones (fecha, planeta, signo, Glon, Mlon, Slon, Glat, Mlat, Slat, Gvel, Mvel, Svel, distancia, casa, tipo) VALUES "
                             "('%1', %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14, '%15')")
                     .arg(currentDate.toString("yyyy-MM-dd hh:mm:ss"))
@@ -208,9 +193,7 @@ MM    Minutos Diferencia
                     .arg(readed.mid(22,7))
                     .arg(readed.mid(29,2))
                     .arg(currentType));
-        //qDebug() << query->lastQuery() << query->lastError();
-
-    };
+    }
     file.close();
 
     delete query;
@@ -222,29 +205,25 @@ MM    Minutos Diferencia
 */
 
 void batchAstrologicGrabData::clipboardChanged(){
-    //ui->textEdit->clear();
-;
     QString clipboarddata = clipboard->text(htmlstring, QClipboard::Clipboard);
     //if(!clipboarddata.contains("<!--StartFragmnet-->")) return;
     if(clipboarddata.contains(basicinfostring)){
         ui->basicinfoTextEdit->setText(clipboarddata);
     }else{
         ui->aspectariumTextEdit->setText(clipboarddata);
-    };
+    }
     log(tr("Datos del clipboard capturados"));
 }
 
 void batchAstrologicGrabData::parseData(){
     parseAspectarium(ui->aspectariumTextEdit->toPlainText());
     parseBasicInfo(ui->basicinfoTextEdit->toPlainText());
-    //QMessageBox::information(this, tr("StarFisher Parser"), tr("Proceso completado! cierre este programa para continuar."), QMessageBox::Close | QMessageBox::Ok, QMessageBox::Close);
     if(QMessageBox::information(this, tr("StarFisher Parser"), tr("Proceso completado! cierre este programa para continuar."), QMessageBox::Close | QMessageBox::Ok) == QMessageBox::Close){
         close();
-    };
+    }
 }
 
 void batchAstrologicGrabData::parseAspectarium(QString basedata){
-    //qDebug() << basedata;
     int tr = basedata.indexOf(trstring);
     int trclose;
     QString trclosestring = "</TR>";
@@ -259,7 +238,7 @@ void batchAstrologicGrabData::parseAspectarium(QString basedata){
         delete file;
         file = 0;
         return;
-    };
+    }
 
     int cuerpo = 1;
     //parseo por lineas
@@ -276,7 +255,6 @@ void batchAstrologicGrabData::parseAspectarium(QString basedata){
             tdclose = linedata.indexOf(tdclosestring, td);
             if(nexttd < tdclose) tdclose = nexttd;
             QString blockdata = linedata.mid(td, tdclose - td);
-            //qDebug() << blockdata;
 
             if(!first){
                 if(blockdata.contains(titlestring)){
@@ -289,75 +267,75 @@ void batchAstrologicGrabData::parseAspectarium(QString basedata){
                     if(blockdata.contains("Conjunction")){
                         aspecto = 1;
                         aspectostring = "Conjunction";
-                    };
+                    }
                     if(blockdata.contains("Opposition")){
                         aspecto = 2;
                         aspectostring = "Opposition";
-                    };
+                    }
                     if(blockdata.contains("Trine")){
                         aspecto = 3;
                         aspectostring = "Trine";
-                    };
+                    }
                     if(blockdata.contains("Square")){
                         aspecto = 4;
                         aspectostring = "Square";
-                    };
+                    }
                     if(blockdata.contains("Quintile")){
                         aspecto = 5;
                         aspectostring = "Quintile";
-                    };
+                    }
                     if(blockdata.contains("Biquintile")){
                         aspecto = 6;
                         aspectostring = "Biquintile";
-                    };
+                    }
                     if(blockdata.contains("Sextile")){
                         aspecto = 7;
                         aspectostring = "Sextile";
-                    };
+                    }
                     if(blockdata.contains("Septile")){
                         aspecto = 8;
                         aspectostring = "Septile";
-                    };
+                    }
                     if(blockdata.contains("Biseptile")){
                         aspecto = 9;
                         aspectostring = "Biseptile";
-                    };
+                    }
                     if(blockdata.contains("Triseptile")){
                         aspecto = 10;
                         aspectostring = "Triseptile";
-                    };
+                    }
                     if(blockdata.contains("Octile")){
                         aspecto = 11;
                         aspectostring = "Octile";
-                    };
+                    }
                     if(blockdata.contains("Trioctile")){
                         aspecto = 12;
                         aspectostring = "Trioctile";
-                    };
+                    }
                     if(blockdata.contains("Novile")){
                         aspecto = 13;
                         aspectostring = "Novile";
-                    };
+                    }
                     if(blockdata.contains("Decile")){
                         aspecto = 14;
                         aspectostring = "Decile";
-                    };
+                    }
                     if(blockdata.contains("Tridecile")){
                         aspecto = 15;
                         aspectostring = "Tridecile";
-                    };
+                    }
                     if(blockdata.contains("Semisextile")){
                         aspecto = 16;
                         aspectostring = "Semisextile";
-                    };
+                    }
                     if(blockdata.contains("Quincunx")){
                         aspecto = 17;
                         aspectostring = "Quincunx";
-                    };
+                    }
                     if(blockdata.contains("Undecile")){
                         aspecto = 18;
                         aspectostring = "Undecile";
-                    };
+                    }
 
                     int begin = blockdata.indexOf(aspectostring) + QString(aspectostring).length() + 1;
                     int end = blockdata.indexOf(">", begin) - 1;
@@ -378,16 +356,16 @@ void batchAstrologicGrabData::parseAspectarium(QString basedata){
                     qDebug() << f;
                     file->write(f.toLatin1());
                     file->write("\r\n");
-                };
+                }
             }else{
                 first = false;
-            };
+            }
             cuerpo2++;
             td = nexttd;
-        };
+        }
         tr = basedata.indexOf(trstring, tr + 1);
         cuerpo++;
-    };
+    }
 
     file->close();
     delete file;
@@ -398,7 +376,6 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
     file = new QFile("distributionsigns.dat");
     file->open(QIODevice::WriteOnly);
 
-    //qDebug() << basedata;
     QString bodybeginstring = "<TBODY>";
     QString bodyendstring = "</TBODY>";
     QString trbegin = "<TR>";
@@ -417,7 +394,6 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
     int tbodybegin = basedata.indexOf(bodybeginstring, basetitleindex);
     int tbodyend = basedata.indexOf(bodyendstring, basetitleindex);
     tablestring = basedata.mid(tbodybegin, tbodyend - tbodybegin);
-    //qDebug() << tablestring;
     rowbegin = tablestring.indexOf(trbegin);
     int indexy = 0;
     while(rowbegin != -1){
@@ -428,17 +404,15 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
         while(blockbegin != -1){
             blockend = rowstring.indexOf(tdend, blockbegin);
             QString blockdata = rowstring.mid(blockbegin, blockend - blockbegin);
-            //qDebug() << "y: " << indexy << " x: " << indexx << " data: " << blockdata;
             //ToDo: guardar a un archivo
             saveSignLine(indexx, indexy, blockdata, file);
 
             blockbegin = rowstring.indexOf(tdbegin, blockbegin + 3);
             indexx++;
-        };
-        //qDebug() << rowstring;
+        }
         rowbegin = tablestring.indexOf(trbegin, rowbegin + 3);
         indexy++;
-    };
+    }
 
     file->close();
     file->setFileName("distributionhouses.dat");
@@ -450,7 +424,6 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
     tbodybegin = basedata.indexOf(bodybeginstring, basetitleindex);
     tbodyend = basedata.indexOf(bodyendstring, basetitleindex);
     tablestring = basedata.mid(tbodybegin, tbodyend - tbodybegin);
-    //qDebug() << tablestring;
     rowbegin = tablestring.indexOf(trbegin);
     indexy = 0;
     while(rowbegin != -1){
@@ -461,17 +434,15 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
         while(blockbegin != -1){
             blockend = rowstring.indexOf(tdend, blockbegin);
             QString blockdata = rowstring.mid(blockbegin, blockend - blockbegin);
-            //qDebug() << "y: " << indexy << " x: " << indexx << " data: " << blockdata;
             //ToDo: guardar a un archivo
             saveHouseLine(indexx, indexy, blockdata, file);
 
             blockbegin = rowstring.indexOf(tdbegin, blockbegin + 3);
             indexx++;
-        };
-        //qDebug() << rowstring;
+        }
         rowbegin = tablestring.indexOf(trbegin, rowbegin + 3);
         indexy++;
-    };
+    }
 
     file->close();
     file->setFileName("distributionquadrants.dat");
@@ -483,7 +454,7 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
     tbodybegin = basedata.indexOf(bodybeginstring, basetitleindex);
     tbodyend = basedata.indexOf(bodyendstring, basetitleindex);
     tablestring = basedata.mid(tbodybegin, tbodyend - tbodybegin);
-    //qDebug() << tablestring;
+
     rowbegin = tablestring.indexOf(trbegin);
     indexy = 0;
     while(rowbegin != -1){
@@ -494,17 +465,15 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
         while(blockbegin != -1){
             blockend = rowstring.indexOf(tdend, blockbegin);
             QString blockdata = rowstring.mid(blockbegin, blockend - blockbegin);
-            //qDebug() << "y: " << indexy << " x: " << indexx << " data: " << blockdata;
             //ToDo: guardar a un archivo
             saveQuadrantLine(indexx, indexy, blockdata, file);
 
             blockbegin = rowstring.indexOf(tdbegin, blockbegin + 3);
             indexx++;
-        };
-        //qDebug() << rowstring;
+        }
         rowbegin = tablestring.indexOf(trbegin, rowbegin + 3);
         indexy++;
-    };
+    }
 
     file->close();
     file->setFileName("positions.dat");
@@ -516,7 +485,6 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
     tbodybegin = basedata.indexOf(bodybeginstring, basetitleindex);
     tbodyend = basedata.indexOf(bodyendstring, basetitleindex);
     tablestring = basedata.mid(tbodybegin, tbodyend - tbodybegin);
-    //qDebug() << tablestring;
     rowbegin = tablestring.indexOf(trbegin);
     tdbegin = "<TD";
     indexy = 0;
@@ -534,11 +502,10 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
 
             blockbegin = rowstring.indexOf(tdbegin, blockbegin + 3);
             indexx++;
-        };
-        //qDebug() << rowstring;
+        }
         rowbegin = tablestring.indexOf(trbegin, rowbegin + 3);
         indexy++;
-    };
+    }
 
     //basetitle = "Positions";
     file->close();
@@ -567,11 +534,10 @@ void batchAstrologicGrabData::parseBasicInfo(QString basedata){
 
             blockbegin = rowstring.indexOf(tdbegin, blockbegin + 3);
             indexx++;
-        };
-        //qDebug() << rowstring;
+        }
         rowbegin = tablestring.indexOf(trbegin, rowbegin + 3);
         indexy++;
-    };
+    }
 
     file->close();
     delete file;
@@ -637,7 +603,7 @@ void batchAstrologicGrabData::saveSignLine(int x, int y, QString data, QFile *fi
         case 3:
             asp = "mu";
             break;
-        };
+        }
 
         switch(y){
         case 1:
@@ -652,15 +618,14 @@ void batchAstrologicGrabData::saveSignLine(int x, int y, QString data, QFile *fi
         case 4:
             elem = "ag";
             break;
-        };
+        }
 
-        //qDebug() << elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0');
         file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toLatin1());
         file->write("\r\n");
 
-    };
+    }
 
-};
+}
 
 void batchAstrologicGrabData::saveHouseLine(int x, int y, QString data, QFile *file){
     if((x == 0) || (y == 0)) return;
@@ -677,7 +642,7 @@ void batchAstrologicGrabData::saveHouseLine(int x, int y, QString data, QFile *f
         case 3:
             asp = "ca";
             break;
-        };
+        }
 
         switch(y){
         case 1:
@@ -692,12 +657,11 @@ void batchAstrologicGrabData::saveHouseLine(int x, int y, QString data, QFile *f
         case 4:
             elem = "04";
             break;
-        };
+        }
 
-        //qDebug() << elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0');
         file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toLatin1());
         file->write("\r\n");
-    };
+    }
 }
 
 void batchAstrologicGrabData::saveQuadrantLine(int x, int y, QString data, QFile *file){
@@ -712,7 +676,7 @@ void batchAstrologicGrabData::saveQuadrantLine(int x, int y, QString data, QFile
         case 2:
             asp = "we";
             break;
-        };
+        }
 
         switch(y){
         case 1:
@@ -721,12 +685,11 @@ void batchAstrologicGrabData::saveQuadrantLine(int x, int y, QString data, QFile
         case 2:
             elem = "be";
             break;
-        };
+        }
 
-        //qDebug() << elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0');
         file->write((elem+asp+QString("%1").arg(planets.at(i)).rightJustified(2, '0')).toLatin1());
         file->write("\r\n");
-    };
+    }
 }
 
 void batchAstrologicGrabData::savePositionLine(int x, int y, QString data, QFile *file){
@@ -752,18 +715,13 @@ void batchAstrologicGrabData::savePositionLine(int x, int y, QString data, QFile
             begin2 = data.indexOf(">", begin2) + 1;
             number = data.mid(begin, end - begin).rightJustified(2 ,'0');
             horoscopenumber = getHoroscopeNumber(data);
-            //qDebug() << "begin: " << begin << " end: " << end << " begin2: " << begin2;
-            //qDebug() << "number: " << number;
             f += QString("%1").arg(horoscopenumber).rightJustified(2, '0') + number + data.mid(begin2, 2) + data.mid(begin2 + 3, 2);
-            //qDebug() << f;
             break;
         case 2:
         case 3:
             begin = data.indexOf(">") + 1;
             end = data.indexOf("°", begin) - 1;
             f += data.mid(begin, (end + 1) - begin).rightJustified(2, '0') + data.mid(end + 2, 2) + data.mid(end + 5, 2);
-            //break;
-
             break;
         case 4:
             begin = data.indexOf(">") + 1;
@@ -773,12 +731,10 @@ void batchAstrologicGrabData::savePositionLine(int x, int y, QString data, QFile
             begin = data.indexOf(">") + 1;
             f += data.mid(begin).rightJustified(2, '0');
             f = f + "\r\n";
-            //qDebug() << f;
             file->write(f.toLatin1());
-            //guardar en archivo
             f = "";
             break;
-    };
+    }
 }
 
 void batchAstrologicGrabData::savePosition2Line(int x, int y, QString data, QFile *file){
@@ -809,6 +765,6 @@ void batchAstrologicGrabData::savePosition2Line(int x, int y, QString data, QFil
         file->write(f.toLatin1());
         file->write("\r\n");
         f = "";
-    };
+    }
 }
 

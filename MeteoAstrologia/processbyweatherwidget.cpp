@@ -83,7 +83,7 @@ void processByWeatherWidget::refresh(){
         ui->weatherTable->setItem(i, 0, new QTableWidgetItem(param->parameter));
         ui->weatherTable->setItem(i, 1, new QTableWidgetItem(QString("%1").arg(param->value)));
         ui->weatherTable->setItem(i, 2, new QTableWidgetItem(QString("%1").arg(param->tolerance)));
-    };
+    }
 }
 
 void processByWeatherWidget::refreshResult(){
@@ -103,7 +103,7 @@ void processByWeatherWidget::refreshResult(){
         ui->aspectariumTableWidget->setItem(i, 0, new QTableWidgetItem(information->retrievePlanet(param.data.planet1)));
         ui->aspectariumTableWidget->setItem(i, 1, new QTableWidgetItem(information->retrievePlanet(param.data.planet2)));
         ui->aspectariumTableWidget->setItem(i, 2, new QTableWidgetItem(QString("%1").arg(param.times)));
-    };
+    }
 
     //positions
     ui->positionsTableWidget->setRowCount(information->positionResult.count());
@@ -114,7 +114,7 @@ void processByWeatherWidget::refreshResult(){
         ui->positionsTableWidget->setItem(i, 0, new QTableWidgetItem(information->retrievePlanet(param.data.planet)));
         ui->positionsTableWidget->setItem(i, 1, new QTableWidgetItem(information->retrieveSign(param.data.sign)));
         ui->positionsTableWidget->setItem(i, 2, new QTableWidgetItem(QString("%1").arg(param.times)));
-    };
+    }
 
     //houses
     ui->housesTableWidget->setRowCount(information->housesResult.count());
@@ -130,8 +130,8 @@ void processByWeatherWidget::refreshResult(){
                 type = "Succedent";
             }else{
                 type = "Angular";
-            };
-        };
+            }
+        }
         if(param.data.house == 1) casa = "1 5 9";
         if(param.data.house == 4) casa = "4 8 12";
         if(param.data.house == 7) casa = "7 11 3";
@@ -141,7 +141,7 @@ void processByWeatherWidget::refreshResult(){
         ui->housesTableWidget->setItem(i, 1, new QTableWidgetItem(casa));
         ui->housesTableWidget->setItem(i, 2, new QTableWidgetItem(type));
         ui->housesTableWidget->setItem(i, 3, new QTableWidgetItem(QString("%1").arg(param.times)));
-    };
+    }
 
     //signs
     ui->signsTableWidget->setRowCount(information->signResult.count());
@@ -157,8 +157,8 @@ void processByWeatherWidget::refreshResult(){
                 column = "Fixed";
             }else{
                 column = "Mutable";
-            };
-        };
+            }
+        }
         if(param.data.sign == "fu") sign = "Fuego";
         if(param.data.sign == "ag") sign = "Agua";
         if(param.data.sign == "ti") sign = "Tierra";
@@ -168,7 +168,7 @@ void processByWeatherWidget::refreshResult(){
         ui->signsTableWidget->setItem(i, 1, new QTableWidgetItem(column));
         ui->signsTableWidget->setItem(i, 2, new QTableWidgetItem(sign));
         ui->signsTableWidget->setItem(i, 3, new QTableWidgetItem(QString("%1").arg(param.times)));
-    };
+    }
 
     //quadrants
     ui->quadrantesTableWidget->setRowCount(information->quadrantsResult.count());
@@ -180,7 +180,7 @@ void processByWeatherWidget::refreshResult(){
         ui->quadrantesTableWidget->setItem(i, 1, new QTableWidgetItem((param.data.eastwest == "es") ? "Este" : "Oeste"));
         ui->quadrantesTableWidget->setItem(i, 2, new QTableWidgetItem((param.data.code == "ab") ? "Above" : "Beneath"));
         ui->quadrantesTableWidget->setItem(i, 3, new QTableWidgetItem(QString("%1").arg(param.times)));
-    };
+    }
 
     ui->aspectariumTableWidget->resizeColumnsToContents();
     ui->positionsTableWidget->resizeColumnsToContents();
@@ -194,22 +194,20 @@ void processByWeatherWidget::openDateWidget(QModelIndex index){
     MainWindow *mainwidget;
     for(int i = 0; i < widgets.count(); i++){
         if(dynamic_cast<MainWindow*>(widgets.at(i)) != NULL){
-            //qDebug() << "eureka";
             mainwidget = static_cast<MainWindow*>(widgets.at(i));
             QDateTime *param = new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd hh:mm:ss"));
             weatherDisplayWidget *form = new weatherDisplayWidget(param);
             mainwidget->showForm(form);
-        };
-    };
+        }
+    }
 }
 
 void processByWeatherWidget::typeChange(){
-    //qDebug() << ui->desdeLaTablaComboBox->currentText();
     if(ui->desdeLaTablaComboBox->currentText() == "NOAA"){
         information->setNOAAWeather();
     }else{
         information->setAstralWeather();
-    };
+    }
     weatherList.clear();
     refresh();
 }
@@ -223,14 +221,14 @@ void processByWeatherWidget::doFilter(){
     information->setStrongWeathers(true);
     for(int i = 0; i < weatherList.count(); i++){
         information->addWeather(weatherList.at(i));
-    };
+    }
     information->setUSAF(usaf());
     information->processWeather();
     QList<QDateTime> result = information->getMatchDates();    
     for(int i = 0; i < result.count(); i++){
         qDebug() << result.at(i).toString();
         ui->datesList->addItem(result.at(i).toString("yyyy-MM-dd hh:mm:ss"));
-    };
+    }
 
     ui->fechasLabel->setText(QString("Fechas: %1 items").arg(result.count()));
 
@@ -248,7 +246,6 @@ void processByWeatherWidget::dayMenu(QPoint pt){
     menu.addAction("Agregar todas las fechas a planilla");
     QAction* result = menu.exec(gpt);
     if(result){
-        //QMessageBox::warning(this, tr("wo"), result->text(), QMessageBox::Ok);
         excelExportWidget* excel = MainWindow::instance()->getExcelExport();
         if(result->text() == "Agregar fecha a planilla"){
             QModelIndexList list = ui->datesList->selectionModel()->selectedRows(0);
@@ -256,7 +253,7 @@ void processByWeatherWidget::dayMenu(QPoint pt){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->datesList->rootIndex();
@@ -265,8 +262,8 @@ void processByWeatherWidget::dayMenu(QPoint pt){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 QString processByWeatherWidget::usaf() const

@@ -44,7 +44,7 @@ signsDialog::signsDialog(metAstro::signsParameter *param, QWidget *parent) :
     }else{
         isMod = true;
         this->meinSign = param;
-    };
+    }
 
     loadData();
 }
@@ -63,7 +63,7 @@ void signsDialog::accepted(){
         emit signsModded(meinSign);
     }else{
         emit signsAdded(meinSign);
-    };
+    }
     QDialog::accept();
 }
 

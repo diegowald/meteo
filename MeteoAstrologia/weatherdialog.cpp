@@ -14,7 +14,6 @@ weatherDialog::weatherDialog(metAstro::weatherParameter *weather, bool isNOAA, Q
          << "1000/500"
          << "Dir. Viento"
          << "Vel. Viento";
-    //ui->tipoComboBox->addItems(list);
     if(isNOAA){
         ui->tipoComboBox->addItem("Temp. Maxima", "temp_max");
         ui->tipoComboBox->addItem("Temp. Media", "temp_media");
@@ -35,12 +34,11 @@ weatherDialog::weatherDialog(metAstro::weatherParameter *weather, bool isNOAA, Q
         ui->tipoComboBox->addItem("1000/500", "mil500");
         ui->tipoComboBox->addItem("Dir. Viento", "direccionviento");
         ui->tipoComboBox->addItem("Vel. Viento", "vientovel");
-    };
+    }
     connect(ui->buttonBox, SIGNAL(accepted()), this, SLOT(accepted()));
     connect(ui->buttonBox, SIGNAL(rejected()), this, SLOT(closed()));
     connect(ui->tipoComboBox, SIGNAL(currentIndexChanged(QString)), this, SLOT(typeChanged(QString)));
 
-    //ui->setupUi(this);
     if(weather != 0){
         isMod = true;
         this->meinWeather = weather;
@@ -51,7 +49,7 @@ weatherDialog::weatherDialog(metAstro::weatherParameter *weather, bool isNOAA, Q
         this->meinWeather->parameter = "null";
         this->meinWeather->value = 0;
         this->meinWeather->tolerance = 0;
-    };
+    }
 }
 
 weatherDialog::~weatherDialog()
@@ -75,7 +73,7 @@ void weatherDialog::accepted(){
         emit weatherMod(this->meinWeather);
     }else{
         emit weatherAdd(this->meinWeather);
-    };
+    }
     QDialog::accept();
 }
 

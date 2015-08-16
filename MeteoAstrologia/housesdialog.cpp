@@ -45,7 +45,7 @@ housesDialog::housesDialog(metAstro::housesParameter *house, QWidget *parent) :
     }else{
         meinHouse = house;
         isMod = true;
-    };
+    }
 
     loadData();
 }
@@ -63,7 +63,7 @@ void housesDialog::accepted(){
         emit housesModded(meinHouse);
     }else{
         emit housesAdded(meinHouse);
-    };
+    }
     QDialog::accept();
 }
 

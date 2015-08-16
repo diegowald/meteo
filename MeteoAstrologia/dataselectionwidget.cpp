@@ -13,7 +13,7 @@ dataSelectionWidget::dataSelectionWidget(QList<QStringList> *list, QWidget *pare
     for(int i = 0; i < data->length(); ++i){
         QString fecha = data->at(i).at(0);
         ui->listWidget->addItem(new QListWidgetItem(QDate::fromString(fecha.mid(1,8), "yyyyMMdd").toString("dd-MM-yyyy") + "  " + fecha.mid(9, 2)));
-    };
+    }
 }
 
 dataSelectionWidget::~dataSelectionWidget()

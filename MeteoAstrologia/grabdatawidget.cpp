@@ -7,7 +7,6 @@ grabDataWidget::grabDataWidget(bool isSizigia, QWidget *parent) :
     ui(new Ui::grabDataWidget)
 {
     ui->setupUi(this);
-    //connect(ui->starFisherButton, SIGNAL(clicked()), this, SLOT(addStarFisherData()));
     connect(ui->satelmecPushButton, SIGNAL(clicked()), this, SLOT(addSatelmecData()));
     connect(ui->saveButton, SIGNAL(clicked()), this, SLOT(saveData()));
     connect(ui->closeButton, SIGNAL(clicked()), this, SLOT(close()));
@@ -19,8 +18,6 @@ grabDataWidget::grabDataWidget(bool isSizigia, QWidget *parent) :
     sizigia = isSizigia;
     ui->SizigiagroupBox->setEnabled(sizigia);
     ui->SizigiagroupBox->setVisible(sizigia);
-    /*ui->fechaGroupBox->setEnabled(!sizigia);
-    ui->fechaGroupBox->setVisible(!sizigia);*/
     this->wheaterData = new QList<QStringList>;
 
     QSqlQuery query;
@@ -42,8 +39,6 @@ grabDataWidget::~grabDataWidget()
 void grabDataWidget::addSatelmecData(){
     QSettings sets("config.ini");
     sets.beginGroup("program");
-    /*QFileDialog diag(this);
-    if(diag.exec()){*/
     QString filename = sets.value("SFDfile", "87750SFC.SFD").toString();
     QFile file(filename);
 
@@ -51,47 +46,42 @@ void grabDataWidget::addSatelmecData(){
         wheaterData->clear();
         bool seguir = true;
         while(!file.atEnd() && seguir){
-            //qDebug() << "wepa";
             QString readed = QString(file.read(233));
-            //qDebug() << readed;
             if(readed.count("M ", Qt::CaseSensitive) == 20) continue; //no fue tomado
             if(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")) < ui->dateTimeEdit->date()) continue;
             if(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")) > ui->dateTimeEdit->date()){
                 seguir = false;
                 continue;
-            };
+            }
 
             QStringList parsed;
             while(readed.length() > 11){
                 parsed << readed.left(11);
                 readed.remove(0,11);
-            };
+            }
             wheaterData->append(parsed);
-        };
+        }
         if(wheaterData->isEmpty()){
             QMessageBox::warning(this, tr("Atencion"), tr("No hay informacion para esta fecha en el archivo seleccionado."), QMessageBox::Ok);
         }else{
             dataSelectionWidget *dialog =  new dataSelectionWidget(wheaterData, dialog);
-            //dialog->setAttribute(Qt::WA_DeleteOnClose);
             if(dialog->exec()){
                 qDebug() << "culo";
                 QStringList dataAccepted = dialog->getDataList();
                 ui->tempMaxDoubleSpinBox->setValue(dataAccepted.at(1).toDouble());
                 ui->tempMinDoubleSpinBox->setValue(dataAccepted.at(2).toDouble());
                 double precipitaciones = dataAccepted.at(16).toDouble();
-                if(precipitaciones > 990){ precipitaciones = (precipitaciones - 990) / 10; };
+                if(precipitaciones > 990){ precipitaciones = (precipitaciones - 990) / 10; }
                 ui->precipitacionSpinBox->setValue(precipitaciones);
                 ui->velVientoDoubleSpinBox->setValue(dataAccepted.at(6).toInt() * 1.852);
                 ui->dirVientoSpinBox->setValue(dataAccepted.at(7).toInt());
-                //precipitacion (mm.) 991 = 0.1 mm.  sino 00x.x = x.x milimetros
-
-            };
+            }
             delete dialog;
-        };
+        }
 
     }else{
         QMessageBox::warning(this, tr("Error"), tr("No se pudo abrir el archivo de informacion, compruebe que no lo este usando otro programa en este momento"), QMessageBox::Ok);
-    };
+    }
 
     filename = sets.value("RBDfile", "87750RAO.RBD").toString();
     //QFile file(filename);
@@ -101,33 +91,22 @@ void grabDataWidget::addSatelmecData(){
     if(file.open(QIODevice::ReadOnly)){
         bool seguir = true;
         while(!file.atEnd() && seguir){
-            //qDebug() << "wepa";
             QString readed = QString(file.read(33));
-            //qDebug() << readed;
             if(readed.count("M ", Qt::CaseSensitive) == 2) continue; //no fue tomado
             if(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")) < ui->dateTimeEdit->date()) continue;
             if(QDate::fromString(readed.mid(1, 8), tr("yyyyMMdd")) > ui->dateTimeEdit->date()){
                 seguir = false;
                 continue;
-            };
+            }
             ui->data1000500SpinBox->setValue(readed.mid(21,7).toInt());
-            /*QStringList parsed;
-            while(readed.length() > 11){
-                parsed << readed.left(11);
-                readed.remove(0,11);
-            };
-            wheaterData->append(parsed);*/
-        };
+        }
     }else{
         QMessageBox::warning(this, tr("Error"), tr("No se pudo abrir el archivo de informacion, compruebe que no lo este usando otro programa en este momento"), QMessageBox::Ok);
-    };
+    }
     sets.endGroup();
 }
 
 void grabDataWidget::addStarFisherData(){
-    //QProcess p(this);
-    //p.start("starFisherParser.exe");
-    //qDebug() << p.waitForFinished(-1);
     QSettings sets("config.ini");
     sets.beginGroup("program");
     qDebug() << starFisher->state();
@@ -135,11 +114,10 @@ void grabDataWidget::addStarFisherData(){
     qDebug() << sets.value("SFfile").toString();
     if(starFisher->state() == QProcess::NotRunning){
         starFisher->start(sets.value("SFfile").toString());
-    };
+    }
     if(starFisherParser->state() == QProcess::NotRunning){
         starFisherParser->start("starFisherParser.exe");
-    };
-    //qDebug() << starFisher->waitForStarted(-1);
+    }
     sets.endGroup();
 }
 
@@ -160,10 +138,10 @@ void grabDataWidget::saveData2(){
             tipo = "mensual";
         }else{
             tipo = ui->sizigiaComboBox->currentText();
-        };
+        }
     }else{
         tipo = "normal";
-    };
+    }
 
     QFile file;
     file.setFileName("aspectarium.dat");
@@ -190,7 +168,7 @@ P1,P2 Planetas en conjuncion
 CC codigo de conjuncion
 MM    Minutos Diferencia
 */
-    };
+    }
     file.close();
 
     file.setFileName("distributionsigns.dat");
@@ -206,7 +184,7 @@ MM    Minutos Diferencia
                     .arg(readed.mid(4, 2))
                     .arg(tipo));
         qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
     file.close();
 
     file.setFileName("distributionhouses.dat");
@@ -222,7 +200,7 @@ MM    Minutos Diferencia
                     .arg(readed.mid(4, 2))
                     .arg(tipo));
         qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
     file.close();
 
     file.setFileName("distributionquadrants.dat");
@@ -237,7 +215,7 @@ MM    Minutos Diferencia
                     .arg(readed.mid(4, 2))
                     .arg(tipo));
         qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
     file.close();
 
     file.setFileName("positions.dat");
@@ -275,28 +253,15 @@ G3M3S3  Grados Minutos y Segundos Velocidad
 nn.nnnn Distancia (2 enteros y cuatro decimales)
 H          codigo 1-12
 */
-    };
+    }
     file.close();
-
-   /* file.setFileName("houses.dat");
-    file.open(QIODevice::ReadOnly);
-    while(!file.atEnd()){
-        QString readed = file.readLine();
-        query->exec(QString("INSERT INTO () VALUES "
-                            "(%1, %2, %3, %4)")
-                    .arg(ui->dateTimeEdit->date().toString())
-                    .arg(readed.mid(0, 2))
-                    .arg(readed.mid(2, 2))
-                    .arg(readed.mid(4, 2)));
-    };
-    file.close();*/
 
     QString luna = "none";
 
     if(ui->lunaGroupBox->isEnabled()){
         if(ui->fullMoonRadioButton->isChecked()) luna = "llena";
         if(ui->newMoonRadioButton->isChecked()) luna = "nueva";
-    };
+    }
 
     // Modificacion de diego
     query->exec(QString("INSERT INTO estadotiempos_diarios (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna, usaf) VALUES "
@@ -329,10 +294,10 @@ void grabDataWidget::saveData(){
             tipo = "mensual";
         }else{
             tipo = ui->sizigiaComboBox->currentText();
-        };
+        }
     }else{
         tipo = "normal";
-    };
+    }
 
     QFile file;
 
@@ -349,7 +314,7 @@ void grabDataWidget::saveData(){
                     .arg(utils::getSeconds(asp.diff))
                     .arg(tipo)
                     .arg(asp.diff));
-    };
+    }
 
     for(int i = 0; i < information.signDistribution.size(); i++){
         astroInfo::DistributionSignInfo sign = information.signDistribution.at(i);
@@ -361,7 +326,7 @@ void grabDataWidget::saveData(){
                     .arg(sign.planet)
                     .arg(tipo));
         qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
 
     for(int i = 0; i < information.houseDistribution.size(); i++){
         astroInfo::DistributionHousesInfo house = information.houseDistribution.at(i);
@@ -373,7 +338,7 @@ void grabDataWidget::saveData(){
                     .arg(house.planet)
                     .arg(tipo));
         qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
 
     for(int i = 0; i < information.quadrantsDistribution.size(); i++){
         astroInfo::QuadrantsInfo quad = information.quadrantsDistribution.at(i);
@@ -385,7 +350,7 @@ void grabDataWidget::saveData(){
                     .arg(quad.planet)
                     .arg(tipo));
         qDebug() << query->lastQuery() << query->lastError();
-    };
+    }
 
     for(int i = 0; i < information.positions.size(); i++){
         astroInfo::PositionInfo pos = information.positions.at(i);
@@ -426,29 +391,16 @@ G3M3S3  Grados Minutos y Segundos Velocidad
 nn.nnnn Distancia (2 enteros y cuatro decimales)
 H          codigo 1-12
 */
-    };
+    }
     file.close();
-
-   /* file.setFileName("houses.dat");
-    file.open(QIODevice::ReadOnly);
-    while(!file.atEnd()){
-        QString readed = file.readLine();
-        query->exec(QString("INSERT INTO () VALUES "
-                            "(%1, %2, %3, %4)")
-                    .arg(ui->dateTimeEdit->date().toString())
-                    .arg(readed.mid(0, 2))
-                    .arg(readed.mid(2, 2))
-                    .arg(readed.mid(4, 2)));
-    };
-    file.close();*/
 
     QString luna = "none";
 
     if(ui->lunaGroupBox->isEnabled()){
         if(ui->fullMoonRadioButton->isChecked()) luna = "llena";
         if(ui->newMoonRadioButton->isChecked()) luna = "nueva";
-    };
-     // Modificacion de diego
+    }
+    // Modificacion de diego
     query->exec(QString("INSERT INTO estadotiempos_diarios (fecha, maxima, minima, vientovel, direccionviento, precipitacion, mil500, observaciones, tipo, luna, usaf) VALUES "
                         "('%1', %2, %3, %4, %5, %6, %7, '%8', '%9', '%10', '%11')")
                 .arg(ui->dateTimeEdit->dateTime().toString("yyyy-MM-dd hh:mm:ss"))

@@ -4,7 +4,6 @@ astroInfo::astroInfo(QObject *parent) :
     QObject(parent),
     swe(new sweph())
 {
-    //swe->swe_set_ephe_path("E:\\shaka\\dev\\current\\soft\\MeteoAstrologia\\sweph\\ephe");
     qDebug() << QDir::currentPath().replace("/", "\\");
     swe->swe_set_ephe_path(QDir::currentPath().replace("/", "\\") + "\\sweph\\ephe");
     infook = false;
@@ -56,42 +55,26 @@ void astroInfo::doCalc(){
     double jdy = swe->swe_julday(mydate.day(),mydate.month(),mydate.year(), mytime.hour() + (mytime.minute() / 60.0) + (mytime.second() / 3600.0));
     qDebug() << "ñaña";
     this->juliandate = jdy;
-    /*qDebug()<< "time" << mytime.hour() + (mytime.minute() / 60.0) + (mytime.second() / 3600.0);
-    qDebug() << mytime.hour();
-    qDebug() << mytime.minute();
-    qDebug() << mytime.second();
-    qDebug() << "ñaña";*/
     sidt = swe->swe_sidtime(jdy);
-    /*qDebug() << "ñaña";
-    *qDebug() << "swe_swe_julday" << QString("%1").arg(jdy, 0, 'g', 20);
-    qDebug() << "swe_swe_julday2" << QString("%1").arg(mydate.toJulianDay(), 0, 'g', 20);*/
 
     //calc houses
     if(this->housesAscmc != 0) delete this->housesAscmc;
     if(this->housesCusps != 0) delete this->housesCusps;
     this->housesAscmc = new double[10];
     this->housesCusps = new double[13];
-    /*qDebug() << this->juliandate;
-    qDebug() << this->lat;
-    qDebug() << this->lon;*/
     swe->swe_houses(this->juliandate, this->lat, this->lon, this->housesCusps, /*ascmc*/this->housesAscmc);
     for(int i = 0; i < 14; i++){
         qDebug() << "cusps i:" << i << " "  << this->housesCusps[i];/* ascmc[i];*/
-    };
+    }
 
     //calc for every planet
     for(int planet = 0; planet <= 12; ++planet){
-        /*qDebug() << "Doby name: " << bodyPositions[planet].name;
-        qDebug() << "Doby number: " << bodyPositions[planet].number;*/
         double* result = swe->swe_calc_ut(this->juliandate, bodyPositions[planet].number);
         for(int i = 0; i <= 6; ++i){
             bodyPositions[planet].bodyData[i] = result[i];
-        };
-        /*double sign2*/ int sign2 = GetHousePos(bodyPositions[planet].longitude, bodyPositions[planet].latitude, this->housesCusps);
+        }
+        int sign2 = GetHousePos(bodyPositions[planet].longitude, bodyPositions[planet].latitude, this->housesCusps);
         bodyPositions[planet].house = sign2;//(int)sign2 % 13;
-        /*qDebug() << "Signo: " << (((int)bodyPositions[planet].longitude / 30) % 12) + 1;*/
-        /*qDebug() << "planeta: " << bodyPositions[planet].name;
-        qDebug() << "Casa: " << bodyPositions[planet].house;*/
         if(bodyPositions[planet].name == "Earth") continue;
         PositionInfo info;
         info.sign = (((int)bodyPositions[planet].longitude / 30) % 12) + 1;
@@ -103,24 +86,14 @@ void astroInfo::doCalc(){
         info.velocity = bodyPositions[planet].longSpeed;
         positions << info;
         //qDebug() << "latitud: " << bodyPositions[planet].latitude;
-    };    
+    }
 
     //calc part of fortune
     bodyPositions[13].longitude = Normalize((this->housesAscmc[0] + bodyPositions[4].longitude) - bodyPositions[0].longitude);
-    //qDebug() << "Part of Fortune" << bodyPositions[13].longitude;
 
     //calc asc and mc as bodies
     this->bodyPositions[14].longitude = this->housesAscmc[0];
     this->bodyPositions[15].longitude = this->housesAscmc[1];
-
-    /*double *result;
-    qDebug() << "Doby name: " << "Lilith";
-    qDebug() << "Doby number: " << 12;
-    result = swe->swe_calc_ut(this->juliandate, 12);*/
-
-    /*qDebug() << "Doby name: " << "true node";
-    qDebug() << "Doby number: " << 13;
-    result = swe->swe_calc_ut(this->juliandate, 13);*/
 
     //return;
     // calc of aspects
@@ -131,22 +104,10 @@ void astroInfo::doCalc(){
             int j = 1;
             if(planet1 == planet2) continue;
             double angle = this->distanceDegree(bodyPositions[planet1].longitude, bodyPositions[planet2].longitude);
-            /*qDebug() << "planet: " << bodyPositions[planet1].name << "angle: " << bodyPositions[planet1].longitude;
-            qDebug() << "angle: " << angle;
-            qDebug() << "planet 2: " << bodyPositions[planet2].name << "angle: " << bodyPositions[planet2].longitude;*/
             while(!find && (j <= 18)){
                 //chequeo por aspecto j
-                //qDebug() << "j: " << j;
 
-                /*qDebug() << "angle: " << angle;
-                qDebug() << "angle2: " << distanceDegree(angle, AspectSet[j].angle);*/
                 if(diffDegree(angle, AspectSet[j].angle) < (AspectSet[j].orb * .85)){
-                    /*qDebug() << "woah!";
-                    qDebug() << "planet: " << bodyPositions[planet1].name;
-                    qDebug() << "angle: " << angle;
-                    qDebug() << "aspect angle: " << AspectSet[j].angle << " orb: " << AspectSet[j].orb;
-                    qDebug() << "asp: " << AspectSet[j].name;
-                    qDebug() << "planet 2: " << bodyPositions[planet2].name;*/
                     find = true;
                     AspectInfo asp;
                     asp.asp = &AspectSet[j];
@@ -155,73 +116,34 @@ void astroInfo::doCalc(){
                     asp.planet1 = bodyPositions[planet1].number;
                     asp.planet2 = bodyPositions[planet2].number;
                     aspectarium.append(asp);
-                };
+                }
                 j++;
-            };
-            //if(find){};
-        };
-    };
+            }
+        }
+    }
 
-    //qDebug() << "1";
-    //lon = pd.lon_deg + pd.lon_min / 60.0 + pd.lon_sec / 3600.0;
     lon = -(10/60.0);
     sidt += lon / 15;
-    //qDebug() << sidt;
     if (sidt >= 24) sidt -= 24;
     if (sidt < 0) sidt += 24;
     armc = sidt * 15;
-    //qDebug() << "armc: " << armc;
 
-    //qDebug() << "houses";
-/*    for(int i = 0; i <=12; i++){
-        qDebug() << "House " << i << " : " << this->housesCusps[i];
-    };*/
-
-    //double x[6];
-    //double *x = swe->swe_calc(this->juliandate, -1, 0);
-    /*for(int i = 0; i < 6; i++){
-        qDebug() << "x[" << i << "]: " << x[i];
-    };*/
 
     //calculo de houses
-    //QVector<QString> dist[4][3];
     qDebug() << "q";
     QVector<int> dist[4][3];
     for(int i = 0; i <= 12; ++i){
-        //if(sky.skyObject[i].body->GetType() != Body::ePlanet) continue;
-        //double sign2, sign3;
         int sign;
-        //int element;
-        /*if(bySign){
-                sign = sky.GetSign(i)';
-                element = horoscope.settings->signSet.sign[sign].GetElement();
-        }else{
-                sign = sky.GetHouse(i);
-                element = (GlyphObj::Element)(sign % 4);
-        }*/
-        /*sign2 = GetHousePos(bodyPositions[i].longitude, bodyPositions[i].latitude, this->housesCusps);
-        double pos[2];
-
-        pos[0] = bodyPositions[i].longitude;
-        pos[1] = bodyPositions[i].latitude;
-        sign3 = swe->swe_house_pos(armc, this->lat, x[0], pos);
-        sign = sign2;
-        /*bodyPositions[i].house = sign3 +.5;
-        sign = sign3 + .5;*/
-        //element = sign 4;
         if(bodyPositions[i].name == "Earth") continue;
         sign = bodyPositions[i].house;
         qDebug() << "sign: " << sign;
 
-        //dist[sign % 4][sign % 3].push_back(bodyPositions[i].name);
         dist[sign % 4][sign % 3].push_back(bodyPositions[i].number);
-    };
+    }
     qDebug() << "q";
     for(unsigned int el = 0; el < 4; el++){
         for(unsigned int mod = 0; mod < 3; mod++){
-            //qDebug() << "el: " << el << "mod: " << mod;
             for(unsigned int i =0; i < dist[el][mod].size(); i++){
-                //qDebug() << dist[el][mod][i];
                 if(dist[el][mod][i] == 14) continue;
                 DistributionHousesInfo info;
                 if(el == 0) info.house = 4;
@@ -242,17 +164,9 @@ void astroInfo::doCalc(){
 
     QVector<int> dist2[4][3];
     for(int i = 0; i <= 10; ++i){
-        //if(sky.skyObject[i].body->GetType() != Body::ePlanet) continue;
         double sign2, sign3;
         int sign;
         int element;
-        /*if(bySign){
-                sign = sky.GetSign(i);
-                element = horoscope.settings->signSet.sign[sign].GetElement();
-        }else{
-                sign = sky.GetHouse(i);
-                element = (GlyphObj::Element)(sign % 4);
-        }*/
         sign = (int)(bodyPositions[i].longitude / 30.0) % 12;
         element = sign % 4;
         switch(element){
@@ -279,16 +193,11 @@ void astroInfo::doCalc(){
             default:
                 dist2[sign % 4][sign % 3].push_back(bodyPositions[i].number);
         }
-        //qDebug() << "body: " << bodyPositions[i].name << " house: " << sign2 << "  " << sign3;
-
-        //dist[sign % 4][sign % 3].push_back(bodyPositions[i].number);
-    };
+    }
 
     for(unsigned int el = 0; el < 4; el++){
         for(unsigned int mod = 0; mod < 3; mod++){
-            //qDebug() << "el: " << el << "mod: " << mod;
             for(unsigned int i =0; i < dist2[el][mod].size(); i++){
-                //qDebug() << dist2[el][mod][i];
                     DistributionSignInfo info;
                     if(dist2[el][mod][i] == 14) continue;
                     if(mod == 0) info.column = "ca";
@@ -336,25 +245,8 @@ void astroInfo::doCalc(){
                 quadrantsDistribution << info;
             }
         }
-    };
+    }
 
-    //aspectarium.clear(); ta
-    //signDistribution.clear();
-    //houseDistribution.clear();
-    // quadrantsDistribution.clear();
-    // positions.clear(); ta;
-
-    //qDebug() << "elapsed: " << mytimer.elapsed();
-
-    /*for(int i = 0; i < aspectarium.length(); i++){
-        qDebug() << i;
-    };*/
-
-    /*qDebug() << aspectarium;
-    qDebug() << quadrantsDistribution;
-    qDebug() << signDistribution;
-    qDebug() << positions;
-    qDebug() << houseDistribution;*/
     qDebug() << "fin";
 }
 
@@ -472,7 +364,7 @@ void astroInfo::loadBodySet(){
     for(int i = 0; i <= 10; i++){
         Body currentBody = bodyPositions[i];
         clearBody(&currentBody);
-    };
+    }
     this->bodyPositions[0].name = QString("Sun");
     this->bodyPositions[0].number = 0;
     this->bodyPositions[1].name = QString("Mercury");
@@ -513,26 +405,11 @@ double astroInfo::GetHousePos(double longitude, double latitude, double* cusp){
     for(unsigned int i = 1; i < 13; i++){
         tope = i + 1;
         if(tope ==  13) tope = 1;
-       // qDebug() << i;
         if(cusp[i] > cusp[tope]){
             if((cusp[i] <= longitude && longitude < 360) || (longitude > 0 && longitude <= cusp[tope])) house = i;
-           // qDebug() << "al reves" << "cusp: " << cusp[i] << "long: " << longitude << "cusp+1: " << cusp[tope] << longitude << house;
         }else{
             if(cusp[i] <= longitude && cusp[tope] > longitude) house = i;
-            //qDebug() << "cusp: " << cusp[i] << "long: " << longitude << "cusp+1: " << cusp[tope] << longitude << house;
-        };
-
-
-    };
-    return house;
-    /*double l = Normalize(longitude - cusp[0]);
-    //qDebug() << l;
-    for(unsigned int i = 0; i < 12; i++){
-            double maxi = ((i == 11) ? 360 : Normalize(cusp[i + 1] - cusp[0]));
-            double mini =  Normalize(cusp[i] - cusp[0]);
-            if( l >= mini && l < maxi){
-                    return  ((l - mini) / (maxi - mini) + (double)i); //* 10.0;
-            }
+        }
     }
-    return -1;*/
+    return house;
 }

@@ -25,7 +25,7 @@ void RBDtoWeatherDialog::doCalc()
         dialog.setValue(dialog.value() + 1);
         QDateTime date = QDateTime::fromString(query.record().field("fecha").value().toString(), "yyyy-MM-dd hh:mm:ss");
         processDay(date);
-    };
+    }
 }
 
 void RBDtoWeatherDialog::processDay(QDateTime date)
@@ -40,7 +40,7 @@ void RBDtoWeatherDialog::processDay(QDateTime date)
         if(date.time() > QTime(3, 0) && date.time() <= QTime(9, 0)) dates.setTime(QTime(6, 0));
         if(date.time() > QTime(9, 0) && date.time() <= QTime(15, 0)) dates.setTime(QTime(12, 0));
         if(date.time() > QTime(15, 0) && date.time() <= QTime(21, 0)) dates.setTime(QTime(18, 0));
-    };
+    }
 
     QSqlQuery insert;
     QSqlQuery select;
@@ -59,5 +59,5 @@ void RBDtoWeatherDialog::processDay(QDateTime date)
                     .arg(date.toString("yyyy-MM-dd hh:mm:ss"))
                     ); // Modificacion de diego
         qDebug() << insert.lastQuery() << insert.lastError();
-    };
+    }
 }

@@ -434,7 +434,7 @@ void dataProcessorWidget::refreshStrongAspect(){
         ui->strongAspectTableWidget->setItem(i, 3, new QTableWidgetItem(QString("%1").arg(asp->grade)));
         ui->strongAspectTableWidget->setItem(i, 4, new QTableWidgetItem(QString("%1").arg(asp->minutes)));
         ui->strongAspectTableWidget->setItem(i, 5, new QTableWidgetItem(QString("%1").arg(asp->seconds)));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshWeakAspect(){
@@ -461,7 +461,7 @@ void dataProcessorWidget::refreshWeakAspect(){
         ui->weakAspectTableWidget->setItem(i, 3, new QTableWidgetItem(QString("%1").arg(asp->grade)));
         ui->weakAspectTableWidget->setItem(i, 4, new QTableWidgetItem(QString("%1").arg(asp->minutes)));
         ui->weakAspectTableWidget->setItem(i, 5, new QTableWidgetItem(QString("%1").arg(asp->seconds)));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshStrongPosition(){
@@ -495,7 +495,7 @@ void dataProcessorWidget::refreshStrongPosition(){
         ui->strongPositionsTableWidget->setItem(i, 10, new QTableWidgetItem(QString("%1").arg(asp->secondsVel.value)));
         ui->strongPositionsTableWidget->setItem(i, 11, new QTableWidgetItem(QString("%1").arg(asp->distance)));
         ui->strongPositionsTableWidget->setItem(i, 12, new QTableWidgetItem(QString("%1").arg(asp->house)));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshWeakPosition(){
@@ -529,7 +529,7 @@ void dataProcessorWidget::refreshWeakPosition(){
         ui->weakPositionsTableWidget->setItem(i, 10, new QTableWidgetItem(QString("%1").arg(asp->secondsVel.value)));
         ui->weakPositionsTableWidget->setItem(i, 11, new QTableWidgetItem(QString("%1").arg(asp->distance)));
         ui->weakPositionsTableWidget->setItem(i, 12, new QTableWidgetItem(QString("%1").arg(asp->house)));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshStrongHouse(){
@@ -551,7 +551,7 @@ void dataProcessorWidget::refreshStrongHouse(){
         ui->strongHousesTableWidget->setItem(i, 0, new QTableWidgetItem(processor->retrieveHouse(asp->house)));
         ui->strongHousesTableWidget->setItem(i, 1, new QTableWidgetItem(asp->houseType));
         ui->strongHousesTableWidget->setItem(i, 2, new QTableWidgetItem(planet));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshWeakHouse(){
@@ -573,7 +573,7 @@ void dataProcessorWidget::refreshWeakHouse(){
         ui->weakHousesTableWidget->setItem(i, 0, new QTableWidgetItem(processor->retrieveHouse(asp->house)));
         ui->weakHousesTableWidget->setItem(i, 1, new QTableWidgetItem(asp->houseType));
         ui->weakHousesTableWidget->setItem(i, 2, new QTableWidgetItem(planet));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshStrongCuadrante(){
@@ -595,7 +595,7 @@ void dataProcessorWidget::refreshStrongCuadrante(){
         ui->strongCuadrantesTableWidget->setItem(i, 0, new QTableWidgetItem(asp->code));
         ui->strongCuadrantesTableWidget->setItem(i, 1, new QTableWidgetItem(asp->eastwest == "es" ? "este" : "oeste"));
         ui->strongCuadrantesTableWidget->setItem(i, 2, new QTableWidgetItem(planet));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshWeakCuadrante(){
@@ -617,7 +617,7 @@ void dataProcessorWidget::refreshWeakCuadrante(){
         ui->weakCuadrantesTableWidget->setItem(i, 0, new QTableWidgetItem(asp->code));
         ui->weakCuadrantesTableWidget->setItem(i, 1, new QTableWidgetItem(asp->eastwest == "es" ? "este" : "oeste"));
         ui->weakCuadrantesTableWidget->setItem(i, 2, new QTableWidgetItem(planet));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshStrongSign(){
@@ -636,11 +636,10 @@ void dataProcessorWidget::refreshStrongSign(){
         qDebug() << "aspect index: " << i;
         asp = this->strongSigns.at(i);
         planet = processor->retrievePlanet(asp->planet);
-        //sign = processor->retrieveSign(asp->sign);
         ui->strongSignsTableWidget->setItem(i, 0, new QTableWidgetItem(asp->column));
         ui->strongSignsTableWidget->setItem(i, 1, new QTableWidgetItem(asp->sign));
         ui->strongSignsTableWidget->setItem(i, 2, new QTableWidgetItem(planet));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshWeakSign(){
@@ -659,11 +658,10 @@ void dataProcessorWidget::refreshWeakSign(){
         qDebug() << "aspect index: " << i;
         asp = this->weakSigns.at(i);
         planet = processor->retrievePlanet(asp->planet);
-        //sign = processor->retrieveSign(asp->sign);
         ui->weakSignsTableWidget->setItem(i, 0, new QTableWidgetItem(asp->column));
         ui->weakSignsTableWidget->setItem(i, 1, new QTableWidgetItem(asp->sign));
         ui->weakSignsTableWidget->setItem(i, 2, new QTableWidgetItem(planet));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshStrongWeather(){
@@ -681,12 +679,10 @@ void dataProcessorWidget::refreshStrongWeather(){
     for(int i = 0; i < this->strongWeather.count(); ++i){
         qDebug() << "aspect index: " << i;
         asp = this->strongWeather.at(i);
-        //planet = processor->retrievePlanet(asp->planet);
-        //sign = processor->retrieveSign(asp->sign);
         ui->strongWeatheresTableWidget->setItem(i, 0, new QTableWidgetItem(asp->parameter));
         ui->strongWeatheresTableWidget->setItem(i, 1, new QTableWidgetItem(asp->value));
         ui->strongWeatheresTableWidget->setItem(i, 2, new QTableWidgetItem(asp->tolerance));
-    };
+    }
 }
 
 void dataProcessorWidget::refreshWeakWeather(){
@@ -699,17 +695,14 @@ void dataProcessorWidget::refreshWeakWeather(){
     ui->weakWeatheresTableWidget->setColumnCount(3);
     ui->weakWeatheresTableWidget->setRowCount(this->weakWeather.count());
     ui->weakWeatheresTableWidget->setHorizontalHeaderLabels(headers);
-    //QString planet, sign;
     metAstro::weatherParameter *asp;
     for(int i = 0; i < this->strongWeather.count(); ++i){
         qDebug() << "aspect index: " << i;
         asp = this->strongWeather.at(i);
-        //planet = processor->retrievePlanet(asp->planet);
-        //sign = processor->retrieveSign(asp->sign);
         ui->weakWeatheresTableWidget->setItem(i, 0, new QTableWidgetItem(asp->parameter));
         ui->weakWeatheresTableWidget->setItem(i, 1, new QTableWidgetItem(asp->value));
         ui->weakWeatheresTableWidget->setItem(i, 2, new QTableWidgetItem(asp->tolerance));
-    };
+    }
 }
 
 void dataProcessorWidget::processData(){

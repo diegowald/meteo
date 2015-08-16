@@ -13,21 +13,6 @@ dataProcessor::dataProcessor(QObject *parent) :
     quadrantPercent = 100;
     housePercent = 100;
 
-    /*QSqlQuery *query = new QSqlQuery();
-    query->exec("CREATE TEMPORARY TABLE IF NOT EXISTS processedWeather ("
-                "`id` int(11) NOT NULL AUTO_INCREMENT,"
-                "`fecha` datetime NOT NULL,"
-                "`maxima` decimal(7,4) NOT NULL,"
-                "`minima` decimal(7,4) NOT NULL,"
-                "`vientovel` decimal(7,4) NOT NULL,"
-                "`direccionviento` decimal(7,4) NOT NULL,"
-                "`precipitacion` smallint(6) NOT NULL,"
-                "`mil500` smallint(6) NOT NULL,"
-                "`observaciones` text NOT NULL,"
-                "`tipo` varchar(32) NOT NULL,"
-                "PRIMARY KEY (`id`)"
-                ")");
-    qDebug() << query->lastQuery() << query->lastError();*/
     setAstralWeather();
 }
 
@@ -51,32 +36,30 @@ void dataProcessor::processAspects(){
     for(int i = 0; i < aspectsWeak.count(); i++){
         metAstro::aspectParameter *param = aspectsWeak.at(i);
         weakAspectQuery << QString("(SELECT fecha FROM aspectariums WHERE (((planeta1 = %1 AND planeta2 = %2) OR (planeta1 = %3 AND planeta2 = %4)) AND conjuncion = %5))").arg(param->planet1).arg(param->planet2).arg(param->planet2).arg(param->planet1).arg(param->aspect);
-    };
+    }
 
     for(int i = 0; i < aspects.count(); i++){
         metAstro::aspectParameter *param = aspects.at(i);
         strongAspectQuery << QString("(SELECT fecha FROM aspectariums WHERE (((planeta1 = %1 AND planeta2 = %2) OR (planeta1 = %3 AND planeta2 = %4)) AND conjuncion = %5))").arg(param->planet1).arg(param->planet2).arg(param->planet2).arg(param->planet1).arg(param->aspect);
-    };
+    }
 
     if(doStrongAspects){
-        //if(!strongAspectQuery.isEmpty()) querystring += "WHERE " + strongAspectQuery.join(" AND ");
         if(!strongAspectQuery.isEmpty()){
             if(strongAspectQuery.count() > 1)
                 querystring += strongAspectQuery.join(" JOIN ") + " USING (fecha)";
             else
                 querystring += strongAspectQuery.at(0);
-        };
+        }
     }else{
         if(doWeakAspects){
-            //if(strongAspectQuery.isEmpty()) querystring += "WHERE " + weakAspectQuery.join(" AND ");
             if(weakAspectQuery.isEmpty()){
                 if(weakAspectQuery.count() > 1)
                     querystring += weakAspectQuery.join(" JOIN ") + " USING (fecha)";
                 else
                     querystring += weakAspectQuery.at(0);
-            };
-        };
-    };
+            }
+        }
+    }
 
     querystring += " ORDER BY fecha";
 
@@ -84,86 +67,6 @@ void dataProcessor::processAspects(){
     lastSqlResult = querystring;
     qDebug() << query.lastQuery() << query.lastError();
     while(query.next()) spatResult << QDateTime::fromString(query.record().field("fecha").value().toString(), "yyyy-MM-dd hh:mm:ss");
-
-
-    /*QString querystring = QString("(SELECT * FROM aspectariums WHERE fecha >= '%1' AND fecha <= '%2')").arg(this->initDate.toString("yyyy-MM-dd")).arg(this->finishDate.toString("yyyy-MM-dd"));
-    QString where = "", whereWeak = "";
-    QStringList closures;
-    QStringList weakClosures;
-    QList<QDateTime> timestamps;
-    metAstro::aspectParameter *asp;
-
-    if(doStrongAspects){
-        for(int i = 0; i < this->aspects.count(); ++i){
-            where = "(";
-            asp = this->aspects.at(i);
-            where += QString(" planeta1 = %1 AND ").arg(asp->planet1);
-            where += QString(" planeta2 = %1 AND ").arg(asp->planet2);
-            where += QString(" conjuncion = %1 ").arg(asp->aspect);
-            if(asp->computeGrade) where += QString("AND ((totaldif => %1) OR (totaldif <= %2))").arg(asp->grade - asp->gradeTolerance).arg(asp->grade + asp->gradeTolerance);
-            if(asp->computeMinutes) where += QString("AND ((mindif => %1) OR (mindif <= %2))").arg(asp->minutes - asp->minutesTolerance).arg(asp->minutes + asp->minutesTolerance);
-            if(asp->computeSeconds) where += QString("AND ((segdif => %1) OR (segdif <= %2))").arg(asp->seconds - asp->secondsTolerance).arg(asp->seconds + asp->secondsTolerance);
-            where += ")";
-            closures << where;
-        };
-        where = closures.join(" AND ");
-    };
-
-    if(doWeakAspects){
-        for(int i = 0; i < this->aspectsWeak.count(); ++i){
-            whereWeak = "(";
-            asp = this->aspectsWeak.at(i);
-            whereWeak += QString(" planeta1 = %1 AND ").arg(asp->planet1);
-            whereWeak += QString(" planeta2 = %1 AND ").arg(asp->planet2);
-            whereWeak += QString(" conjuncion = %1 ").arg(asp->aspect);
-            if(asp->computeGrade) whereWeak += QString("AND ((totaldif => %1) OR (totaldif <= %2))").arg(asp->grade - asp->gradeTolerance).arg(asp->grade + asp->gradeTolerance);
-            if(asp->computeMinutes) whereWeak += QString("AND ((mindif => %1) OR (mindif <= %2))").arg(asp->minutes - asp->minutesTolerance).arg(asp->minutes + asp->minutesTolerance);
-            if(asp->computeSeconds) whereWeak += QString("AND ((segdif => %1) OR (segdif <= %2))").arg(asp->seconds - asp->secondsTolerance).arg(asp->seconds + asp->secondsTolerance);
-            whereWeak += ")";
-            closures << whereWeak;
-        };
-        whereWeak = "(" + weakClosures.join(" OR ") + ")";
-    };
-
-    if(doWeakAspects){
-        if(where.isEmpty()){
-            where = whereWeak;
-        }else{
-            if(!whereWeak.isEmpty()){
-                where += " AND " + whereWeak;
-            }
-        };
-    };
-
-    QSqlQuery *query = new QSqlQuery();
-    if(firstTest){
-        query->exec(querystring);
-        while(query->next()) this->spatResult << query->record().field("fecha").value().toDateTime();
-        firstTest = false;
-    };
-
-    for(int i = 0; i < this->spatResult.count(); ++i){
-        query->exec(QString("SELECT fecha FROM aspectarium WHERE fecha = '%1' AND %2"));
-        if(query->next()) timestamps << this->spatResult.at(i);
-    };
-
-    //refresh valid timestamp
-    this->spatResult.clear();
-    for(int i = 0; i < timestamps.count(); ++i) this->spatResult << timestamps.at(i);
-
-    /*query->exec("TRUNCATE TABLE processedWeather");
-    qDebug() << query->lastQuery() << query->lastError();
-
-    query->exec("INSERT INTO processedWeather SELECT * FROM estadotiempos WHERE fecha IN (SELECT fecha FROM " + querystring + " AS tabla WHERE " + where + ")");
-    qDebug() << query->lastQuery() << query->lastError();
-    while(query->next()){
-        qDebug() << query->record().field("fecha").value().toDateTime();
-        timestamps << query->record().field("fecha").value().toDateTime();
-        //timestamps;
-    };*
-    qDebug() << "aspect finish";
-    delete query;
-    emit finish();*/
 }
 
 void dataProcessor::processWeather(){
@@ -178,33 +81,32 @@ void dataProcessor::processWeather(){
     for(int i = 0; i < weathersWeak.count(); i++){
         metAstro::weatherParameter *param = weathersWeak.at(i);
         weakWeatherQuery << "(" + param->parameter + " >= " + QString("%1").arg(param->value - param->tolerance) + " AND " + param->parameter + " <= " + QString("%1").arg(param->value + param->tolerance) + ")";
-    };
+    }
 
     for(int i = 0; i < weathers.count(); i++){
         metAstro::weatherParameter *param = weathers.at(i);
         strongWeatherQuery << "(" + param->parameter + " >= " + QString("%1").arg(param->value - param->tolerance) + " AND " + param->parameter + " <= " + QString("%1").arg(param->value + param->tolerance) + ")";
-    };
+    }
 
     querystring = "SELECT strftime('%Y-%m-%d', fecha) as fecha FROM " + weatherTable;
     Q_ASSERT(_usaf.length() > 0);
     if(doStrongWeathers){
         if(!strongWeatherQuery.isEmpty()){
             querystring += " WHERE usaf = '" + _usaf + "'" + strongWeatherQuery.join(" AND ");
-        };
+        }
     }else{
         if(doWeakWeathers){
             if(!weakWeatherQuery.isEmpty()){
                 querystring += " WHERE usaf = '" + _usaf + "'" + strongWeatherQuery.join(" OR ");
-            };
-        };
-    };
+            }
+        }
+    }
 
     querystring += " ORDER BY fecha";
 
     query.exec(querystring);
     lastSqlResult = querystring;
     qDebug() << query.lastQuery() << query.lastError();
-    //while(query.next()) spatResult << QDateTime::fromString(query.record().field("fecha").value().toString(), "yyyy-MM-dd hh:mm:ss");
     while(query.next()) spatResult << QDateTime::fromString(query.record().field("fecha").value().toString(), "yyyy-MM-dd");
 }
 
@@ -212,7 +114,6 @@ int dataProcessor::getDignity(int planet, double longitude){
     int sign;
     int dignity;
     dignity = metAstro::None;
-    //sign = ((int)longitude % 30) + 1;
     sign = (((int)longitude / 30) % 12) + 1;
     switch(sign){
         case 1:
@@ -241,7 +142,6 @@ int dataProcessor::getDignity(int planet, double longitude){
             if(planet == 6) dignity = metAstro::Detriment;
             break;
         case 6:
-            //if(planet == 2) dignity = metAstro::Rules;
             if(planet == 2) dignity = metAstro::Rules | metAstro::Exaltation;
             if(planet == 6) dignity = metAstro::Detriment;
             if(planet == 3) dignity = metAstro::Fall;
@@ -277,7 +177,7 @@ int dataProcessor::getDignity(int planet, double longitude){
             //if(planet == 2) dignity = metAstro::Detriment;
             if(planet == 2) dignity = metAstro::Fall | metAstro::Detriment;
             break;
-    };
+    }
     return dignity;
 }
 
@@ -331,7 +231,7 @@ int dataProcessor::getSignByDignity(metAstro::dignityParam param){
             break;
         default:
             sign = 0;
-    };
+    }
     return sign;
 }
 
@@ -384,8 +284,7 @@ void dataProcessor::processResults(){
         param.data = dato;
         param.times = query.record().field("t").value().toInt();
         aspectsResult << param;
-    };
-        //qDebug() << query.record().field("t").value().toInt() << query.record().field("planeta1").value().toInt() << query.record().field("planeta2").value().toInt();
+    }
 
     //positions
     qDebug() << "positions";
@@ -399,8 +298,7 @@ void dataProcessor::processResults(){
         param.data = dato;
         param.times = query.record().field("t").value().toInt();
         positionResult << param;
-    };
-        //qDebug() << query.record().field("t").value().toInt() << query.record().field("planeta").value().toInt() << query.record().field("signo").value().toInt();
+    }
 
     //signs
     qDebug() << "signs";
@@ -415,8 +313,7 @@ void dataProcessor::processResults(){
         param.data = dato;
         param.times = query.record().field("t").value().toInt();
         signResult << param;
-    };
-        //qDebug() << query.record().field("t").value().toInt() << query.record().field("planeta").value().toInt() << query.record().field("signo").value().toString() << query.record().field("columna").value().toString();
+    }
 
     //quadrants
     qDebug() << "quadrants";
@@ -431,8 +328,7 @@ void dataProcessor::processResults(){
         param.data = dato;
         param.times = query.record().field("t").value().toInt();
         quadrantsResult << param;
-    };
-        //qDebug() << query.record().field("t").value().toInt() << query.record().field("planeta").value().toInt() << query.record().field("codigo").value().toInt() << query.record().field("esteoeste").value().toString();
+    }
 
     //houses
     qDebug() << "houses";
@@ -448,10 +344,7 @@ void dataProcessor::processResults(){
         param.data = dato;
         param.times = query.record().field("t").value().toInt();
         housesResult << param;
-    };
-        //qDebug() << query.record().field("t").value().toInt() << query.record().field("planeta").value().toInt() << query.record().field("codigotipo").value().toString() << query.record().field("codigocasa").value().toInt();
-
-
+    }
 }
 
 QString dataProcessor::getSqlResult(processTypeReturn ret){
@@ -477,11 +370,11 @@ QString dataProcessor::getSqlResult(processTypeReturn ret){
         case Quadrants:
             sqlquery += "cuadrantes";
             break;
-    };
+    }
     QStringList wherelist;
     for(int i = 0; i < this->spatResult.count(); ++i){
         wherelist << "fecha LIKE '" + this->spatResult.at(i).toString() + "'";
-    };
+    }
     where = wherelist.join(" OR ");
     sqlquery += " WHERE " + where;
     return sqlquery;
@@ -493,56 +386,6 @@ QString dataProcessor::retrievePlanet(int planet){
     query.exec(QString("SELECT * FROM planetas WHERE num = %1").arg(planet));
     query.next();
     result = query.record().field("planeta").value().toString();
-    /*switch(planet){
-        case 1:
-            result = "Sol";
-            break;
-        case 2:
-            result = "Luna";
-            break;
-        case 3:
-            result = "Mercurio";
-            break;
-        case 4:
-            result = "Venus";
-            break;
-        case 5:
-            result = "Martes";
-            break;
-        case 6:
-            result = "Jupiter";
-            break;
-        case 7:
-            result = "Saturno";
-            break;
-        case 8:
-            result = "Urano";
-            break;
-        case 9:
-            result = "Neptuno";
-            break;
-        case 10:
-            result = "Pluton";
-            break;
-        case 11:
-            result = "Ascendente";
-            break;
-        case 12:
-            result = "MC";
-            break;
-        case 13:
-            result = "Nodo";
-            break;
-        case 14:
-            result = "Lilith";
-            break;
-        case 15:
-            result = "Fortuna";
-            break;
-        default:
-            result = "null";
-            break;
-    };*/
     return result;
 }
 
@@ -611,7 +454,7 @@ QString dataProcessor::retrieveAspect(metAstro::aspectParameter *aspect){
                 break;
          default:
                 result = "null";
-    };
+    }
 
     return result;
 }
@@ -677,7 +520,7 @@ QString dataProcessor::retrieveAspect(int aspect){
                 break;
          default:
                 result = "null";
-    };
+    }
 
     return result;
 }
@@ -723,7 +566,7 @@ QString dataProcessor::retrieveSign(int sign){
                 break;
         default:
             result = "null";
-    };
+    }
     return result;
 }
 
@@ -745,7 +588,7 @@ QString dataProcessor::retrieveHouse(int house){
         default:
             result  = "null";
             break;
-    };
+    }
     return result;
 }
 
@@ -754,82 +597,82 @@ void dataProcessor::addAspects(QList<metAstro::aspectParameter*> aspects){
     this->aspects.clear();
     for(int i = 0; i < aspects.length(); ++i){
         this->aspects << aspects.at(i);
-    };
+    }
 }
 
 void dataProcessor::addWeakAspects(QList<metAstro::aspectParameter*> aspectsWeak){
     this->aspectsWeak.clear();
     for(int i = 0; i < aspectsWeak.length(); ++i){
         this->aspectsWeak << aspectsWeak.at(i);
-    };
+    }
 }
 
 void dataProcessor::addWeathers(QList<metAstro::weatherParameter*> weathers){
     this->weathers.clear();
     for(int i = 0; i < weathers.length(); ++i){
         this->weathers << weathers.at(i);
-    };
+    }
 }
 
 void dataProcessor::addWeakWeathers(QList<metAstro::weatherParameter*> weathersWeak){
     this->weathersWeak.clear();
     for(int i = 0; i < weathersWeak.length(); ++i){
         this->weathersWeak << weathersWeak.at(i);
-    };
+    }
 }
 
 void dataProcessor::addPositions(QList<metAstro::positionParameter*> positions){
     this->positions.clear();
     for(int i = 0; i < positions.length(); ++i){
         this->positions << positions.at(i);
-    };
+    }
 }
 
 void dataProcessor::addWeakPositions(QList<metAstro::positionParameter*> positionsWeak){
     this->positionsWeak.clear();
     for(int i = 0; i < positionsWeak.length(); ++i){
         this->positionsWeak << positionsWeak.at(i);
-    };
+    }
 }
 
 void dataProcessor::addHouses(QList<metAstro::housesParameter*> houses){
     this->houses.clear();
     for(int i = 0; i < houses.length(); ++i){
         this->houses << houses.at(i);
-    };
+    }
 }
 
 void dataProcessor::addWeakHouses(QList<metAstro::housesParameter*> housesWeak){
     this->housesWeak.clear();
     for(int i = 0; i < housesWeak.length(); ++i){
         this->housesWeak << housesWeak.at(i);
-    };
+    }
 }
 
 void dataProcessor::addQuadrants(QList<metAstro::cuadrantesParameter*> quadrants){
     this->quadrants.clear();
     for(int i = 0; i < quadrants.length(); ++i){
         this->quadrants << quadrants.at(i);
-    };
+    }
 }
 
 void dataProcessor::addWeakQuadrants(QList<metAstro::cuadrantesParameter*> quadrantsWeak){
     this->quadrantsWeak.clear();
     for(int i = 0; i < quadrantsWeak.length(); ++i){
         this->quadrantsWeak << quadrantsWeak.at(i);
-    };
+    }
 }
 
 void dataProcessor::addSings(QList<metAstro::signsParameter*> signs){
     this->signs.clear();
     for(int i = 0; i < signs.length(); ++i){
         this->signs << signs.at(i);
-    };
+    }
 }
 
 void dataProcessor::addWeakSings(QList<metAstro::signsParameter*> signsWeak){
     this->signsWeak.clear();
     for(int i = 0; i < signsWeak.length(); ++i){
         this->signsWeak << signsWeak.at(i);
-    };
+    }
 }

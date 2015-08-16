@@ -35,7 +35,7 @@ void fileLoadWidget::addFiles(){
         filenames.append(files.at(i));
         //qDebug() << files.at(i);
         fileprogress.append(0);
-    };
+    }
 
     refresh();
 }
@@ -48,7 +48,7 @@ void fileLoadWidget::removeFiles(){
     foreach(data, list){
         filenames.removeAt(data.row());
         fileprogress.removeAt(data.row());
-    };
+    }
 
     refresh();
 }
@@ -66,16 +66,16 @@ void fileLoadWidget::processFiles(){
             processDiaryWeather(filename);
             fileprogress.replace(i++, 100);
             refresh();
-        };
-    };
+        }
+    }
     if(ui->ninoMonthlyRadioButton->isChecked()){
         QString filename;
         foreach(filename, filenames){
             processNinoMonthly(filename);
             fileprogress.replace(i++, 100);
             refresh();
-        };
-    };
+        }
+    }
     if(ui->sunspotDiaryRadioButton->isChecked()){
         QString filename;
         foreach(filename, filenames){
@@ -83,16 +83,16 @@ void fileLoadWidget::processFiles(){
             fileprogress.replace(i++, 100);
             refresh();
             filenames.removeOne(filename);
-        };
-    };
+        }
+    }
     if(ui->sunspotMonthlyRadioButton->isChecked()){
         QString filename;
         foreach(filename, filenames){
             processMonthlySunspots(filename);
             fileprogress.replace(i++, 100);
             refresh();
-        };
-    };
+        }
+    }
 }
 
 void fileLoadWidget::refresh(){
@@ -105,7 +105,7 @@ void fileLoadWidget::refresh(){
         bar->setValue(fileprogress.at(i));
         ui->tableWidget->setItem(i, 0, new QTableWidgetItem(filenames.at(i)));
         ui->tableWidget->setCellWidget(i, 1, bar);
-    };
+    }
 }
 
 bool fileLoadWidget::processDiaryWeather(QString filename)
@@ -150,21 +150,21 @@ bool fileLoadWidget::processDiaryWeather(QString filename)
                     querystring = "INSERT INTO estadotiempos_diarios (temp_media, temp_max, temp_min, presion, "
                                   "visibilidad, viento_vel, viento_rafaga, punto_rocio, precipitaciones, nieve, flags, fecha) VALUES "
                                   "(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, '%12-%13-%14')";
-                };
+                }
                 //temp media
                 if(line.mid(24,6) == "9999.9"){
                     querystring = querystring.arg(line.mid(24,6));
                 }else{
                     double celc = line.mid(24, 6).toDouble();
                     querystring = querystring.arg(QString("%1").arg((celc - 32)/1.8));
-                };
+                }
                 //temp maxima
                 if(line.mid(102,6) == "9999.9"){
                     querystring = querystring.arg(line.mid(102, 6));
                 }else{
                     double celc = line.mid(102, 6).toDouble();
                     querystring = querystring.arg(QString("%1").arg((celc - 32)/1.8));
-                };
+                }
 
                 //temp minima
                 if(line.mid(110,6) == "9999.9"){
@@ -172,7 +172,7 @@ bool fileLoadWidget::processDiaryWeather(QString filename)
                 }else{
                     double celc = line.mid(110, 6).toDouble();
                     querystring = querystring.arg(QString("%1").arg((celc - 32)/1.8));
-                };
+                }
 
                 //presion
                 querystring = querystring.arg( line.mid(46, 6) == "9999.9" ? line.mid(57, 6) : line.mid(46, 6) );
@@ -183,7 +183,7 @@ bool fileLoadWidget::processDiaryWeather(QString filename)
                 }else{
                     double miles = line.mid(68, 5).toDouble();
                     querystring = querystring.arg(QString("%1").arg(miles * 1.609));
-                };
+                }
 
                 //viento velocidad
                 if(line.mid(78, 5) == "999.9"){
@@ -191,7 +191,7 @@ bool fileLoadWidget::processDiaryWeather(QString filename)
                 }else{
                     double knot = line.mid(78, 5).toDouble();
                     querystring = querystring.arg(QString("%1").arg(knot * 1.852));
-                };
+                }
 
                 //viento rafaga
                 if(line.mid(88, 5) == "999.9"){
@@ -199,7 +199,7 @@ bool fileLoadWidget::processDiaryWeather(QString filename)
                 }else{
                     double knot = line.mid(88, 5).toDouble();
                     querystring = querystring.arg(QString("%1").arg(knot * 1.852));
-                };
+                }
 
                 //punto rocio
                 if(line.mid(35, 6) == "9999.9"){
@@ -207,7 +207,7 @@ bool fileLoadWidget::processDiaryWeather(QString filename)
                 }else{
                     double celc = line.mid(35, 6).toDouble();
                     querystring = querystring.arg(QString("%1").arg((celc - 32)/1.8));
-                };
+                }
 
                 //precipitaciones
                 if(line.mid(118, 5) != "99.99"){
@@ -223,7 +223,7 @@ bool fileLoadWidget::processDiaryWeather(QString filename)
                 }else{
                     double pulg = line.mid(125, 5).toDouble();
                     querystring = querystring.arg("999.9");
-                };
+                }
 
                 //flags
                 querystring = querystring.arg(line.mid(132, 6));
@@ -232,51 +232,16 @@ bool fileLoadWidget::processDiaryWeather(QString filename)
                 querystring = querystring.arg(line.mid(14, 4));
                 querystring = querystring.arg(line.mid(18, 2));
                 querystring = querystring.arg(line.mid(20, 2));
-                //}else{
-                /* querystring = "INSERT INTO estadotiempos_diarios (fecha, temp_media, temp_max, temp_min, presion, "
-                            "visibilidad, viento_vel, viento_rafaga, punto_rocio, precipitaciones, nieve, flags) VALUES "
-                            "('%1-%2-%3', %4, %5, %6, %7, %8, %9, %10, %11, %12, %13, %14)";*/
-                /*querystring = querystring.arg(line.mid(14, 4));
-                    querystring = querystring.arg(line.mid(18, 2));
-                    querystring = querystring.arg(line.mid(20, 2));
-                    querystring = querystring.arg(line.mid(24,6));
-                    querystring = querystring.arg(line.mid(102, 6));
-                    querystring = querystring.arg(line.mid(110, 6));
-                    querystring = querystring.arg( line.mid(46, 6) == "9999.9" ? line.mid(57, 6) : line.mid(46, 6) );
-                    querystring = querystring.arg(line.mid(68, 5));
-                    querystring = querystring.arg(line.mid(78, 5));
-                    querystring = querystring.arg(line.mid(88, 5));
-                    querystring = querystring.arg(line.mid(35, 6));
-                    querystring = querystring.arg(line.mid(118, 5));
-                    querystring = querystring.arg(line.mid(125, 5));
-                    querystring = querystring.arg(line.mid(132, 6));
-                };*/
 
 
                 qDebug() << line;
                 query.exec(querystring);
 
                 qDebug() << query.lastQuery() << query.lastError();
-                /*qDebug() << line.mid(14, 4);
-                qDebug() << line.mid(18, 2);
-                qDebug() << line.mid(20, 2);
-                qDebug() << line.mid(24,6);
-                qDebug() << line.mid(35, 6);*/
-                /*qDebug() << line.mid(46, 6);
-                qDebug() << line.mid(57, 6);*/
-                /*qDebug() << line.mid(68, 5);
-                qDebug() << line.mid(78, 5);
-                qDebug() << line.mid(88, 5);
-                qDebug() << line.mid(95, 5);*/
-                /*qDebug() << line.mid(102, 6);
-                qDebug() << line.mid(110, 6);
-                /*qDebug() << line.mid(118, 5);
-                qDebug() << line.mid(125, 5);
-                qDebug() << line.mid(132, 6);*/
-            };
-        };
+            }
+        }
         query.exec("COMMIT TRANSACTION");
-    };
+    }
 }
 bool fileLoadWidget::processNinoMonthly(QString filename){
     qDebug() << "processDiary Weather";
@@ -288,7 +253,7 @@ bool fileLoadWidget::processNinoMonthly(QString filename){
         QSqlQuery query;
         query.exec("BEGIN TRANSACTION");
         while(!file.atEnd()){
-            if(first){ first = false; continue; };
+            if(first){ first = false; continue; }
             QString line(file.readLine());
             QString querystring, selectstring;
             QString month;
@@ -308,14 +273,14 @@ bool fileLoadWidget::processNinoMonthly(QString filename){
                 querystring = querystring.arg(line.mid(27, 4));
                 querystring = querystring.arg(line.mid(0, 4));
                 querystring = querystring.arg(month.rightJustified(2, '0'));
-            };
+            }
 
             query.exec(querystring);
 
             qDebug() << query.lastQuery() << query.lastError();
-        };
+        }
         query.exec("COMMIT TRANSACTION");
-    };
+    }
 }
 bool fileLoadWidget::processDiarySunspots(QString filename){
     qDebug() << "processDiary Weather";
@@ -342,7 +307,6 @@ bool fileLoadWidget::processDiarySunspots(QString filename){
                 if(query.next())
                 {
                     querystring = "UPDATE estadotiempos_diarios SET sunspots = %1 WHERE fecha = '%2-%3-%4'";
-                    //querystring = querystring.arg(line.mid(10,5));
                     querystring = querystring.arg(rec[2]);
                     querystring = querystring.arg(line.mid(0, 4));
                     querystring = querystring.arg(line.mid(4, 2));
@@ -355,16 +319,15 @@ bool fileLoadWidget::processDiarySunspots(QString filename){
                     querystring = querystring.arg(line.mid(0, 4));
                     querystring = querystring.arg(line.mid(4, 2));
                     querystring = querystring.arg(line.mid(6, 2));
-                    //querystring = querystring.arg(line.mid(10,5));
                     querystring = querystring.arg(rec[2]);
                 }
                 query.exec(querystring);
 
                 qDebug() << query.lastQuery() << query.lastError();
             }
-        };
+        }
         query.exec("COMMIT TRANSACTION");
-    };
+    }
 }
 bool fileLoadWidget::processMonthlySunspots(QString filename){
     qDebug() << "processDiary Weather";
@@ -376,7 +339,7 @@ bool fileLoadWidget::processMonthlySunspots(QString filename){
         QSqlQuery query;
         query.exec("BEGIN TRANSACTION");
         while(!file.atEnd()){
-            if(first){ first = false; continue; };
+            if(first){ first = false; continue; }
             QString line(file.readLine());
             QString querystring, selectstring;
             selectstring = "SELECT fecha FROM estadotiempos_mensuales WHERE fecha = '%1-%2-01'";
@@ -393,14 +356,14 @@ bool fileLoadWidget::processMonthlySunspots(QString filename){
                 querystring = querystring.arg(line.mid(0, 4));
                 querystring = querystring.arg(line.mid(4, 2));
                 querystring = querystring.arg(line.mid(19, 5));
-            };
+            }
 
             query.exec(querystring);
 
             qDebug() << query.lastQuery() << query.lastError();
-        };
+        }
         query.exec("COMMIT TRANSACTION");
-    };
+    }
 }
 
 void fileLoadWidget::on_btnDownload_released()
@@ -412,7 +375,6 @@ void fileLoadWidget::on_btnDownload_released()
     }
     else if (ui->sunspotDiaryRadioButton->isChecked())
     {
-        //url = "http://sidc.oma.be/sunspot-data/dailyssn.php";
         url = "http://www.sidc.be/silso/DATA/dayssn.dat";
     }
     else if (ui->sunspotMonthlyRadioButton->isChecked())
@@ -459,7 +421,6 @@ void fileLoadWidget::fileDownloaded(const QString &filename)
     file.close();
 
     filenames.append(file.fileName());
-    //qDebug() << files.at(i);
     fileprogress.append(0);
     refresh();
     downloader->deleteLater();

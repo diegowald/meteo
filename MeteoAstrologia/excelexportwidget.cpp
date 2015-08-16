@@ -14,17 +14,6 @@ excelExportWidget::excelExportWidget(QWidget *parent) :
 
     connect(ui->filterButton, SIGNAL(clicked()), this, SLOT(filter()));
     connect(ui->exportButton, SIGNAL(clicked()), this, SLOT(excelExport()));
-    /*dateList << new QDateTime(QDateTime::fromString("2001-01-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("2002-02-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("2001-03-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("2011-04-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("2000-05-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("1971-06-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("1981-07-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("2003-08-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("2002-09-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("1999-10-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));
-    dateList << new QDateTime(QDateTime::fromString("1987-11-01 00:00:00", "yyyy-MM-dd hh:mm:ss"));*/
     refreshList();
 
     ui->typeComboBox->addItem("Temp. Maxima", "temp_max");
@@ -70,12 +59,10 @@ void excelExportWidget::del(){
                 toRemove.swap(i, i+1);
             }else{
                 stop = true;
-            };
+            }
             i--;
-        };
-        //dateList.removeAt(index.row());
-        //dateList.removeAll(new QDateTime(index.data().toDateTime()));
-    };
+        }
+    }
     foreach(i, toRemove) dateList.removeAt(i);
     refreshList();
 }
@@ -84,10 +71,7 @@ void excelExportWidget::add(){
     QDateTimeEdit *widget = new QDateTimeEdit();
     widget->setCalendarPopup(true);
     widget->setAttribute(Qt::WA_DeleteOnClose);
-    /*widget->setWindowModality(Qt::ApplicationModal);
-    widget->show();*/
     ui->verticalLayout->addWidget(widget);
-    //connect(widget, SIGNAL(editingFinished()), this, SLOT(added()));
     disconnect(ui->addButton, SIGNAL(clicked()), this ,SLOT(add()));
     disconnect(ui->delButton, SIGNAL(clicked()), this, SLOT(del()));
     connect(ui->addButton, SIGNAL(clicked()), this ,SLOT(added()));
@@ -103,10 +87,8 @@ void excelExportWidget::added(){
             qDebug() << "yahoo!";
             QDateTimeEdit* date = static_cast<QDateTimeEdit*>(ob);
             addDateTime(new QDateTime(date->dateTime()));
-            //date->setAttribute(Qt::WA_DeleteOnClose);
-            //date->close();
-        };
-    };
+        }
+    }
     cancel();
 }
 
@@ -117,8 +99,8 @@ void excelExportWidget::cancel(){
         if(dynamic_cast<QDateTimeEdit*>(ob) != NULL){
             QDateTimeEdit* date = static_cast<QDateTimeEdit*>(ob);
             date->close();
-        };
-    };
+        }
+    }
     disconnect(ui->addButton, SIGNAL(clicked()), this ,SLOT(added()));
     disconnect(ui->delButton, SIGNAL(clicked()), this, SLOT(cancel()));
     connect(ui->addButton, SIGNAL(clicked()), this ,SLOT(add()));
@@ -130,7 +112,7 @@ void excelExportWidget::refreshList(){
     QDateTime* date;
     foreach(date, dateList){
         ui->listWidget->addItem(new QListWidgetItem(date->toString("yyyy-MM-dd hh:mm:ss")));
-    };
+    }
 }
 void excelExportWidget::filter(){
     ui->tableWidget->clear();
@@ -149,8 +131,8 @@ void excelExportWidget::filter(){
     if(ui->astralRadio->isChecked()) ppTable = "estadotiempos_diarios"; // Modificacion de diego
     if(ui->noaaRadio->isChecked()) ppTable = "estadotiempos_diarios";
     if(ui->rbdButton->isChecked()) ppTable = "tiempos";
-    if(ui->monthRadio->isChecked()){ ppTable = "view_estadotiempos_mensuales"; isMonth = true; };
-    if(ui->annoButton->isChecked()){ ppTable = "view_estadotiempos_mensuales"; };
+    if(ui->monthRadio->isChecked()){ ppTable = "view_estadotiempos_mensuales"; isMonth = true; }
+    if(ui->annoButton->isChecked()){ ppTable = "view_estadotiempos_mensuales"; }
 
     if(ui->allRadio->isChecked()){
         trueDateList = dateList;
@@ -158,18 +140,18 @@ void excelExportWidget::filter(){
         QModelIndexList list = ui->listWidget->selectionModel()->selectedIndexes();
         QModelIndex index;
         foreach(index, list) trueDateList << dateList.at(index.row());
-    };
+    }
 
     if(isMonth){
         if(ui->onlyRadio->isChecked()){
             foreach(item, trueDateList){
                 filterList << QString("(strftime('%Y', fecha) = '%1')").arg(item->toString("yyyy"));
-            };
+            }
         }else{
             foreach(item, trueDateList){
                 filterList << QString("(strftime('%Y', fecha) >= '%1' AND strftime('%Y', fecha) <= '%2')").arg(item->addMonths(-ui->spinBox->value()).toString("yyyy")).arg(item->addMonths(ui->spinBox->value()).toString("yyyy"));
-            };
-        };
+            }
+        }
         filter = filterList.join(" OR ");
         query.exec(
                     QString("SELECT strftime('%m', fecha) as month, strftime('%Y', fecha) as year, %1 as q FROM %2 WHERE %3 AND usaf = '%4'' ORDER BY year, month")
@@ -195,25 +177,20 @@ void excelExportWidget::filter(){
                 ui->tableWidget->setRowCount(row+1);
                 qDebug() << "row count: " << ui->tableWidget->rowCount() << " column count: " << ui->tableWidget->columnCount();
                 ui->tableWidget->setItem(row, 0, new QTableWidgetItem(QString("%1").arg(query.record().field("year").value().toString())));
-            };
-            //ui->tableWidget->setRowCount(row);
+            }
             ui->tableWidget->setItem(row, query.record().field("month").value().toInt(), new QTableWidgetItem(QString("%1").arg(query.record().field("q").value().toString())));
-            /*qDebug() << query.record().field("month").value().toInt();
-            qDebug() << QString("%1").arg(query.record().field("q").value().toString());*/
-
-            //if(column == 13) column = 1;
-        };
+        }
     }else{
         if(ui->annoButton->isChecked()){
             if(ui->onlyRadio->isChecked()){
                 foreach(item, trueDateList){
                     filterList << QString("(fecha LIKE '%1%')").arg(item->toString("yyyy"));
-                };
+                }
             }else{
                 foreach(item, trueDateList){
                     filterList << QString("(fecha >= '%1-01-01' AND fecha <= '%2-12-31')").arg(item->addYears(-ui->spinBox->value()).toString("yyyy")).arg(item->addYears(ui->spinBox->value()).toString("yyyy"));
-                };
-            };
+                }
+            }
             filter = filterList.join(" OR ");
             if(ui->astralRadio->isChecked()) filter = filter.replace("fecha", "strftime('%Y-%m-%d', fecha)");
             query.exec(QString("SELECT * FROM %1 WHERE %2 ORDER BY fecha").arg(ppTable).arg(filter));
@@ -221,33 +198,33 @@ void excelExportWidget::filter(){
             if(ui->onlyRadio->isChecked()){
                 foreach(item, trueDateList){
                     filterList << QString("(fecha = '%1')").arg(item->toString("yyyy-MM-dd"));
-                };
+                }
             }else{
                 foreach(item, trueDateList){
                     filterList << QString("(fecha >= '%1' AND fecha <= '%2')").arg(item->addDays(-ui->spinBox->value()).toString("yyyy-MM-dd")).arg(item->addDays(ui->spinBox->value()).toString("yyyy-MM-dd"));
-                };
-            };
+                }
+            }
             filter = filterList.join(" OR ");
             if(ui->astralRadio->isChecked()) filter = filter.replace("fecha", "strftime('%Y-%m-%d', fecha)");
             query.exec(QString("SELECT * FROM %1 WHERE %2 ORDER BY fecha").arg(ppTable).arg(filter));
-        };
+        }
         query.next();
         i = 0;
         row = 1;
         while(query.record().fieldName(i) != ""){
             fields << query.record().fieldName(i);
             i++;
-        };
+        }
         ui->tableWidget->setColumnCount(fields.count());
         ui->tableWidget->setHorizontalHeaderLabels(fields);
         do{
             ui->tableWidget->setRowCount(row);
             for(column = 0; column < fields.count(); column++){
                 ui->tableWidget->setItem(row - 1, column, new QTableWidgetItem(QString("%1").arg(query.record().field(column).value().toString())));
-            };
+            }
             row++;
         }while(query.next());
-    };
+    }
 
     qDebug() << query.lastQuery() << query.lastError();    
     ui->tableWidget->resizeColumnsToContents();
@@ -274,19 +251,15 @@ void excelExportWidget::excelExport(){
     for(int i = 0; i < ui->tableWidget->columnCount(); i++){
         cell = sheet->querySubObject("Cells(int,int)", 1, i+1);
         cell->setProperty("Value", QVariant::fromValue(ui->tableWidget->horizontalHeaderItem(i)->text()));
-    };
+    }
 
     for(int i = 0; i < ui->tableWidget->columnCount(); i++){
         for(int j = 0; j < ui->tableWidget->rowCount(); j++){
-            //cell = sheet->querySubObject("Cells( Int, Int )", i, j);
-            //Cells(fila, columna)
             cell = sheet->querySubObject("Cells(int,int)", j+2, i+1);
             cell->setProperty("Value", QVariant::fromValue(ui->tableWidget->item(j, i)->data(Qt::DisplayRole).toString().replace('.', ",")));
-            /*qDebug() << ui->tableWidget->item(j, i)->data(Qt::UserRole);
-            qDebug() << ui->tableWidget->item(j, i)->data(Qt::DisplayRole);*/
             dialog.setValue(step++);
-        };
-    };
+        }
+    }
 
     app->setProperty("Visible", true );
 }

@@ -5,7 +5,6 @@ monthViewWidget::monthViewWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::monthViewWidget),
     astroModel(new QSqlTableModel),
-    //monthModel(new QSqlTableModel),
     dailyModel(new QSqlTableModel),
     astralModel(new QSqlQueryModel)
 {
@@ -96,19 +95,19 @@ void monthViewWidget::selectedDay(QModelIndex index)
     qDebug() << date;
     if(data == "Posiciones"){
         astralModel->setQuery(QString("SELECT * FROM view_posiciones WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     if(data == "Aspectos"){
         astralModel->setQuery(QString("SELECT * FROM view_aspectaiums WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     if(data == "Casas"){
         astralModel->setQuery(QString("SELECT * FROM view_casas WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     if(data == "Cuadrantes"){
         astralModel->setQuery(QString("SELECT * FROM view_cuadrantes WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     if(data == "Signos"){
         astralModel->setQuery(QString("SELECT * FROM view_signos WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     qDebug() << astroModel->lastError() << astroModel->query().lastQuery();
     resize();
 
@@ -125,32 +124,31 @@ void monthViewWidget::changeCombo(QString data){
     index = index.sibling(index.row(), 0);
     QString date = index.data().toDateTime().toString("yyyy-MM");
     list = ui->astroDailyTableView->selectionModel()->selectedRows();
-    //qDebug() << list.isEmpty();
     if(!list.isEmpty()){        
         index = list.at(0);
         qDebug() << index.data();
         index = index.sibling(index.row(), 1);
         //date = index.data().toDateTime().toString("yyyy-MM-dd");
         date = index.data().toString();
-    };
+    }
     qDebug() << index.data().toDateTime().toString("yyyy-MM-dd");
     qDebug() << date;
 
     if(data == "Posiciones"){
         astralModel->setQuery(QString("SELECT * FROM view_posiciones WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     if(data == "Aspectos"){
         astralModel->setQuery(QString("SELECT * FROM view_aspectariums WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     if(data == "Casas"){
         astralModel->setQuery(QString("SELECT * FROM view_houses WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     if(data == "Cuadrantes"){
         astralModel->setQuery(QString("SELECT * FROM view_cuadrantes WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
     if(data == "Signos"){
         astralModel->setQuery(QString("SELECTE * FROM view_signos WHERE fecha LIKE '%1%'").arg(date));
-    };
+    }
 
     resize();
 }

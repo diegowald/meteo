@@ -41,7 +41,7 @@ cuadrantesDialog::cuadrantesDialog(metAstro::cuadrantesParameter *cuadrante, QWi
     }else{
         isMod = true;
         this->meinCuadrante = cuadrante;
-    };
+    }
 
     loadData();
 }
@@ -60,7 +60,7 @@ void cuadrantesDialog::accepted(){
         emit cuadranteModded(this->meinCuadrante);
     }else{
         emit cuadranteAdded(this->meinCuadrante);
-    };
+    }
     QDialog::accept();
 }
 

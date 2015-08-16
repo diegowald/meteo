@@ -10,10 +10,6 @@ positionsDialog::positionsDialog(metAstro::positionParameter *param, bool modif,
     connect(ui->buttonBox, SIGNAL(accepted()), this, SLOT(accepted()));
     connect(ui->buttonBox, SIGNAL(rejected()), this, SLOT(closed()));
 
-    /*ui->casaComboBox->addItem("1 5 9", 1);
-    ui->casaComboBox->addItem("10 2 6", 10);
-    ui->casaComboBox->addItem("7 11 3", 7);
-    ui->casaComboBox->addItem("4 8 12", 4);*/
     ui->casaComboBox->addItem("1", 1);
     ui->casaComboBox->addItem("2", 2);
     ui->casaComboBox->addItem("3", 3);
@@ -100,10 +96,10 @@ positionsDialog::positionsDialog(metAstro::positionParameter *param, bool modif,
         isMod = true;
         this->meinPosition = param;
 
-    };
+    }
 
     if(modif){
-    };
+    }
 
     loadData();
 }
@@ -156,7 +152,7 @@ void positionsDialog::accepted(){
         emit positionModded(this->meinPosition);
     }else{
         emit positionAdded(this->meinPosition);
-    };
+    }
     QDialog::accept();
 }
 

@@ -92,13 +92,12 @@ void processByAspectWidget::refreshAspects(){
         ui->aspectTableWidget->setItem(i, 0, new QTableWidgetItem(utils::planetName(param.planet1)));
         ui->aspectTableWidget->setItem(i, 1, new QTableWidgetItem(utils::planetName(param.planet2)));
         ui->aspectTableWidget->setItem(i, 2, new QTableWidgetItem(utils::aspectName(param.aspect)));
-    };
+    }
 }
 
 void processByAspectWidget::doCalc(){
     ui->filterButton->setText("Buscando...");
     ui->filterButton->setEnabled(false);
-    //ui->datesList->clear();
     qApp->processEvents();
     information->clearWeather();
     information->setAspects(true);
@@ -106,17 +105,8 @@ void processByAspectWidget::doCalc(){
     for(int i = 0; i < aspects.count(); i++){
         metAstro::aspectParameter *param = &(aspects[i]);
         information->addAspect(param);
-    };
+    }
     information->processAspects();
-    //QList<QDateTime> result = information->getMatchDates();
-    /*for(int i = 0; i < result.count(); i++){
-        qDebug() << result.at(i).toString();
-        ui->datesList->addItem(result.at(i).toString("yyyy-MM-dd hh:mm:ss"));
-    };*/
-
-    //ui->fechasLabel->setText(QString("Fechas: %1 items").arg(result.count()));
-
-    //information->processResults();
 
     refreshResult();
     ui->filterButton->setText("Filtrar");
@@ -152,8 +142,8 @@ void processByAspectWidget::refreshResult(){
                        .arg(signo1)
                        .arg(planeta2)
                        .arg(signo2));
-        };
-    };
+        }
+    }
     query.exec("END TRANSACTION");
 
     astroModel->setFilter(astro.join(" OR "));
@@ -176,7 +166,6 @@ void processByAspectWidget::noaaMenu(QPoint val){
     menu.addAction("Agregar todas las fechas a planilla");
     QAction* result = menu.exec(gpt);
     if(result){
-        //QMessageBox::warning(this, tr("wo"), result->text(), QMessageBox::Ok);
         excelExportWidget* excel = MainWindow::instance()->getExcelExport();
         if(result->text() == "Agregar fecha a planilla"){
             QModelIndexList list = ui->dairyTableView->selectionModel()->selectedRows(0);
@@ -184,7 +173,7 @@ void processByAspectWidget::noaaMenu(QPoint val){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->dairyTableView->rootIndex();
@@ -193,8 +182,8 @@ void processByAspectWidget::noaaMenu(QPoint val){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 void processByAspectWidget::daysMenu(QPoint val){
@@ -213,7 +202,7 @@ void processByAspectWidget::daysMenu(QPoint val){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd hh:mm:ss")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->astroTableView->rootIndex();
@@ -222,6 +211,6 @@ void processByAspectWidget::daysMenu(QPoint val){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd hh:mm:ss")));
             }
-        };
-    };
+        }
+    }
 }

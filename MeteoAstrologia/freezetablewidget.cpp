@@ -44,10 +44,7 @@
 
 FreezeTableWidget::FreezeTableWidget(QWidget *parent) : QTableView(parent)
  {
-       //setModel(model);
        frozenTableView = new QTableView(this);
-
-       //init();
 
        //connect the headers and scrollbars of both tableviews together
        connect(horizontalHeader(),SIGNAL(sectionResized(int,int,int)), this,
@@ -60,9 +57,6 @@ FreezeTableWidget::FreezeTableWidget(QWidget *parent) : QTableView(parent)
        connect(verticalScrollBar(), SIGNAL(valueChanged(int)),
                frozenTableView->verticalScrollBar(), SLOT(setValue(int)));
        connect(frozenTableView, SIGNAL(customContextMenuRequested(QPoint)), this, SIGNAL(customContextMenuRequested(QPoint)));
-
-       //frozenTableView->setSelectionModel(this->selectionModel());
-
  }
 
  FreezeTableWidget::~FreezeTableWidget()
@@ -108,9 +102,6 @@ FreezeTableWidget::FreezeTableWidget(QWidget *parent) : QTableView(parent)
 
        viewport()->stackUnder(frozenTableView);
 
-       /*frozenTableView->setStyleSheet("QTableView { border: none;"
-                                      "background-color: #8EDE21;"
-                                      "selection-background-color: #999}"); //for demo purposes*/
        frozenTableView->setSelectionModel(selectionModel());
        for(int col=1; col<model()->columnCount(); col++)
              frozenTableView->setColumnHidden(col, true);
@@ -170,7 +161,6 @@ FreezeTableWidget::FreezeTableWidget(QWidget *parent) : QTableView(parent)
 void FreezeTableWidget::resizeColumnsToContents()
  {
      QTableView::resizeColumnsToContents();
-     //frozenTableView->resizeColumnsToContents();
  }
 
  void FreezeTableWidget::updateFrozenTableGeometry()

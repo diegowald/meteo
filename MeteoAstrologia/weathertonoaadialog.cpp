@@ -41,7 +41,7 @@ void weatherToNoaaDialog::doCalc()
         dialog.setValue(dialog.value() + 1);
         QDateTime date = QDateTime::fromString(query.record().field("fecha").value().toString(), "yyyy-MM-dd");
         processDay(date);
-    };
+    }
     query.exec("COMMIT TRANSACTION");
 }
 
@@ -73,37 +73,37 @@ void weatherToNoaaDialog::processDay(QDateTime date)
             if(tempmin > select.record().field("tempmin").value().toDouble())
                 tempmin = select.record().field("tempmin").value().toDouble();
             ctempmin++;
-        };
+        }
         if(select.record().field("tempmax").value().toDouble() != -99){
             if(tempmax < select.record().field("tempmax").value().toDouble())
                 tempmax = select.record().field("tempmax").value().toDouble();
             ctempmax++;
-        };
+        }
         if(select.record().field("temperatura").value().toDouble() != -99){
             temperatura = select.record().field("temperatura").value().toDouble();
             ctemperatura++;
-        };
+        }
         if(select.record().field("visibilidad").value().toDouble() != -99){
             visibilidad = select.record().field("visibilidad").value().toDouble();
             cvisibilidad++;
-        };
+        }
         if(select.record().field("velocidadviento").value().toDouble() != -99){
             viento_vel = select.record().field("velocidadviento").value().toDouble() * 1.875;
             cviento_vel++;
-        };
+        }
         if(select.record().field("puntorocio").value().toDouble() != -99){
             punto_rocio = select.record().field("puntorocio").value().toDouble();
             cpunto_rocio++;
-        };
+        }
         if(select.record().field("lluvia").value().toDouble() != -99){
             precipitaciones = select.record().field("lluvia").value().toDouble();
             cprecipitaciones++;
-        };
+        }
         if(select.record().field("presion").value().toDouble() != -99){
             presion = select.record().field("presion").value().toDouble();
             cpresion++;
-        };
-    };
+        }
+    }
 
     if(ctemperatura != 0)   select.exec(QString("UPDATE estadotiempos_diarios SET temp_media = %1 WHERE fecha = '%2' AND temp_media = -99 AND usaf = '%3'")
                                         .arg(temperatura / ctemperatura)

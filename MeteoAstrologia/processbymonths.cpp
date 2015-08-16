@@ -1,6 +1,5 @@
 #include "processbymonths.h"
 #include "ui_processbymonths.h"
-//#include "ui_monthParameterDialog.h"
 
 processByMonths::processByMonths(QWidget *parent) :
     QWidget(parent),
@@ -103,21 +102,6 @@ void processByMonths::dayChange(QModelIndex index){
     ui->quadrantsTableView->resizeColumnsToContents();
     ui->signsTableView->resizeColumnsToContents();
     ui->housesTableView->resizeColumnsToContents();
-
-    /*QModelIndexList indexes = ui->monthResultTableView->selectionModel()->selectedRows(0);
-    if(indexes.isEmpty()) return;
-    QModelIndex dato = indexes.at(0).sibling(indexes.at(0).row(), 0);
-
-    positionModel->setFilter(QString("fecha LIKE '%1-%'").arg(dato.data().toString()));;
-    aspectsModel->setFilter(QString("fecha LIKE '%1-%'").arg(dato.data().toString()));;
-    quadrantsModel->setFilter(QString("fecha LIKE '%1-%'").arg(dato.data().toString()));;
-    signsModel->setFilter(QString("fecha LIKE '%1-%'").arg(dato.data().toString()));;
-    housesModel->setFilter(QString("fecha LIKE '%1-%'").arg(dato.data().toString()));;
-    positionModel->select();
-    aspectsModel->select();
-    quadrantsModel->select();
-    signsModel->select();
-    housesModel->select();*/
 }
 
 void processByMonths::noaaChange(QModelIndex index)
@@ -163,7 +147,6 @@ void processByMonths::monthMenu(QPoint pt){
     menu.addAction("Agregar todas las fechas a planilla");
     QAction* result = menu.exec(gpt);
     if(result){
-        //QMessageBox::warning(this, tr("wo"), result->text(), QMessageBox::Ok);
         excelExportWidget* excel = MainWindow::instance()->getExcelExport();
         if(result->text() == "Agregar fecha a planilla"){
             QModelIndexList list = ui->monthResultTableView->selectionModel()->selectedRows(0);
@@ -171,7 +154,7 @@ void processByMonths::monthMenu(QPoint pt){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString() + "-01", "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->monthResultTableView->rootIndex();
@@ -180,8 +163,8 @@ void processByMonths::monthMenu(QPoint pt){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString() + "-01", "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 void processByMonths::dayMenu(QPoint pt){
@@ -200,7 +183,7 @@ void processByMonths::dayMenu(QPoint pt){
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->dayResultTableView->rootIndex();
@@ -209,8 +192,8 @@ void processByMonths::dayMenu(QPoint pt){
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 void processByMonths::noaaMenu(QPoint pt)
@@ -222,7 +205,6 @@ void processByMonths::noaaMenu(QPoint pt)
     menu.addAction("Agregar todas las fechas a planilla");
     QAction* result = menu.exec(gpt);
     if(result){
-        //QMessageBox::warning(this, tr("wo"), result->text(), QMessageBox::Ok);
         excelExportWidget* excel = MainWindow::instance()->getExcelExport();
         if(result->text() == "Agregar fecha a planilla"){
             QModelIndexList list = ui->noaaResultTableView->selectionModel()->selectedRows(0);
@@ -230,7 +212,7 @@ void processByMonths::noaaMenu(QPoint pt)
             foreach(index, list){
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
+        }
         if(result->text() == "Agregar todas las fechas a planilla"){
             QModelIndex index;
             index = ui->dayResultTableView->rootIndex();
@@ -239,8 +221,8 @@ void processByMonths::noaaMenu(QPoint pt)
                 qDebug() << index.data().toString();
                 excel->addDateTime(new QDateTime(QDateTime::fromString(index.data().toString(), "yyyy-MM-dd")));
             }
-        };
-    };
+        }
+    }
 }
 
 QString processByMonths::usaf() const
